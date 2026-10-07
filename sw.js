@@ -1,10 +1,11 @@
-const CACHE_NAME = 'sheepsys-offline-v4';
+const CACHE_NAME = 'sheepsys-offline-v5';
 const ASSETS_TO_CACHE = [
   './index.html',
   './manifest.json',
   './html5-qrcode.min.js',
   './robots.txt',
-  './sitemap.xml'
+  './sitemap.xml',
+  './KULLANIM_KILAVUZU.md'
 ];
 
 self.addEventListener('install', (event) => {
