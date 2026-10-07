@@ -644,8 +644,8 @@
       <small style="opacity:0.85; font-size:0.75rem;">Hasta Muayenesi • İlaçlı Süt Takibi • Aşı & Doğum Takvimi</small>
     </div>
     <div style="display:flex; align-items:center; gap:8px;">
-      <button id="theme-toggle-btn" onclick="toggleTheme()" title="Koyu / Açık Mod" style="background:rgba(255,255,255,0.2); color:white; border:1.5px solid rgba(255,255,255,0.5); padding:8px 12px; border-radius:8px; font-size:0.85rem; font-weight:700; cursor:pointer; min-height:40px; touch-action:manipulation;">🌙 Gece</button>
-      <button onclick="openGuideModal()" style="background:rgba(255,255,255,0.2); color:white; border:1.5px solid rgba(255,255,255,0.5); padding:8px 12px; border-radius:8px; font-size:0.85rem; font-weight:700; cursor:pointer; min-height:40px; touch-action:manipulation;">📖 Kılavuz</button>
+      <button onclick="openGuideModal()" style="background:rgba(255,255,255,0.22); color:white; border:1.5px solid rgba(255,255,255,0.6); padding:8px 14px; border-radius:8px; font-size:0.85rem; font-weight:700; cursor:pointer; min-height:44px; touch-action:manipulation;">📖 Kılavuz</button>
+      <button id="theme-toggle-btn" onclick="toggleTheme()" title="Koyu / Açık Mod" style="background:rgba(255,255,255,0.18); color:white; border:1.5px solid rgba(255,255,255,0.4); padding:8px 12px; border-radius:8px; font-size:0.85rem; font-weight:700; cursor:pointer; min-height:44px; touch-action:manipulation;">🌙 Gece</button>
     </div>
   </header>
 
@@ -677,16 +677,16 @@
       <div class="card">
         <div class="card-title">⚡ Hızlı İşlemler</div>
         <div style="display:grid; grid-template-columns:1fr 1fr; gap:8px;">
+          <button class="btn btn-danger" style="grid-column: span 2; font-size:1.05rem;" onclick="switchTab('emergency')">🆘 Acil İlk Yardım & Hayat Kurtarma</button>
           <button class="btn btn-primary" onclick="switchTab('triage')">🩺 Hasta Muayene Et</button>
           <button class="btn btn-warning" onclick="switchTab('ikas')">💊 İlaç Yap & Süt Kilitle</button>
-          <button class="btn btn-danger" style="background:#b91c1c; color:white;" onclick="switchTab('cost')">💰 Zarar & Masraf Defteri</button>
-          <button class="btn btn-success" style="background:#0f766e; color:white;" onclick="switchTab('feed')">🌾 Yemlik & İşkembe & Geviş</button>
-          <button class="btn btn-info" onclick="switchTab('repro')">🩸 Tohumlama & Doğum</button>
+          <button class="btn btn-outline" style="font-weight:800; border-color:#0f766e; color:#0f766e;" onclick="switchTab('milker')">🥛 Sağımcı Ekranı (Büyük)</button>
           <button class="btn btn-warning" style="background:#e65100; color:white;" onclick="switchTab('calf')">🍼 Kuzu & Ağız Sütü</button>
-          <button class="btn btn-success" style="background:#0f766e; color:white;" onclick="switchTab('weight')">⚖️ Şerit Metreyle Kilo Ölç</button>
-          <button class="btn btn-info" onclick="switchTab('vaccine')">📅 Aşı Takvimi</button>
-          <button class="btn btn-danger" onclick="switchTab('emergency')">🆘 Acil İlk Yardım</button>
-          <button class="btn btn-outline" style="grid-column: span 2;" onclick="switchTab('milker')">🥛 Sağımcı Ekranı (Büyük Yazı)</button>
+          <button class="btn btn-success" style="background:#0f766e; color:white;" onclick="switchTab('feed')">🌾 Yemlik & İşkembe & Geviş</button>
+          <button class="btn btn-success" style="background:#047857; color:white;" onclick="switchTab('weight')">⚖️ Şerit Metreyle Kilo Ölç</button>
+          <button class="btn btn-info" onclick="switchTab('repro')">🩸 Koç Katımı & Doğum</button>
+          <button class="btn btn-info" style="background:#475569; color:white;" onclick="switchTab('vaccine')">📅 Aşı Takvimi</button>
+          <button class="btn btn-danger" style="background:#b91c1c; color:white;" onclick="switchTab('cost')">💰 Zarar & Masraf Defteri</button>
         </div>
       </div>
 
@@ -701,8 +701,8 @@
         <div class="card-title">📋 Hayvan Listesi & Durumlar</div>
         <div style="display:flex; gap:6px; margin-bottom:8px;">
           <input type="text" id="animal-search" placeholder="Küpe No Yaz veya Ara (örn: TR16001)" oninput="renderAnimalTable()" style="margin-bottom:0;">
-          <button class="btn btn-warning" style="width:auto; padding:0 12px;" onclick="startQrScanner('search')" title="Kamerayla Küpe Oku">📷 Oku</button>
-          <button class="btn btn-primary" style="width:auto; padding:0 14px;" onclick="openNewAnimalModal()">+ Yeni Ekle</button>
+          <button class="btn btn-primary" style="width:auto; padding:0 14px; white-space:nowrap;" onclick="openNewAnimalModal()">+ Yeni Ekle</button>
+          <button class="btn btn-warning" style="width:auto; padding:0 12px; white-space:nowrap;" onclick="startQrScanner('search')" title="Kamerayla Küpe Oku">📷 Oku</button>
         </div>
         <div class="table-container">
           <table id="animal-table">
@@ -1539,7 +1539,11 @@
   <nav class="bottom-nav">
     <button class="nav-item active" onclick="switchTab('dashboard')">
       <span class="nav-icon">📊</span>
-      <span>Ağıl Durumu</span>
+      <span>Ağıl Özeti</span>
+    </button>
+    <button class="nav-item" onclick="switchTab('emergency')">
+      <span class="nav-icon">🆘</span>
+      <span>İlk Yardım</span>
     </button>
     <button class="nav-item" onclick="switchTab('triage')">
       <span class="nav-icon">🩺</span>
@@ -1549,37 +1553,33 @@
       <span class="nav-icon">💊</span>
       <span>İlaç & Süt</span>
     </button>
-    <button class="nav-item" onclick="switchTab('cost')">
-      <span class="nav-icon">💰</span>
-      <span>Zarar Defteri</span>
+    <button class="nav-item" onclick="switchTab('milker')">
+      <span class="nav-icon">🥛</span>
+      <span>Sağımcı</span>
+    </button>
+    <button class="nav-item" onclick="switchTab('calf')">
+      <span class="nav-icon">🍼</span>
+      <span>Kuzu Bakımı</span>
     </button>
     <button class="nav-item" onclick="switchTab('feed')">
       <span class="nav-icon">🌾</span>
       <span>Yem & Geviş</span>
     </button>
-    <button class="nav-item" onclick="switchTab('repro')">
-      <span class="nav-icon">🩸</span>
-      <span>Tohum/Doğum</span>
-    </button>
-    <button class="nav-item" onclick="switchTab('calf')">
-      <span class="nav-icon">🍼</span>
-      <span>Kuzu</span>
-    </button>
     <button class="nav-item" onclick="switchTab('weight')">
       <span class="nav-icon">⚖️</span>
       <span>Kilo Ölç</span>
+    </button>
+    <button class="nav-item" onclick="switchTab('repro')">
+      <span class="nav-icon">🩸</span>
+      <span>Koç Katımı</span>
     </button>
     <button class="nav-item" onclick="switchTab('vaccine')">
       <span class="nav-icon">📅</span>
       <span>Aşı Takvimi</span>
     </button>
-    <button class="nav-item" onclick="switchTab('emergency')">
-      <span class="nav-icon">🆘</span>
-      <span>İlk Yardım</span>
-    </button>
-    <button class="nav-item" onclick="switchTab('milker')">
-      <span class="nav-icon">🥛</span>
-      <span>Sağımcı</span>
+    <button class="nav-item" onclick="switchTab('cost')">
+      <span class="nav-icon">💰</span>
+      <span>Zarar Defteri</span>
     </button>
   </nav>
 
@@ -1705,44 +1705,47 @@
         <button onclick="closeGuideModal()" style="background:transparent; border:none; font-size:1.3rem; font-weight:800; cursor:pointer; color:#64748b;">✕</button>
       </div>
       <div style="padding:16px 18px; overflow-y:auto; font-size:0.85rem; line-height:1.7; color:#334155;">
-        <h4 style="color:var(--primary); margin-bottom:6px;">🚀 1. İnternetsiz Telefonda Çalıştırma</h4>
-        <p>• Bu uygulama <strong>%100 internetsiz</strong> çalışır. Tarayıcı menüsünden <strong>"Ana Ekrana Ekle"</strong> diyerek telefonunuza indirebilirsiniz. Merada, yaylada veya ağılda şebeke çekmese bile çalışır.</p>
+        <h4 style="color:var(--primary); margin-bottom:6px;">🚀 1. İnternetsiz Telefonda Çalıştırma (PWA)</h4>
+        <p>• Bu uygulama <strong>%100 internetsiz</strong> çalışır. Tarayıcı menüsünden <strong>"Ana Ekrana Ekle"</strong> veya <strong>"Uygulamayı Yükle"</strong> diyerek telefonunuza indirebilirsiniz. Merada, yaylada veya ağılda şebeke çekmese bile tam ekran çalışır.</p>
 
-        <h4 style="color:var(--primary); margin-top:14px; margin-bottom:6px;">📷 2. Kamerayla Küpe Okuma</h4>
-        <p>• Muayene, ilaç yapma veya arama ekranlarında <strong>"📷 Oku"</strong> butonuna basın. Telefon kamerasını koyunun sarı kulak küpesindeki barkoda veya karekoda doğrulttuğunuzda numara anında otomatik yazılır.</p>
+        <h4 style="color:var(--danger); margin-top:14px; margin-bottom:6px;">🆘 2. Küçükbaş Acil İlk Yardım & Hayat Kurtarma</h4>
+        <p>• Alt menüde ve ana ekranda en üst sırada yer alır.<br>
+        • <strong>Gebelik Zehirlenmesi (İkiz Koması / Ketozis):</strong> Doğuma yakın yatan koyuna ağızdan propilen glikol/pekmez ve damardan glikoz serumu.<br>
+        • <strong>Çelerme (Enterotoksemi / Yem Çarpması):</strong> Yemi derhal kesme, ağızdan karbonatlı su ve Clostridium antitoksin serumu.<br>
+        • <strong>Yeni Doğan Kuzu Donması (Hipotermi):</strong> Ağzı buz gibi kuzuya süt zorlamama; ısıtma lambasıyla vücut ısındıktan sonra kolostrum verme.<br>
+        • <strong>Sidik Zoru & İdrar Taşı:</strong> Koçlarda penis ucu uzantısı tıkanması müdahalesi.<br>
+        • <strong>Kurt / Köpek Isırması & Kanama:</strong> Basınçlı tampon, yara temizliği ve tetanoz koruması.<br>
+        • <strong>Zehirlenme & Şişme:</strong> Timpani gazında sıvı yağ içirme, aşı şokunda adrenalin dozu ve rahim fırlaması koruma adımları.</p>
 
         <h4 style="color:var(--primary); margin-top:14px; margin-bottom:6px;">🩺 3. Hasta Muayenesi (Triyaj)</h4>
-        <p>• Koyunun makat ateşini dereceyle ölçüp yazın (Normal: 38.5–40.0°C). Keyifsizlik ve hırıltılı nefesi puanlayın. Sistem koyunun ne kadar ağır hasta olduğunu ve ne yapmanız gerektiğini söyler.</p>
+        <p>• Koyunun makat ateşini dereceyle ölçüp yazın (Normal: 38.5–40.0°C). Keyifsizlik, iştah ve hırıltılı nefesi puanlayın. Sistem koyunun ne kadar ağır hasta olduğunu ve ne yapmanız gerektiğini söyler.</p>
 
         <h4 style="color:var(--primary); margin-top:14px; margin-bottom:6px;">💊 4. İlaç Yapma & Süt/Et Kilitleme (İKAS)</h4>
         <p>• İğne yaptığınızda koyunun küpesini ve ilacı seçin. Sistem sütün ve etin kaç gün boyunca yasaklı olduğunu canlı sayaçla gösterir.<br>
-        ⚠️ <em>Tilmikosin</em> koyunda yalnızca deri altı vurulur (damardan verilmez). <em>Albendazol</em> gebeliğin ilk 45 gününde verilmez.</p>
+        ⚠️ <em>Tilmikosin</em> koyunda yalnızca deri altı vurulur (damardan KESİNLİKLE verilmez!). <em>Albendazol</em> gebeliğin ilk 45 gününde yavru attıracağı için verilmez.</p>
 
-        <h4 style="color:var(--primary); margin-top:14px; margin-bottom:6px;">💰 5. Zarar & Masraf Defteri</h4>
-        <p>• Çiğ koyun sütü satış fiyatınızı girin. İlaç yüzünden dökülen süt ile veteriner ve ilaç masrafını kuruşu kuruşuna hesaplayıp deftere kaydedin.</p>
+        <h4 style="color:var(--primary); margin-top:14px; margin-bottom:6px;">🥛 5. Sağımcı Ekranı (Büyük Puntolu Hızlı Kontrol)</h4>
+        <p>• Sağımhane personeli için küpe numarasını yazınca dev ekranda <strong>"🟢 SAĞIMA UYGUN"</strong> veya <strong>"🔴 BU KOYUNU TANKA SAĞMA"</strong> uyarısı verir. Tanka sağılması ve kasaba kesilmesi yasak hayvanları canlı listeler.</p>
 
-        <h4 style="color:var(--primary); margin-top:14px; margin-bottom:6px;">🌾 6. Yemlik, İşkembe Ekşimesi & Geviş</h4>
+        <h4 style="color:var(--primary); margin-top:14px; margin-bottom:6px;">🍼 6. Kuzu Hayatta Tutma & İlk Ağız Sütü</h4>
+        <p>• Doğumdan sonraki ilk 2 saatte en az <strong>300–400 mL (2 çay bardağı dolusu)</strong> koyu ağız sütü mutlaka içirilmelidir. Refraktometre ile kalite ölçümü yapın. İshal olan kuzunun kilosuna (ortalama 4 kg) ve göz çökmesine göre 24 saatte kaç litre serum verilmesi gerektiğini hesaplayın.</p>
+
+        <h4 style="color:var(--primary); margin-top:14px; margin-bottom:6px;">🌾 7. Yemlik, İşkembe Ekşimesi & Geviş</h4>
         <p>• Yemden 2 saat sonra yerde yatan koyunların geviş getirmesini sayın (Hedef: En az %58-60). Dışkı (koyun fındığı/zibin) kıvamını kontrol edin. Sürüye katılacak günlük karbonat miktarını (15–30 gram/koyun) hesaplayın.</p>
-
-        <h4 style="color:var(--primary); margin-top:14px; margin-bottom:6px;">🩸 7. Koç Katımı & Doğum Çarkı (150 Gün)</h4>
-        <p>• Koç aşım gününü girin: <strong>17. gün</strong> koç dönüşü, <strong>35. gün</strong> ultrason kontrolü, <strong>120. gün</strong> çelerme aşısı ve <strong>150. gün</strong> beklenen kuzulama günü otomatik hesaplanır.</p>
 
         <h4 style="color:var(--primary); margin-top:14px; margin-bottom:6px;">⚖️ 8. Şerit Metreyle Koyun Canlı Kilo Ölçümü</h4>
         <p>• Kantar yokken koyunun göğüs çevresini ve boyunu mezurayla ölçün. Bilimsel küçükbaş formülüyle canlı ağırlığı hesaplanır ve iğne dozları ekrana gelir.</p>
 
-        <h4 style="color:var(--primary); margin-top:14px; margin-bottom:6px;">🍼 9. Kuzu Hayatta Tutma</h4>
-        <p>• Doğumdan sonraki ilk 2 saatte en az <strong>300–400 mL (2 çay bardağı dolusu)</strong> koyu ağız sütü içirilmelidir. İshal olan kuzunun kilosuna ve göz çökmesine göre 24 saatte kaç litre serum verilmesi gerektiğini hesaplayın.</p>
+        <h4 style="color:var(--primary); margin-top:14px; margin-bottom:6px;">🩸 9. Koç Katımı & Doğum Çarkı (150 Gün Gebelik)</h4>
+        <p>• Koç aşım gününü girin: <strong>17. gün</strong> koç dönüşü, <strong>35. gün</strong> ultrason kontrolü, <strong>120. gün</strong> çelerme aşısı ve <strong>150. gün</strong> beklenen kuzulama günü otomatik hesaplanır.</p>
 
-        <h4 style="color:var(--primary); margin-top:14px; margin-bottom:6px;">🆘 10. Küçükbaş Acil İlk Yardım</h4>
-        <p>• <strong>Gebelik Zehirlenmesi (İkiz Koması):</strong> Ağızdan propilen glikol/şeker ve damardan serum.<br>
-        • <strong>Çelerme (Enterotoksemi):</strong> Yemi kesme, karbonat ve antitoksin serumu.<br>
-        • <strong>Yeni Doğan Kuzu Donması (Hipotermi):</strong> Isıtma kutusu, enerji desteği ve kolostrum.<br>
-        • <strong>Sidik Zoru & İdrar Yolu Tıkanması:</strong> Koçlarda penis ucu taş uzantısı müdahalesi.<br>
-        • <strong>Kurt/Köpek Isırması & Kanama:</strong> Basınçlı tampon, yara temizliği ve tetanoz önlemi.<br>
-        • <strong>Bakır/Zehirli Ot Zehirlenmesi:</strong> Zehirli yem/ot kesimi ve aktif kömür.<br>
-        • Timpani (sıvı yağ içirme), aşı şoku (adrenalin) ve rahim fırlaması ilk yardımları yer alır.</p>
+        <h4 style="color:var(--primary); margin-top:14px; margin-bottom:6px;">📅 10. Akıllı Aşı Takvimi</h4>
+        <p>• Çelerme (Enterotoksemi), Çiçek, Veba (PPR), Şap ve Brucella aşıları için takvim ve rapel sürelerini takip edin.</p>
 
-        <h4 style="color:var(--primary); margin-top:14px; margin-bottom:6px;">💾 11. Veri Yedekleme</h4>
+        <h4 style="color:var(--primary); margin-top:14px; margin-bottom:6px;">💰 11. Zarar & Masraf Defteri</h4>
+        <p>• Çiğ koyun sütü satış fiyatınızı girin. İlaç yüzünden dökülen süt ile veteriner ve ilaç masrafını kuruşu kuruşuna hesaplayıp deftere kaydedin.</p>
+
+        <h4 style="color:var(--primary); margin-top:14px; margin-bottom:6px;">💾 12. Veri Yedekleme & Telefona Aktarma</h4>
         <p>• Sağımcı ekranının altındaki <strong>"📥 Yedeği İndir"</strong> butonuyla kayıtlarınızı indirebilir, başka bir telefona geçerken <strong>"📤 Yedeği Yükle"</strong> ile anında geri yükleyebilirsiniz.</p>
       </div>
       <div style="padding:10px 18px; border-top:1px solid #e2e8f0; background:#f8fafc; border-bottom-left-radius:12px; border-bottom-right-radius:12px; text-align:right;">
