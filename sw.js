@@ -1,4 +1,4 @@
-const CACHE_NAME = 'sheepsys-offline-v9';
+const CACHE_NAME = 'sheepsys-offline-v10';
 const ASSETS_TO_CACHE = [
   './index.html',
   './manifest.json',
