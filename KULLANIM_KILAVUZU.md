@@ -97,7 +97,11 @@ Kantarın olmadığı ağıl ve mera şartlarında terzi mezurasıyla kilo hesap
 ### 9. 🆘 Küçükbaş Acil İlk Yardım
 - **🧠 Gebelik Zehirlenmesi (İkiz Koması / Ketozis):** Ağızdan propilen glikol veya şeker/pekmez içirme, damardan dekstroz serumu ve kuzu kurtarma adımları.
 - **⚡ Çelerme / Yem Çarpması (Enterotoksemi):** Yemi derhal kesme, Clostridium antitoksin serumu ve karbonatlı su içirme.
-- **💉 İğne / Aşı Şoku:** 50-60 kiloluk koyuna 1.0 - 1.2 mL Adrenalin uygulaması.
+- **❄️ Yeni Doğan Kuzu Donması & Üşüme (Hipotermi):** Ağzı buz gibi kuzuya süt zorlamama, ısıtma kutusu/lamba ile vücut ısısını yükseltme ve ısındıktan sonra kolostrum verme.
+- **🪨 Sidik Zoru & İdrar Yolu Tıkanması (Koçlarda Taş / Su Karın):** Penis ucundaki ince kurtçuk uzantısını (processus urethralis) kontrol etme ve acil rahatlatma için kesme tekniği.
+- **🐺 Kurt / Köpek Isırması & Kanama:** Boğaz/bacak damarına basınçlı tampon uygulama, antiseptikle yıkama, dikiş atmama (drenaj) ve tetanoz aşısı.
+- **☠️ Bakır / Zehirli Ot Zehirlenmesi:** Sığır yemini derhal kesme, aktif kömür ve amonyum molibdat desteği.
+- **💉 İğne / Aşı Şoku:** 50-60 kiloluk koyuna 1.0 - 1.2 mL Adrenalin uygulaması ve hava yolu açma.
 - **🎈 Timpani (İşkembe Şişmesi):** 1 su bardağı sıvı yağ içirme ve trokar müdahalesi.
 - **🔴 Rahim Fırlaması:** Döl yatağını ıslak temiz bezle yukarıda tutma protokolü.
 
