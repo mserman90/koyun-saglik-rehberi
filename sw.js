@@ -1,4 +1,4 @@
-const CACHE_NAME = 'sheepsys-offline-v15';
+const CACHE_NAME = 'sheepsys-offline-v16';
 const ASSETS_TO_CACHE = [
   './index.html',
   './manifest.json',
@@ -8,6 +8,7 @@ const ASSETS_TO_CACHE = [
   './apple-touch-icon.png',
   './icon-192.png',
   './icon-512.png',
+  './og-image.png',
   './html5-qrcode.min.js',
   './robots.txt',
   './sitemap.xml',
