@@ -1,16 +1,26 @@
 {
   "name": "Koyun Sağlık Rehberi",
   "short_name": "KoyunRehberi",
-  "description": "Koyun Sağlık Rehberi - Ağıl ve Küçükbaş Sürüler İçin %100 İnternetsiz Sağlık, Aşı, İKAS, Kuzu ve Doğum Takip Sistemi",
+  "description": "Ağıl ve çiftlikler için %100 internetsiz çalışan koyun ve kuzu sağlık teşhisi, acil ilk yardım, aşı takvimi, ilaçlı süt arınma süresi ve sürü yönetim rehberi.",
   "start_url": "./index.html",
+  "scope": "./",
   "display": "standalone",
-  "background_color": "#ffffff",
+  "orientation": "portrait-primary",
+  "background_color": "#0f172a",
   "theme_color": "#0d9488",
+  "categories": ["medical", "business", "utilities"],
   "icons": [
     {
-      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐑</text></svg>",
-      "sizes": "192x192 512x512",
-      "type": "image/svg+xml"
+      "src": "./icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
     }
   ]
 }
