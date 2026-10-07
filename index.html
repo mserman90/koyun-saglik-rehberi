@@ -684,14 +684,16 @@
             <div>
               <label for="cost-disease">Nesi Vardı? (Hastalık):</label>
               <select id="cost-disease">
-                <option value="Meme İltihabı (Mastitis)">Meme Yangısı / İltihabı (Mastitis)</option>
-                <option value="Rahim İltihabı (Metritis)">Rahim İltihabı / Eş Kalması</option>
-                <option value="Zatürre / Ciğer Hastalığı">Zatürre / Öksürük / Ciğer (BRD)</option>
-                <option value="Ayak Çürüğü / Tırnak">Ayak Çürüğü / Tırnak Yarası</option>
-                <option value="Mide Dönmesi / Ketozis">İşkembe / Mide Dönmesi / Ketozis</option>
-                <option value="Doğum Felci (Süt Humması)">Doğum Felci (Kalsiyum Eksikliği)</option>
-                <option value="Kuzu İshali">Kuzu İshali</option>
-                <option value="Diğer Tedavi">Diğer Hastalık / İğne</option>
+                <option value="Meme Yangısı (Mastitis / Gök Meme)">Meme Yangısı / Gök Meme (Mastitis)</option>
+                <option value="Çelerme / Enterotoksemi">Çelerme / Bağırsak Zehirlenmesi (Enterotoksemi)</option>
+                <option value="Gebelik Zehirlenmesi (İkiz Koması)">Gebelik Zehirlenmesi / İkiz Koması (Ketozis)</option>
+                <option value="Zatürre / Ciğer Hastalığı">Zatürre / Ciğer Ağrısı / Hırıltı (Plöropnömoni)</option>
+                <option value="Piyeten / Ayak Çürüğü">Piyeten / Tırnak Çürüğü (Bulaşıcı Ayak Yarası)</option>
+                <option value="Agalaksi (Süt Kesen)">Agalaksi / Süt Kesen Hastalığı</option>
+                <option value="Kuzu İshali / Koksidiyoz">Kuzu İshali (Sarı/Kanlı İshal)</option>
+                <option value="Ektima (Ağız/Dudak Yarası)">Ektima (Koyun-Kuzu Ağız Yarası)</option>
+                <option value="Doğum Felci / Hipokalsemi">Doğum Felci (Kalsiyum Çökmesi)</option>
+                <option value="Diğer Tedavi">Diğer İğne / Şurup / İlaç</option>
               </select>
             </div>
             <div>
@@ -814,13 +816,13 @@
           <div style="font-weight:700; color:#1e293b; font-size:0.9rem; margin-bottom:6px;">
             💩 2. Tezek Kıvamı &amp; Tezeğe Kaçan Bütün Yem Tanesi (1-5 Puanı)
           </div>
-          <label for="feed-manure-score">Ağıldaki Tezeklerin Genel Hali Nasıl?:</label>
+          <label for="feed-manure-score">Ağıldaki Dışkının (Koyun Fındığının/Zibinin) Durumu Nasıl?:</label>
           <select id="feed-manure-score" onchange="evaluateManureScore()">
-            <option value="1">1: Su Gibi Cıvık / Fışkırıyor (Tehlike! İshal veya Zehirlenme/Ağır Asidoz)</option>
-            <option value="2">2: Yayvan ve Sulu (Çizmeye sıçrar - Yem fazla/Saman az, işkembe ekşimesi)</option>
-            <option value="3" selected>3: İdeal Kıvam (Pasta gibi kabarık, ortası hafif çukur - Tam Dengeli)</option>
-            <option value="4">4: Koyu ve Katı (Halka halka tezek, sert - Saman çok fazla, yem az)</option>
-            <option value="5">5: At Tezeği Gibi Kuru ve Topak (Susuz kalmış / İşkembe tıkanmış)</option>
+            <option value="1">1: Su Gibi Cıvık / Fışkırıyor (🚨 Tehlike! Çelerme, İshal veya Ağır Asidoz)</option>
+            <option value="2">2: Birbirine Yapışmış Cıvık Hamur (Arpa fazla / Saman az, işkembe ekşimesi)</option>
+            <option value="3" selected>3: İdeal Koyun Fındığı (Tane tane, nemli ve parlak zibin - Tam Dengeli)</option>
+            <option value="4">4: Çok Kuru ve Sert Topaklar (Kaba yem çok kuru, konsantre yem veya su az)</option>
+            <option value="5">5: Aşırı Taşlaşmış / Kabızlık (Susuzluk, suluk donması veya işkembe tıkanması)</option>
           </select>
 
           <div style="margin-top:8px;">
@@ -1323,11 +1325,11 @@
         <div>
           <label for="new-bcs">Et-Yağ Durumu (Kondisyon):</label>
           <select id="new-bcs">
-            <option value="1.5">Çok Zayıf (Kaburgalar Sayılıyor)</option>
-            <option value="2.5">Biraz Zayıf</option>
-            <option value="3.0" selected>İdeal / Ne Zayıf Ne Şişman</option>
-            <option value="3.5">İyi Besili</option>
-            <option value="4.5">Aşırı Yağlı / Şişman</option>
+            <option value="1.5">1.5 - Çok Zayıf (Sırt/Bel kemiği jilet gibi sivri)</option>
+            <option value="2.5">2.5 - Biraz Zayıf (Bel omurları parmakla hissedilir)</option>
+            <option value="3.0" selected>3.0 - İdeal Damızlık/Sağmal (Bel kemiği yuvarlak ve dolgun)</option>
+            <option value="3.5">3.5 - Toklu / Besili (Bel kemiği zor hissedilir)</option>
+            <option value="4.5">4.5 - Aşırı Yağlı / Hantal (Kuyruk ve bel aşırı yağ toplamış)</option>
           </select>
         </div>
       </div>
@@ -2375,7 +2377,7 @@
         resultBox.innerHTML = `
           <strong>🔴 ALARM: İŞKEMBE EKŞİMESİ (AĞIR ASİDOZ) TEHLİKESİ (%${ratio})!</strong><br>
           • Yatan koyunler geviş getirmeyi neredeyse bırakmış (Kritik sınırın çok altında).<br>
-          • <strong>Tehlike:</strong> Koyun geviş getirmedikçe tükürük üretemez, işkembe asidi yakar ve tırnaklar düşer. Derhal uzun saplı kuru ot verin ve yemliğe koyun başı 200 gram karbonat katın!
+          • <strong>Tehlike:</strong> Koyun geviş getirmedikçe tükürük üretemez, işkembe asidi yakar ve tırnaklar düşer. Derhal uzun saplı kuru ot verin ve yemliğe koyun başı 20-30 gram karbonat katın!
         `;
       }
     }
@@ -2393,19 +2395,19 @@
 
       if (score === "1") {
         bg = "#fee2e2"; border = "#ef4444"; color = "#991b1b";
-        msg = "<strong>🔴 SKOR 1 - TEHLİKELİ (Cıvık / Fışkıran):</strong> Akut rumen asidozu, toksin veya mikrobiyal enterit şüphesi. Bağırsak geçiş hızı çok yüksek, besin emilimi çökmüş durumda.";
+        msg = "<strong>🔴 SKOR 1 - TEHLİKELİ (Fışkıran İshal):</strong> Şiddetli işkembe ekşimesi (asidoz), çelerme veya bağırsak iltihabı. Acil tahılı kesin, kuru ot ve elektrolit verin.";
       } else if (score === "2") {
         bg = "#ffedd5"; border = "#f97316"; color = "#9a3412";
-        msg = "<strong>🟠 SKOR 2 - DİKKAT (Yayvan / Cıvık):</strong> Yüksek konsantre yem, yetersiz lif veya aşırı hızlı rumen fermantasyonu (Subakut Asidoz - SARA şüphesi). Ayak lezyonları (laminitis) riski taşır.";
+        msg = "<strong>🟠 SKOR 2 - DİKKAT (Fındıklar Yapışmış / Cıvıklaşmış):</strong> Arpa/fabrika yemi fazla gelmiş, kaba ot yetersiz. İşkembe ekşiyor; tırnakta topallık ve çelerme riski kapıda.";
       } else if (score === "3") {
         bg = "#dcfce7"; border = "#22c55e"; color = "#115e59";
-        msg = "<strong>🟢 SKOR 3 - İDEAL (Dengeli Pasta):</strong> Mükemmel lif-enerji-protein dengesi. Rumen mikroflorası tam kapasite çalışıyor.";
+        msg = "<strong>🟢 SKOR 3 - İDEAL (Tane Tane Koyun Fındığı):</strong> Mükemmel arpa-ot dengesi. Koyunun işkembesi tıkır tıkır çalışıyor.";
       } else if (score === "4") {
         bg = "#fef9c3"; border = "#eab308"; color = "#854d0e";
-        msg = "<strong>🟡 SKOR 4 - SERT / HALKALI:</strong> Kaba yem / sindirilemeyen lif fazla, konsantre yem veya su tüketimi yetersiz. Süt verimi baskılanabilir (Kuru dönem için kabul edilebilir).";
+        msg = "<strong>🟡 SKOR 4 - KURU / SERT FINDIKLAR:</strong> Saman/kuru kaba yem çok fazla, enerji veya su az. Süt verimi ve kuzu gelişimi yavaşlar.";
       } else if (score === "5") {
         bg = "#fee2e2"; border = "#ef4444"; color = "#991b1b";
-        msg = "<strong>🔴 SKOR 5 - AT DIŞKISI GİBİ TOPAK:</strong> Şiddetli su kısıtı, su donması veya abomasum tıkanması/kabızlık. Su teknelerini derhal kontrol edin.";
+        msg = "<strong>🔴 SKOR 5 - TAŞLAŞMIŞ / KABIZ:</strong> Şiddetli susuzluk veya işkembe durması. Sulukları ve donmuş su borularını derhal kontrol edin.";
       }
 
       if (grains) {
@@ -2459,10 +2461,10 @@
       const bag25Kg = (totalKg / 25).toFixed(1);
 
       resultBox.innerHTML = `
-        <strong>🥣 TMR Karıştırıcıya Eklenecek Günlük Karbonat:</strong><br>
+        <strong>🥣 Yemliğe / Yem Karmaya Eklenecek Günlük Karbonat:</strong><br>
         • <strong>Toplam Doz:</strong> ${totalKg} kg Sodyum Bikarbonat / gün (${cows} baş için)<br>
         • <strong>Çuval Karşılığı (25 kg standart çuval):</strong> ~${bag25Kg} çuval<br>
-        • <em>Uygulama:</em> Yem karmaya (TMR) homojen dağılacak şekilde karıştırın. Tükürük tamponlama kapasitesini destekleyerek rumen pH'sını 6.0–6.4 seviyesinde stabilize eder.
+        • <em>Uygulama:</em> Yemliğe veya karma yeme homojen dağılacak şekilde karıştırın. Tükürük tamponlama kapasitesini destekleyerek rumen pH'sını 6.0–6.4 seviyesinde stabilize eder.
       `;
     }
 
