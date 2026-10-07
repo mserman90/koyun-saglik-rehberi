@@ -8,8 +8,23 @@
   "orientation": "portrait-primary",
   "background_color": "#0f172a",
   "theme_color": "#0d9488",
-  "categories": ["medical", "business", "utilities"],
+  "categories": ["medical", "business", "utilities", "productivity"],
   "icons": [
+    {
+      "src": "./favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "./favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "./apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
     {
       "src": "./icon-192.png",
       "sizes": "192x192",
@@ -21,6 +36,29 @@
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Küçükbaş İlk Yardım",
+      "short_name": "İlk Yardım",
+      "description": "Gebelik zehirlenmesi, çelerme ve donma müdahaleleri",
+      "url": "./index.html#emergency",
+      "icons": [{ "src": "./icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Kuzu Bakımı & Kolostrum",
+      "short_name": "Kuzu Bakımı",
+      "description": "Kuzu ağız sütü ve ishal serum hesabı",
+      "url": "./index.html#calf",
+      "icons": [{ "src": "./icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Koç Katımı Çarkı",
+      "short_name": "Koç Katımı",
+      "description": "150 günlük gebelik ve kuzulama takvimi",
+      "url": "./index.html#repro",
+      "icons": [{ "src": "./icon-192.png", "sizes": "192x192" }]
     }
   ]
 }

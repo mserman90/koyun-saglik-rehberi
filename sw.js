@@ -1,7 +1,11 @@
-const CACHE_NAME = 'sheepsys-offline-v14';
+const CACHE_NAME = 'sheepsys-offline-v15';
 const ASSETS_TO_CACHE = [
   './index.html',
   './manifest.json',
+  './favicon.ico',
+  './favicon-16x16.png',
+  './favicon-32x32.png',
+  './apple-touch-icon.png',
   './icon-192.png',
   './icon-512.png',
   './html5-qrcode.min.js',
