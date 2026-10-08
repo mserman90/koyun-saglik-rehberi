@@ -76,12 +76,15 @@ Küçükbaşta ilaç kalıntılarının süte, peynire ve ete geçmesini önleye
    - **⚠️ Albendazol:** Koç katımında ve ilk 45 günde yavru attıracağı için gebe koyunlara verilmez.
    - Oksitetrasiklin LA, Meloksikam ve Penisilin arınma süreleri otomatik sayılır.
 
-#### 🥛 2.2. Sağımcı Ekranı (Büyük Puntolu Hızlı Kontrol)
+#### 🥛 2.2. Sağımcı Ekranı (Büyük Puntolu & Eller Serbest Sesli Kontrol)
 Sağımhane personeli sağım yaparken:
-- Koyunun küpe numarasını yazar veya kamerayla okutur.
+- **🎙️ Eller Serbest Sesle Sor:** Yeşil mikrofona dokunun ve koyun küpesini söyleyin (örn: *"145"* veya *"yüz kırk beş"*). Sistem koyunu anında bulur ve hoparlörden sesli olarak:
+  - 🔴 *"Dikkat! Kırmızı Alarm! 145 numaralı koyunun sütü yasaklı! Tanka sağmayın! Kalan süre: 24 saat."*
+  - 🟢 *"145 numaralı koyun temiz. Süt kısıtı yok, tanka sağılabilir."* diye seslenir.
+- **📷 Kamerayla Küpe Oku:** Sarı butona basarak kulak küpesini kameraya tutabilirsiniz.
+- **Yazarak Arama:** Küpe numarasını yazınca dev puntolu renkli durumu ekrana gelir.
 - Antibiyotikli koyunlarda dev ekranda **"🔴 BU KOYUNU TANKA SAĞMA!"** kırmızı alarmı ve kalan saat çıkar.
-- İlaçsız koyunlarda **"🟢 SAĞIMA UYGUN"** yeşil onayı verilir.
-- Mezbahaya gönderilmesi yasak olan kesim kilitli koyun ve toklular anlık listelenir.
+- İlaçsız koyunlarda **"🟢 SAĞIMA UYGUN"** yeşil onayı verilir. Kesim kilitli toklu ve koyunlar anlık listelenir.
 
 #### 💰 2.3. Zarar & Masraf Defteri
 - Çiğ koyun sütü satış fiyatınızı (Örn: 38 TL/Litre) yazın.

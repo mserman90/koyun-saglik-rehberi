@@ -43,8 +43,9 @@ Ağıl ve mera koşullarındaki **klinik aciliyet** ve eldivenli kullanıma gör
 
 ## 📱 Barındırdığı Temel Küçükbaş Saha Modülleri
 
-0. **📷 Kamerayla Küpe Okuma (Barkod & QR):**
-   - Hayvan arama, muayene, ilaç/İKAS, sağımcı kontrolü ve yeni koyun ekleme ekranlarında yerel kamera kütüphanesiyle küpeleri otomatik okur (%100 offline).
+0. **🎙️ & 📷 Eller Serbest Sesli Küpe Sorgulama ve Barkod/QR Okuma:**
+   - **🎙️ Sesli Küpe Sorgulama (Web Speech API):** Ağılda veya merada eller kirli ve eldivendeyken ekrana dokunmadan *"yüz kırk beş"* veya *"TR 16 00 12"* deyin. Sistem koyunu anında bulur ve hoparlörden sesli olarak yanıtlar: *"🔴 Kırmızı Alarm! 145 numaralı koyunun sütü yasaklı! Tanka sağmayın! Kalan süre: 24 saat"* veya *"🟢 145 temiz, sağıma uygundur, tanka dökülebilir."*
+   - **📷 Barkod & QR Kamera Okuma:** Hayvan arama, muayene, ilaç/İKAS, sağımcı kontrolü ve yeni koyun ekleme ekranlarında yerel kamera kütüphanesiyle küpeleri otomatik okur (%100 offline).
 
 1. **🆘 Küçükbaş Acil İlk Yardım & Hayat Kurtarma:**
    - **Gebelik Zehirlenmesi (İkiz Koması / Ketozis):** Ağızdan propilen glikol/pekmez ve damardan serum desteği.

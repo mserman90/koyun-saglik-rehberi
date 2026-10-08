@@ -1053,6 +1053,7 @@
           <input type="text" id="animal-search" placeholder="Küpe No Yaz veya Ara (örn: TR16001)" oninput="renderAnimalTable()" style="margin-bottom:0;">
           <button class="btn btn-primary" style="width:auto; padding:0 14px; white-space:nowrap;" onclick="openNewAnimalModal()">+ Yeni Ekle</button>
           <button class="btn btn-warning" style="width:auto; padding:0 12px; white-space:nowrap;" onclick="startQrScanner('search')" title="Kamerayla Küpe Oku">📷 Oku</button>
+          <button id="btn-animal-search-voice" class="btn btn-primary" style="width:auto; padding:0 12px; font-size:1.05rem; white-space:nowrap; background:#0f766e;" onclick="startVoiceAnimalSearch()" title="Sesle Küpe Ara">🎙️</button>
         </div>
         <div class="table-container">
           <table id="animal-table">
@@ -1973,9 +1974,23 @@
           Sağımcı için büyük harfli hızlı kontrol. Küpe numarasını yazın veya seçin:
         </p>
 
-        <div style="display:flex; gap:6px; margin-bottom:12px;">
+        <div style="display:flex; gap:6px; margin-bottom:8px;">
           <input type="text" id="milker-search" placeholder="Örn: TR16001" oninput="checkMilkerStatus()" style="font-size:1.2rem; font-weight:800; padding:12px; text-transform:uppercase; margin-bottom:0;">
-          <button class="btn btn-warning" style="width:auto; padding:0 16px; font-size:1.1rem; white-space:nowrap;" onclick="startQrScanner('milker')" title="Kamerayla Küpe Oku">📷 Oku</button>
+          <button class="btn btn-warning" style="width:auto; padding:0 14px; font-size:1.1rem; white-space:nowrap;" onclick="startQrScanner('milker')" title="Kamerayla Küpe Oku">📷 Oku</button>
+          <button id="btn-milker-voice" class="btn btn-primary" style="width:auto; padding:0 14px; font-size:1.1rem; white-space:nowrap; background:#0f766e;" onclick="startVoiceMilkerSearch()" title="Sesle Küpe Sor (Eller Serbest)">🎙️ Sor</button>
+        </div>
+
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; font-size:0.8rem; background:#f8fafc; padding:8px 12px; border-radius:8px; border:1px solid #e2e8f0; flex-wrap:wrap; gap:6px;">
+          <div id="voice-milker-status" style="color:#64748b; font-weight:600; display:flex; align-items:center; gap:6px;">
+            <span>🎙️ <strong>Eller Serbest:</strong> Yeşil mikrofona dokunun ve küpeyi söyleyin</span>
+          </div>
+          <div style="display:flex; align-items:center; gap:12px;">
+            <label style="display:inline-flex; align-items:center; gap:5px; margin-bottom:0; cursor:pointer; color:#475569; font-weight:700;">
+              <input type="checkbox" id="milker-voice-feedback-toggle" checked style="margin-bottom:0; width:16px; height:16px; accent-color:var(--primary);">
+              🔊 Sesli Cevap
+            </label>
+            <button class="btn btn-outline" style="width:auto; padding:3px 8px; font-size:0.75rem;" onclick="speakMilkerCurrentResult()" title="Mevcut sonucu tekrar seslendir">🔊 Tekrar Oku</button>
+          </div>
         </div>
 
         <div id="milker-result-box" style="margin-top:14px;">
@@ -3926,10 +3941,217 @@
     /* =========================================================================
        6. SAĞIMCI MODU (SADE VE NET EKRAN)
        ========================================================================= */
-    function checkMilkerStatus() {
+    /* =========================================================================
+       ELLER SERBEST SESLİ KÜPE SORGULAMA VE SAĞIMCI SESLİ UYARI MOTORU
+       ========================================================================= */
+
+    function speakVoiceMessage(text, isAlarm = false) {
+      if (!('speechSynthesis' in window)) return;
+      try {
+        window.speechSynthesis.cancel();
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.lang = 'tr-TR';
+        utterance.rate = 0.95;
+        utterance.pitch = isAlarm ? 1.15 : 1.0;
+        window.speechSynthesis.speak(utterance);
+      } catch (e) {
+        console.warn("SpeechSynthesis hatası:", e);
+      }
+    }
+
+    function parseTurkishEarTagVoiceInput(rawText) {
+      if (!rawText) return "";
+      let text = rawText.toLowerCase().trim();
+
+      text = text.replace(/^(küpe|numara|koyun|kuzu|koç|hayvan|sağım|süt|tanka|uygun\s*mu|bak)\s+/gi, "")
+                 .replace(/\s+(uygun\s*mu|sağılır\s*mı|serbest\s*mi|temiz\s*mi|kesilir\s*mi|var\s*mı)$/gi, "")
+                 .trim();
+
+      const ones = { "sıfır": 0, "bir": 1, "iki": 2, "üç": 3, "dört": 4, "beş": 5, "altı": 6, "yedi": 7, "sekiz": 8, "dokuz": 9 };
+      const tens = { "on": 10, "yirmi": 20, "otuz": 30, "kırk": 40, "elli": 50, "altmış": 60, "yetmiş": 70, "seksen": 80, "doksan": 90 };
+
+      const tokens = text.replace(/[^a-z0-9çğıöşü\s]/g, " ").trim().split(/\s+/);
+      let total = 0;
+      let currentGroup = 0;
+
+      for (let i = 0; i < tokens.length; i++) {
+        const t = tokens[i];
+        if (ones[t] !== undefined) {
+          currentGroup += ones[t];
+        } else if (tens[t] !== undefined) {
+          currentGroup += tens[t];
+        } else if (t === "yüz") {
+          currentGroup = (currentGroup === 0 ? 1 : currentGroup) * 100;
+        } else if (t === "bin") {
+          total += (currentGroup === 0 ? 1 : currentGroup) * 1000;
+          currentGroup = 0;
+        }
+      }
+      total += currentGroup;
+
+      const rawDigits = text.replace(/[^0-9]/g, "");
+      let candidateNumber = "";
+      if (total > 0) {
+        candidateNumber = total.toString();
+      } else if (rawDigits) {
+        candidateNumber = rawDigits;
+      }
+
+      if (typeof animals !== 'undefined' && Array.isArray(animals) && animals.length > 0) {
+        const exact = animals.find(a => a.earTag.toUpperCase() === rawText.toUpperCase().replace(/\s+/g, ''));
+        if (exact) return exact.earTag.toUpperCase();
+
+        if (candidateNumber) {
+          const numMatch = animals.find(a => a.earTag.toUpperCase() === candidateNumber.toUpperCase());
+          if (numMatch) return numMatch.earTag.toUpperCase();
+
+          const endMatch = animals.find(a => a.earTag.toUpperCase().endsWith(candidateNumber.toUpperCase()));
+          if (endMatch) return endMatch.earTag.toUpperCase();
+
+          const containsMatch = animals.find(a => a.earTag.toUpperCase().includes(candidateNumber.toUpperCase()));
+          if (containsMatch) return containsMatch.earTag.toUpperCase();
+        }
+      }
+
+      if (candidateNumber) return candidateNumber;
+      return rawText.replace(/[^a-zA-Z0-9]/g, "").toUpperCase();
+    }
+
+    let activeSpeechRecognition = null;
+
+    function startVoiceMilkerSearch() {
+      const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+      const statusEl = document.getElementById("voice-milker-status");
+      const btnEl = document.getElementById("btn-milker-voice");
+
+      if (!SpeechRecognition) {
+        alert("Tarayıcınız yerel ses tanımayı desteklemiyor. Güncel Google Chrome, Microsoft Edge veya Safari kullanabilirsiniz.");
+        return;
+      }
+
+      if (activeSpeechRecognition) {
+        try { activeSpeechRecognition.stop(); } catch(e) {}
+        activeSpeechRecognition = null;
+        if (btnEl) {
+          btnEl.style.background = "#0f766e";
+          btnEl.innerHTML = `🎙️ Sor`;
+        }
+        if (statusEl) statusEl.innerHTML = `<span>🎙️ Ses tanıma durduruldu.</span>`;
+        return;
+      }
+
+      try {
+        const recognition = new SpeechRecognition();
+        recognition.lang = "tr-TR";
+        recognition.interimResults = false;
+        recognition.maxAlternatives = 3;
+
+        recognition.onstart = function() {
+          activeSpeechRecognition = recognition;
+          if (btnEl) {
+            btnEl.style.background = "#dc2626";
+            btnEl.innerHTML = `🛑 Dinliyor...`;
+          }
+          if (statusEl) {
+            statusEl.innerHTML = `<span style="color:#dc2626; font-weight:800;">🔴 Dinleniyor... Koyun küpesini söyleyin (Örn: "145" veya "yüz kırk beş")</span>`;
+          }
+        };
+
+        recognition.onresult = function(event) {
+          let rawTranscript = "";
+          if (event.results && event.results[0] && event.results[0][0]) {
+            rawTranscript = event.results[0][0].transcript;
+          }
+
+          const parsedTag = parseTurkishEarTagVoiceInput(rawTranscript);
+          const searchInput = document.getElementById("milker-search");
+
+          if (searchInput && parsedTag) {
+            searchInput.value = parsedTag;
+            if (statusEl) {
+              statusEl.innerHTML = `<span>✅ Algılandı: "<strong>${rawTranscript}</strong>" ➔ <strong>${parsedTag}</strong></span>`;
+            }
+            checkMilkerStatus(true);
+          } else if (statusEl) {
+            statusEl.innerHTML = `<span style="color:#d97706;">⚠️ Anlaşılamadı ("${rawTranscript}"). Tekrar deneyin.</span>`;
+            speakVoiceMessage("Küpe numarası anlaşılamadı, lütfen tekrar söyleyiniz.");
+          }
+        };
+
+        recognition.onerror = function(event) {
+          console.warn("Ses tanıma hatası:", event.error);
+          if (statusEl) {
+            if (event.error === "not-allowed") {
+              statusEl.innerHTML = `<span style="color:#dc2626;">❌ Mikrofon izni verilmedi. Lütfen tarayıcı ayarlarından mikrofona izin verin.</span>`;
+            } else {
+              statusEl.innerHTML = `<span style="color:#d97706;">⚠️ Ses algılanamadı (${event.error}). Tekrar deneyebilirsiniz.</span>`;
+            }
+          }
+        };
+
+        recognition.onend = function() {
+          activeSpeechRecognition = null;
+          if (btnEl) {
+            btnEl.style.background = "#0f766e";
+            btnEl.innerHTML = `🎙️ Sor`;
+          }
+        };
+
+        recognition.start();
+      } catch (err) {
+        console.error("Speech recognition başlatma hatası:", err);
+        if (statusEl) statusEl.innerHTML = `<span style="color:#dc2626;">Mikrofon başlatılamadı: ${err.message}</span>`;
+      }
+    }
+
+    function speakMilkerCurrentResult() {
+      checkMilkerStatus(true);
+    }
+
+    function startVoiceAnimalSearch() {
+      const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+      const btnEl = document.getElementById("btn-animal-search-voice");
+
+      if (!SpeechRecognition) {
+        alert("Tarayıcınız yerel ses tanımayı desteklemiyor. Güncel Google Chrome, Edge veya Safari önerilir.");
+        return;
+      }
+
+      try {
+        const recognition = new SpeechRecognition();
+        recognition.lang = "tr-TR";
+        recognition.interimResults = false;
+
+        if (btnEl) btnEl.style.background = "#dc2626";
+
+        recognition.onresult = function(event) {
+          const raw = event.results[0][0].transcript;
+          const parsedTag = parseTurkishEarTagVoiceInput(raw);
+          const inp = document.getElementById("animal-search");
+          if (inp && parsedTag) {
+            inp.value = parsedTag;
+            renderAnimalTable();
+            speakVoiceMessage(parsedTag + " arandı.");
+          }
+        };
+
+        recognition.onend = function() {
+          if (btnEl) btnEl.style.background = "#0f766e";
+        };
+
+        recognition.start();
+      } catch (e) {
+        console.warn("startVoiceAnimalSearch hatası:", e);
+        if (btnEl) btnEl.style.background = "#0f766e";
+      }
+    }
+
+    function checkMilkerStatus(autoSpeak = false) {
       const search = (document.getElementById("milker-search").value || "").trim().toUpperCase();
       const resBox = document.getElementById("milker-result-box");
       const blockedUl = document.getElementById("milker-blocked-list");
+      const voiceToggle = document.getElementById("milker-voice-feedback-toggle");
+      const shouldSpeak = autoSpeak === true || (voiceToggle && voiceToggle.checked && autoSpeak);
       const now = new Date();
 
       // Tüm aktif yasaklı hayvanları bul
@@ -3957,7 +4179,7 @@
         resBox.innerHTML = `
           <div class="milker-status-box milker-green">
             🟢 SAĞIMA UYGUN
-            <div style="font-size:0.85rem; font-weight:400; margin-top:4px;">Lütfen kontrol etmek için yukarıya koyun küpe numarasını yazın.</div>
+            <div style="font-size:0.85rem; font-weight:400; margin-top:4px;">Sağım kontrolü için yukarıya koyun küpe numarasını yazın, kamerayla okutun veya sesle söyleyin.</div>
           </div>
         `;
         return;
@@ -3966,11 +4188,15 @@
       if (blockedMap[search]) {
         resBox.innerHTML = `
           <div class="milker-status-box milker-red">
-            🔴 BU İNEĞİ TANKA SAĞMA!
+            🔴 BU KOYUNU TANKA SAĞMA!
             <div style="font-size:1rem; font-weight:600; margin-top:6px;">ANTİBİYOTİKLİ SÜT - TANKA KARIŞTIRILAMAZ!</div>
             <div style="font-size:0.85rem; font-weight:400; margin-top:4px;">Kalan Kısıt Süresi: ${blockedMap[search]}</div>
           </div>
         `;
+
+        if (shouldSpeak) {
+          speakVoiceMessage(`Dikkat! Kırmızı Alarm! ${search} numaralı koyunun sütü yasaklı! Tanka sağmayın! Kalan süre: ${blockedMap[search]}.`, true);
+        }
       } else {
         const animalExists = animals.some(a => a.earTag.toUpperCase() === search);
         if (animalExists) {
@@ -3981,6 +4207,9 @@
               <div style="font-size:0.85rem; font-weight:400;">Kalıntı engeli yoktur, tanka sağılabilir.</div>
             </div>
           `;
+          if (shouldSpeak) {
+            speakVoiceMessage(`${search} numaralı koyun temiz. Süt kısıtı yok, tanka sağılabilir.`, false);
+          }
         } else {
           resBox.innerHTML = `
             <div class="milker-status-box milker-yellow">
@@ -3988,6 +4217,9 @@
               <div style="font-size:0.85rem; font-weight:400; margin-top:4px;">"${search}" küpe numarası kayıtlı değil. Lütfen kontrol ediniz.</div>
             </div>
           `;
+          if (shouldSpeak) {
+            speakVoiceMessage(`${search} numaralı koyun listede kayıtlı değil. Aktif süt yasağı görünmüyor.`, false);
+          }
         }
       }
     }
