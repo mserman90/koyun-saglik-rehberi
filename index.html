@@ -2001,27 +2001,59 @@
         <button onclick="closeGuideModal()" style="background:transparent; border:none; font-size:1.3rem; font-weight:800; cursor:pointer; color:#64748b;">✕</button>
       </div>
       <div style="padding:16px 18px; overflow-y:auto; font-size:0.85rem; line-height:1.7; color:#334155;">
-        <h4 style="color:var(--primary); margin-bottom:6px;">🚀 1. Hızlı Başlangıç & Telefona Yükleme (PWA)</h4>
-        <p>• Bu uygulama <strong>%100 internetsiz</strong> çalışır. Tarayıcı menüsünden <strong>"Ana Ekrana Ekle"</strong> veya <strong>"Uygulamayı Yükle"</strong> diyerek telefonunuza indirebilirsiniz. Merada, yaylada veya taş ağılda şebeke çekmese bile tam ekran ve jet hızında çalışır.</p>
+        <!-- 1. NEREDEN BAŞLAMALIYIM? -->
+        <div style="background:#eff6ff; border-left:4px solid #0f766e; padding:10px 14px; border-radius:6px; margin-bottom:14px;">
+          <h4 style="color:#0f766e; margin:0 0 6px 0; font-size:0.95rem; display:flex; align-items:center; gap:6px;">
+            🏁 1. Nereden Başlamalıyım? (İlk Kez Açanlar İçin)
+          </h4>
+          <p style="margin:0 0 6px 0;"><strong>• 1. Adım (Telefona İndir):</strong> Tarayıcı menüsünden <em>"Ana Ekrana Ekle"</em> veya <em>"Uygulamayı Yükle"</em> deyin. Artık internetsiz merada, yaylada ve taş ağılda şebeke hiç çekmese bile %100 çevrimdışı ve jet hızında çalışır.</p>
+          <p style="margin:0 0 6px 0;"><strong>• 2. Adım (Bütün sürüyü tek tek girmene gerek YOK!):</strong> Yüzlerce koyunu tek tek yazarak vakit kaybetmeyin. İlk etapta sadece o an işlem yapacağınız koyunu (hasta olanı, iğne yaptığınızı, tohumlanan/koçlanan anaç koyunu veya yeni doğan kuzuyu) <strong>"+ Yeni Ekle"</strong> veya sarı <strong>"📷 Oku"</strong> butonuyla (kulak küpesi barkodu/QR) saniyeler içinde kaydedin. Sürünüz iş yaptıkça kendiliğinden oluşacaktır.</p>
+          <p style="margin:0;"><strong>• 3. Adım (Doğru Kapıyı Seç):</strong> O anki ihtiyacınıza göre ana sayfadaki 3 öncelik kapısından birine dokunarak başlayın.</p>
+        </div>
 
-        <h4 style="color:var(--danger); margin-top:14px; margin-bottom:6px;">🚨 2. Kapı A: Acil Durum & Hayat Kurtarma (Hayati Öncelikli)</h4>
-        <p>• <strong>🆘 Acil İlk Yardım:</strong> Canlı ağırlıkla <strong>Adrenalin Doz Hesabı</strong> (Aşı şoku), <strong>Gebelik Zehirlenmesi / İkiz Koması</strong> (propilen glikol/pekmez ve glikoz serumu), <strong>Çelerme / Enterotoksemi</strong> (yemi kesme, karbonatlı su, Clostridium antitoksin), <strong>Yeni Doğan Kuzu Donması / Hipotermi</strong> (ısıtma lambası ve vücut ısınmadan süt zorlamama), <strong>Sidik Zoru & İdrar Taşı</strong>, <strong>Kurt Isırması / Kanama</strong> ve <strong>Timpani Gaz Şişmesi</strong> gibi acil protokolleri içerir.</p>
-        <p>• <strong>🩺 Hasta Muayenesi (Triyaj & Ateş):</strong> Şüpheli koyunun makat ateşini dereceyle ölçüp yazın (Normal: 38.5–40.0°C. 40.2°C üzeri yüksek ateştir). Keyifsizlik, iştah ve hırıltılı nefesi puanlayın. Sistem koyunun ne kadar ağır hasta olduğunu ve ne yapmanız gerektiğini söyler.</p>
+        <!-- 2. NASIL DEVAM ETMELİYİM? -->
+        <h4 style="color:#0f172a; margin:14px 0 8px 0; font-size:0.95rem; font-weight:800; border-bottom:2px solid #e2e8f0; padding-bottom:4px;">
+          🔄 2. Nasıl Devam Etmeliyim? (Ağılda ve Merada Günlük İş Akışı)
+        </h4>
 
-        <h4 style="color:#d97706; margin-top:14px; margin-bottom:6px;">🥛 3. Kapı B: Günlük İlaç & Süt/Et Güvenliği (Zararı & Cezayı Önleme)</h4>
-        <p>• <strong>💊 İlaç Yap & Süt Kilitle (İKAS):</strong> İğne yaptığınızda koyunun küpesini ve ilacı seçin. Sistem sütün ve etin kaç gün boyunca yasaklı olduğunu canlı sayaçla gösterir. ⚠️ <em>Tilmikosin</em> koyunda yalnızca deri altı vurulur (damardan KESİNLİKLE verilmez!). <em>Albendazol</em> gebeliğin ilk 45 gününde yavru attıracağı için verilmez.</p>
-        <p>• <strong>🥛 Sağımcı Ekranı (Büyük Puntolu Hızlı Kontrol):</strong> Sağımhane personeli için küpe numarasını yazınca dev ekranda <strong>"🟢 SAĞIMA UYGUN"</strong> veya <strong>"🔴 BU KOYUNU TANKA SAĞMA"</strong> uyarısı verir. Tanka sağılması ve kasaba kesilmesi yasak hayvanları canlı listeler.</p>
-        <p>• <strong>💰 Zarar & Masraf Defteri:</strong> Çiğ koyun sütü satış fiyatınızı girin. İlaç yüzünden dökülen süt ile veteriner ve ilaç masrafını kuruşu kuruşuna hesaplayıp deftere kaydedin.</p>
+        <!-- Senaryo 1: Acil Durum -->
+        <div style="margin-bottom:12px; padding-left:4px;">
+          <h5 style="color:#dc2626; margin:0 0 4px 0; font-size:0.88rem; font-weight:800;">
+            🚨 Senaryo 1: Ağılda / Merada Acil Durum & Hayat Kurtarma (Kapı A)
+          </h5>
+          <p style="margin:0 0 4px 0;">• <strong>🆘 Acil İlk Yardım:</strong> Aşı şokunda kiloyu girip anında <strong>Adrenalin Dozunu</strong> hesaplayın. <strong>Gebelik Zehirlenmesi / İkiz Koması</strong> (propilen glikol/pekmez ve glikoz serumu), <strong>Çelerme / Enterotoksemi</strong> (yemi kesme, karbonatlı su, Clostridium antitoksin), <strong>Yeni Doğan Kuzu Donması / Hipotermi</strong> (ısıtma lambası ve vücut ısınmadan süt zorlamama), <strong>Sidik Zoru & İdrar Taşı</strong>, <strong>Kurt Isırması / Kanama</strong> ve <strong>Timpani Gaz Şişmesi</strong> protokollerini adım adım uygulayın.</p>
+          <p style="margin:0;">• <strong>🩺 Hasta Muayene Et (Triyaj):</strong> Koyun durgunsa veya yatıyorsa makat ateşini dereceyle ölçüp yazın (Normal: 38.5–40.0°C. 40.2°C üzeri yüksek ateştir), klinik puanı verin; sistem hastalığın ağırlığını ve ne yapmanız gerektiğini söylesin.</p>
+        </div>
 
-        <h4 style="color:#15803d; margin-top:14px; margin-bottom:6px;">📋 4. Kapı C: Sürü Yönetimi, Büyüme & Rutin Takip</h4>
-        <p>• <strong>🩸 Koç Katımı & Doğum Çarkı (150 Gün Gebelik):</strong> Koç aşım gününü girin: <strong>17. gün</strong> koç dönüşü (tutmadıysa tekrar), <strong>35. gün</strong> ultrason kontrolü, <strong>120. gün</strong> doğuma 1 ay kala çelerme aşısı ve <strong>150. gün</strong> beklenen kuzulama günü otomatik hesaplanır.</p>
-        <p>• <strong>🍼 Kuzu Hayatta Tutma & İlk Ağız Sütü:</strong> Doğumdan sonraki ilk 2 saatte en az <strong>300–400 mL (2 çay bardağı dolusu)</strong> koyu ağız sütü mutlaka içirilmelidir. Refraktometre ile kalite ölçümü yapın. İshal olan kuzunun kilosuna (ortalama 4 kg) ve göz çökmesine göre 24 saatte kaç litre serum verilmesi gerektiğini hesaplayın.</p>
-        <p>• <strong>📅 Akıllı Aşı Takvimi:</strong> Çelerme (Enterotoksemi), Çiçek, Veba (PPR), Şap ve Brucella aşıları için takvim ve rapel sürelerini takip edin.</p>
-        <p>• <strong>⚖️ Şerit Metreyle Canlı Kilo Ölçümü:</strong> Kantar yokken koyunun göğüs çevresini ve boyunu mezurayla ölçün. Bilimsel küçükbaş formülüyle canlı ağırlığı hesaplanır ve iğne dozları ekrana gelir.</p>
-        <p>• <strong>🌾 Yemlik, İşkembe Ekşimesi & Geviş:</strong> Yemden 2 saat sonra yerde yatan koyunların geviş getirmesini sayın (Hedef: En az %58-60). Dışkı (koyun fındığı/zibin) kıvamını kontrol edin. Sürüye katılacak günlük karbonat miktarını (15–30 gram/koyun) hesaplayın.</p>
+        <!-- Senaryo 2: İlaç Yapıldığında -->
+        <div style="margin-bottom:12px; padding-left:4px;">
+          <h5 style="color:#d97706; margin:0 0 4px 0; font-size:0.88rem; font-weight:800;">
+            🥛 Senaryo 2: İğne / İlaç Yaptığınızda - Zararı ve Cezayı Önleyin (Kapı B)
+          </h5>
+          <p style="margin:0 0 4px 0;">• <strong>💊 İlaç Yap & Süt Kilitle (İKAS):</strong> İğne vurduğunuz an koyunu ve ilacı seçin. Sistem yasal süt ve et arınma süresini canlı saat-dakika geri sayımıyla kilitler. ⚠️ <em>Tilmikosin</em> koyunda yalnızca deri altı vurulur (damara KESİNLİKLE vurulmaz!). <em>Albendazol</em> erken gebelikte yavru attırır.</p>
+          <p style="margin:0 0 4px 0;">• <strong>🥛 Sağımcı Ekranı:</strong> Küpeyi yazınca dev ekranda <strong>"🟢 SAĞIMA UYGUN"</strong> veya <strong>"🔴 BU KOYUNU TANKA SAĞMA"</strong> uyarısı verir. Sütün mandıraya veya peynire karışmasını ve kasap/kesim cezasını engeller.</p>
+          <p style="margin:0;">• <strong>💰 Zarar & Masraf Defteri:</strong> Dökülen sütü ve veteriner masrafını girin; cebinizden çıkan net ekonomik zararı kuruşu kuruşuna görün.</p>
+        </div>
 
-        <h4 style="color:var(--primary); margin-top:14px; margin-bottom:6px;">💾 5. Veri Yedekleme & Telefona Aktarma</h4>
-        <p>• Sağımcı ekranının altındaki <strong>"📥 Yedeği İndir"</strong> butonuyla kayıtlarınızı indirebilir, başka bir telefona geçerken <strong>"📤 Yedeği Yükle"</strong> ile anında geri yükleyebilirsiniz. Tüm veriler telefonunuzda şifresiz ve çevrimdışı kalır.</p>
+        <!-- Senaryo 3: Günlük Rutin -->
+        <div style="margin-bottom:12px; padding-left:4px;">
+          <h5 style="color:#15803d; margin:0 0 4px 0; font-size:0.88rem; font-weight:800;">
+            📋 Senaryo 3: Günlük Ağıl Rutini, Koç Katımı & Kuzu Büyütme (Kapı C)
+          </h5>
+          <p style="margin:0 0 4px 0;">• <strong>🩸 Koç Katımı & Doğum Çarkı:</strong> Koç aşım tarihini girin; 17. gün koç dönüşünü, 35. gün ultrason kontrolünü, 120. gün doğuma 1 ay kala çelerme aşısını ve 150. gün beklenen kuzulama gününü takip edin.</p>
+          <p style="margin:0 0 4px 0;">• <strong>🍼 Kuzu Hayatta Tutma & İlk Ağız Sütü:</strong> İlk 2 saatte en az 300–400 mL (2 çay bardağı) koyu ağız sütünü içirin. Brix optik refraktometreyle kaliteyi ölçün; ishal kuzularda göz çökmesine göre 24 saatlik serum/can suyu litresini hesaplayın.</p>
+          <p style="margin:0 0 4px 0;">• <strong>📅 Akıllı Aşı Takvimi:</strong> Çelerme (Enterotoksemi), Çiçek, PPR Veba, Şap ve Brucella aşılarının takvim ve rapel sürelerini takip edin.</p>
+          <p style="margin:0 0 4px 0;">• <strong>⚖️ Şerit Metreyle Canlı Kilo Ölçümü:</strong> Kantar yokken koyunun veya toklunun göğüs çevresini ve boyunu mezurayla ölçün; küçükbaş formülüyle canlı ağırlığı ve iğne dozlarını anında görün.</p>
+          <p style="margin:0;">• <strong>🌾 Yemlik & Geviş Sayacı:</strong> Yemden 2 saat sonra yerde yatan koyunların geviş getirmesini sayın (Hedef: %58-60); koyun fındığı/zibin kıvamını kontrol edip sürüye günlük karbonat miktarını (15-30 gr/koyun) hesaplayın.</p>
+        </div>
+
+        <!-- Senaryo 4: Veri Yedekleme -->
+        <div style="background:#f8fafc; border:1px solid #e2e8f0; padding:10px 14px; border-radius:6px;">
+          <h5 style="color:#475569; margin:0 0 4px 0; font-size:0.85rem; font-weight:800;">
+            💾 Senaryo 4: Günün Sonunda / Hafta Sonu (Veri Güvenliği)
+          </h5>
+          <p style="margin:0;">• Sağımcı ekranının en altındaki <strong>"📥 Yedeği İndir"</strong> butonuyla kayıtlarınızı JSON dosyası olarak telefonunuza indirin. Başka telefona geçtiğinizde <strong>"📤 Yedeği Yükle"</strong> ile tüm ağıl verilerinizi 2 saniyede geri yükleyin.</p>
+        </div>
       </div>
       <div style="padding:10px 18px; border-top:1px solid #e2e8f0; background:#f8fafc; border-bottom-left-radius:12px; border-bottom-right-radius:12px; text-align:right;">
         <button class="btn btn-primary" style="width:auto; padding:6px 16px;" onclick="closeGuideModal()">Anladım, Kapat</button>

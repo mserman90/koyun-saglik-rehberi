@@ -4,125 +4,110 @@
 
 ---
 
-## 🚀 1. Hızlı Başlangıç & PWA Kurulumu
+## 🏁 1. Nereden Başlamalıyım? (İlk Kez Açanlar İçin 3 Basit Adım)
 
-### Telefonunuza Yükleme (Android / iOS):
-1. İnternet bağlantınız varken **[https://mserman90.github.io/koyun-saglik-rehberi/](https://mserman90.github.io/koyun-saglik-rehberi/)** adresini açın.
-2. Tarayıcı menüsünden (üç nokta veya paylaş butonu) **"Ana Ekrana Ekle"** veya **"Uygulamayı Yükle"** seçeneğine dokunun.
-3. Telefonunuzun ana ekranına uygulama simgesi eklenir. Artık merada, yaylada, internetin ve şebekenin hiç çekmediği taş ağıllarda dahi tam ekran ve jet hızında çalışır.
+Uygulamayı ilk defa açtıysanız ve nereden başlayacağınızı bilmiyorsanız şu 3 basit adımı takip edin:
 
-### Bilgisayarda Açma:
-- Doğrudan web adresini açabilir veya depodaki [`index.html`](./index.html) dosyasını herhangi bir tarayıcıda çift tıklayarak çalıştırabilirsiniz.
+### 1. Adım: Uygulamayı Telefonunuza Yükleyin (%100 Çevrimdışı Çalışma)
+1. Telefonunuzun tarayıcısından **[https://mserman90.github.io/koyun-saglik-rehberi/](https://mserman90.github.io/koyun-saglik-rehberi/)** adresine girin.
+2. Tarayıcı menüsünden (üç nokta veya paylaş ikonu) **"Ana Ekrana Ekle"** veya **"Uygulamayı Yükle"** butonuna dokunun.
+3. Uygulama telefonunuza kurulur. Artık internetin ve baz istasyonunun hiç çekmediği taş ağıllarda, merada ve yaylada dahi tam ekran ve jet hızında çalışır.
 
----
+### 2. Adım: Bütün Sürüyü Tek Tek Girmek Zorunda mıyım? (KESİNLİKLE HAYIR!)
+- **Korkmayın:** İlk günden yüzlerce koyunu tek tek yazarak saatlerinizi harcamanıza gerek yoktur.
+- Uygulamayı hemen o an **işlem yapacağınız hayvanla** kullanmaya başlayın:
+  - Hasta olan, iğne vuracağınız, koçlanan anaç koyunun veya yeni doğan kuzunun küpe numarasını ekrandaki **"+ Yeni Ekle"** veya sarı **"📷 Oku"** butonuyla (kulak küpesindeki barkod/QR okutarak) saniyeler içinde kaydedin.
+  - Siz günlük işlerinizi yaptıkça sürünüz arka planda kendiliğinden eksiksiz oluşacaktır.
 
-## 🧭 2. Klinik & Operasyonel Mantık Sırası (3 Kapı Sistemi)
-
-Uygulamanın tüm butonları, alt menüsü ve modülleri rastgele değil; bir ağılda veya merada karşılaşılan **klinik aciliyet** ve **ekonomik risk** sırasına göre **3 Mantıksal Kapı** halinde dizilmiştir:
-
-```mermaid
-graph TD
-    A["🚨 KAPI A: Acil Durum & Hayat Kurtarma<br/>(Hayati Öncelikli)"] --> B["🥛 KAPI B: Günlük İlaç & Süt/Et Güvenliği<br/>(Zararı & Cezayı Önleme)"]
-    B --> C["📋 KAPI C: Sürü Yönetimi, Büyüme & Rutin Takip<br/>(Verim & Karlılık)"]
-```
-
-1. **🚨 Kapı A: Acil Durum & Hayat Kurtarma:** Saniyelerin yarıştığı ölüm kalım anlarında ilk yardım ve klinik triyaj modülleri.
-2. **🥛 Kapı B: Günlük İlaç & Süt/Et Güvenliği:** Antibiyotikli sütün tanka karışmasını, kasap/kesim cezalarını ve mali kayıpları önleyen İKAS, sağımcı ekranı ve zarar defteri.
-3. **📋 Kapı C: Sürü Yönetimi, Büyüme & Rutin Takip:** Koç katımı, kuzu doğumu, aşı takvimi, şerit metreyle tartım, geviş sayımı ve sürü ıslahı operasyonları.
+### 3. Adım: Şu An Ağılda veya Merada Hangi Durumdasınız? (Doğru Kapıyı Seçin)
+Uygulama ana ekranında işlemler 3 ana öncelik kapısına göre dizilmiştir:
+- 🚨 **Ölüm-kalım, kurt ısırması, donma veya zehirlenme mi var?** $\rightarrow$ Doğrudan **1. Kapı: Acil Durum & Hayat Kurtarma**'ya girin.
+- 🥛 **Veteriner geldi, koyuna iğne mi yapıldı?** $\rightarrow$ Sütü ve eti korumak için **2. Kapı: Günlük İlaç & Süt/Et Güvenliği**'ne girin.
+- 📋 **Sakin bir gün, rutin ağıl işleri mi yapacaksınız?** $\rightarrow$ **3. Kapı: Sürü Yönetimi, Büyüme & Rutin Takip**'e girin.
 
 ---
 
-## 🚨 3. KAPI A: Acil Durum & Hayat Kurtarma (Hayati Öncelikli)
+## 🔄 2. Nasıl Devam Etmeliyim? (Ağılda ve Merada 4 Günlük Senaryo ve İş Akışı)
 
-Ağılda veya merada acil bir kaza, donma veya zehirlenme olduğunda ilk başvurulacak hayat kurtarma kapısıdır.
-
-### 🆘 3.1. Küçükbaş Acil İlk Yardım & Hayat Kurtarma
-Veteriner hekim ağıla ulaşana kadar uygulanacak kritik protokoller:
-- **⚖️ Canlı Ağırlık Doz Hesaplayıcı:** Koyunun veya kuzunun ağırlığı girildiğinde, anafilaktik şok için hayat kurtaran Adrenalin dozunu (1:1000 Adrenalin, her 45 kg için 1 mL) anında hesaplar.
-- **🧠 Gebelik Zehirlenmesi (İkiz Koması / Ketozis):** Doğuma 2-3 hafta kala yerde yatan, kör gibi yürüyen gebe koyunlara ağızdan propilen glikol veya pekmez içirme, damardan glikoz serumu desteği.
-- **⚡ Çelerme / Yem Çarpması (Enterotoksemi):** Ani tane yem/taze ot sonrası çırpınan hayvanda yemi derhal kesme, ağızdan karbonatlı su ve Clostridium antitoksin serumu.
-- **❄️ Yeni Doğan Kuzu Donması & Üşüme (Hipotermi):** Ağzı buz gibi kuzuya süt zorlamama; ısıtma lambası/kutusuyla vücut ısındıktan sonra kolostrum verme.
-- **💧 Sidik Zoru & İdrar Yolu Tıkanması:** Besi tokluları ve koçlarda penis ucu uzantısındaki (processus urethralis) tuz kristallerinin temizlenmesi.
-- **🐺 Kurt / Köpek Isırması & Kanama:** Basınçlı tampon, yara temizliği, tetanoz aşısı ve antibiyotik kalkanı.
-- **🌿 Bakır / Zehirli Ot Zehirlenmesi:** Zehirli otu kesme, aktif kömür ve sıvı yağ ile bağırsak koruması.
-- **🎈 İşkembe Şişmesi (Timpani Gazı):** Sol boşluk kontrolü, hortum salma, köpüklü gazda sıvı yağ içirme ve acil durumlarda trokar tekniği.
-
-### 🩺 3.2. Hasta Muayene Et (Küçükbaş Saha Triyajı)
-Bir koyunun veya kuzunun hastalandığından şüphelendiğinizde bu ekrana girin:
-1. **Makat Ateşi (°C):** Dereceyle ölçülen ateşi girin (Normal: 38.5–40.0 °C. 40.2 °C ve üzeri yüksek ateştir).
-2. **Nabız & Nefes:** 1 dakikadaki kalp atımı (Normal: 70–90, kuzuda 100-120) ve nefes sayısını yazın.
-3. **Klinik Skorlama:** Keyifsizlik, iştah durumu ve hırıltılı nefesi puanlayın.
-4. Sistem anında **"DURUMU İYİ"**, **"ORTA DERECE HASTA (İlaç Lazım)"** veya **"ÇOK ACİL & AĞIR HASTA (Veterineri Çağır)"** kararı verir ve ne yapmanız gerektiğini listeler.
+Ağıl ve mera koşullarında karşılaştığınız her duruma göre adım adım izleyeceğiniz iş akışları şunlardır:
 
 ---
 
-## 🥛 4. KAPI B: Günlük İlaç & Süt/Et Güvenliği (Zararı & Cezayı Önleme)
+### 🚨 SENARYO 1: Ağılda / Merada Acil Durum & Hayat Kurtarma (Kapı A)
+Veteriner hekim ağıla ulaşana kadar geçen kritik dakikalarda hayat kurtarır:
 
-Küçükbaşta ilaç kalıntılarının mandıraya giden süte ve mezbahaya giden ete geçmesini önleyen finansal koruma kalkanıdır.
+#### 🆘 1.1. Küçükbaş Acil İlk Yardım
+- **Aşı Şoku / İğne Alerjisi:** Koyun aşıdan sonra titremeye ve fenalaşmaya başlarsa kiloyu kutuya yazın; sistem hayat kurtaran **Adrenalin Dozunu** (1:1000 Adrenalin, her 45 kg için 1 mL) otomatik hesaplar.
+- **Gebelik Zehirlenmesi (İkiz Koması / Ketozis):** Doğuma 2-3 hafta kala yerde yatan, kör gibi yürüyen gebe koyunlara derhal ağızdan propilen glikol veya pekmez içirin; damardan glikoz serumu desteği sağlayın.
+- **Çelerme / Yem Çarpması (Enterotoksemi):** Ani tane yem veya taze ot sonrası çırpınan hayvanda yemi derhal kesin; ağızdan karbonatlı su ve Clostridium antitoksin serumu uygulayın.
+- **Yeni Doğan Kuzu Donması & Üşüme (Hipotermi):** Ağzı buz gibi kuzuya zorla süt içirmeyin (akciğere kaçar); ısıtma lambası veya kutusuyla vücut ısındıktan sonra ilk ağız sütünü verin.
+- **Sidik Zoru & İdrar Yolu Tıkanması:** Besi tokluları ve koçlarda penis ucu uzantısındaki tuz kristallerini temizleyin; ağrı kesici ve rasyona amonyum klorür uygulayın.
+- **Kurt / Köpek Isırması & Kanama:** Basınçlı bez tampon uygulayın, tentürdiyotla temizleyin, tetanoz aşısı ve antibiyotik kalkanı yapın.
+- **İşkembe Gazı (Timpani):** Sol böğür davul gibi şiştiğinde 100-200 mL sıvı yağ içirin; gerekirse trokar uygulayın.
 
-### 💊 4.1. İlaç Kaydı & Sütü/Eti Tanka Yasaklama (İKAS)
-1. İlaç yapılan koyunu ve ilacı seçin.
+#### 🩺 1.2. Hasta Muayene Et (Küçükbaş Saha Triyajı)
+Bir koyunun veya kuzunun hastalandığından şüphelendiğinizde:
+1. Dereceyle makat ateşini ölçüp yazın (Normal: 38.5–40.0 °C. 40.2 °C üzeri yüksek ateştir).
+2. Nabız (70–90) ve nefes sayısını girin.
+3. Keyifsizlik, iştah kaybı ve hırıltılı nefesi puanlayın.
+4. Sistem anında **"DURUMU İYİ"**, **"ORTA DERECE HASTA (İlaç Lazım)"** veya **"ÇOK ACİL & AĞIR HASTA (Veterineri Çağır)"** kararı verir ve yapılacakları listeler.
+
+---
+
+### 🥛 SENARYO 2: İğne / İlaç Yaptığınızda - Zararı ve Cezayı Önleyin (Kapı B)
+Küçükbaşta ilaç kalıntılarının süte, peynire ve ete geçmesini önleyen finansal koruma kalkanıdır:
+
+#### 💊 2.1. İlaç Yap & Süt Kilitle (İKAS)
+1. İlaç vurulan koyunu seçin ve ilacı listeden işaretleyin.
 2. Vurulan dozu ve saati kaydedin.
 3. Sistem yasal arınma süresine göre saat ve dakika bazında geri sayım başlatır.
-4. **Koyuna Özel Kritik Uyarılar:**
-   - **⚠️ Tilmikosin Uyarısı:** Kesinlikle damara vurulmaz, yalnızca deri altı uygulanır! Süt cezası 15 gün (360 sa), et 42 gündür.
-   - **⚠️ Albendazol Uyarısı:** Koç katımında ve ilk 45 günde yavru attıracağı için gebe koyunlara verilmez.
+4. **Koyuna Özel Hayati İlaç Kuralları:**
+   - **⚠️ Tilmikosin:** Koyunda yalnızca deri altı vurulur (damardan KESİNLİKLE verilmez, kalbi durdurur!). Süt cezası 15 gün (360 sa), et 42 gündür.
+   - **⚠️ Albendazol:** Koç katımında ve ilk 45 günde yavru attıracağı için gebe koyunlara verilmez.
    - Oksitetrasiklin LA, Meloksikam ve Penisilin arınma süreleri otomatik sayılır.
 
-### 🥛 4.2. Sağımcı Ekranı (Büyük Puntolu Hızlı Kontrol)
-Sağımhane personeli için tek bakışta:
-- Küpe numarasını yazın veya **"📷 Oku"** ile okutun.
-- Antibiyotikli koyunlarda **🔴 BU KOYUNU TANKA SAĞMA!** kırmızı alarmı verir.
-- İlaçsız koyunlarda **🟢 SAĞIMA UYGUN** yeşil onayı çıkar.
+#### 🥛 2.2. Sağımcı Ekranı (Büyük Puntolu Hızlı Kontrol)
+Sağımhane personeli sağım yaparken:
+- Koyunun küpe numarasını yazar veya kamerayla okutur.
+- Antibiyotikli koyunlarda dev ekranda **"🔴 BU KOYUNU TANKA SAĞMA!"** kırmızı alarmı ve kalan saat çıkar.
+- İlaçsız koyunlarda **"🟢 SAĞIMA UYGUN"** yeşil onayı verilir.
 - Mezbahaya gönderilmesi yasak olan kesim kilitli koyun ve toklular anlık listelenir.
 
-### 💰 4.3. Zarar & Masraf Defteri (Dökülen Süt ve İlaç Maliyeti)
-1. Koyun sütü litre satış fiyatınızı (Örn: 38 TL/Litre) yazın.
-2. Tedavi gören koyunu, hastalığı (Gök Meme, Çelerme, Piyeten vb.), veteriner ve ilaç masrafını girin.
-3. İlaç yüzünden dökülen sütü yazın; toplam zararınızı kuruşu kuruşuna görün.
+#### 💰 2.3. Zarar & Masraf Defteri
+- Çiğ koyun sütü satış fiyatınızı (Örn: 38 TL/Litre) yazın.
+- Tedavi gören koyunu, hastalığı (Gök Meme, Çelerme, Piyeten vb.), dökülen sütü ve veteriner masrafını girin; cebinizden çıkan zararı kuruşu kuruşuna görün.
 
 ---
 
-## 📋 5. KAPI C: Sürü Yönetimi, Büyüme & Rutin Takip
+### 📋 SENARYO 3: Günlük Ağıl Rutini, Koç Katımı & Kuzu Büyütme (Kapı C)
+Sürünün üremesini, kuzu sağlığını ve mera verimini yönetin:
 
-Sürünün üremesini, kuzu verimini ve mera sağlığını yöneten günlük rutin modüllerdir.
+#### 🩸 3.1. Koç Katımı & Doğum Çarkı (150 Gün Gebelik)
+- Koç aşım tarihini ve koçun küpesini kaydedin:
+  - **17. Gün:** Koç aşım / kızgınlık dönüş kontrolü (Tutmadıysa koç ister).
+  - **35. Gün:** Ultrason ile gebelik kontrolü ve tekiz/ikiz tespiti.
+  - **120. Gün:** Doğuma 1 ay kala Çelerme (Enterotoksemi) pekiştirme aşısı (Ağız sütüyle kuzuya antikor geçmesi için).
+  - **150. Gün:** Beklenen kuzulama günü.
 
-### 🩸 5.1. Koç Katımı & Doğum Çarkı (150 Gün Gebelik)
-1. Koç aşım tarihini ve koçun küpe numarasını kaydedin.
-2. Otomatik takvim başlar:
-   - **17. Gün:** Koç aşım / kızgınlık dönüş kontrolü (Tutmadıysa koç ister).
-   - **35. Gün:** Ultrason ile gebelik kontrolü ve tekiz/ikiz tespiti.
-   - **120. Gün:** Doğuma 1 ay kala Çelerme / Enterotoksemi pekiştirme aşısı (Ağız sütüyle kuzuya antikor geçmesi için).
-   - **150. Gün:** Beklenen kuzulama günü.
+#### 🍼 3.2. Kuzu Hayatta Tutma & İlk Ağız Sütü (Kolostrum)
+- **İlk 2 Saat Kuralı:** Yeni doğan kuzuya ilk 2 saatte en az **300–400 mL (2 çay bardağı dolusu)** koyu ağız sütü mutlaka içirilmelidir!
+- **Brix Kalite Ölçer:** Refraktometre ile ağız sütünün kalitesini ölçün.
+- **Kuzu İshali Sıvı Hesabı:** Kuzu ağırlığı (ortalama 4 kg) ve göz çökme durumuna göre 24 saatte verilmesi gereken serum ve can suyu (0.4 – 0.6 Litre) hesaplanır.
+- **Göbek Kordonu:** Doğum anında tentürdiyota daldırılarak kurutulmalıdır.
 
-### 🍼 5.2. Kuzu Hayatta Tutma & İlk Ağız Sütü (Kolostrum)
-1. **İlk 2 Saat Kuralı:** Yeni doğan kuzuya ilk 2 saatte en az **300–400 mL (2 çay bardağı dolusu)** koyu ağız sütü mutlaka içirilmelidir!
-2. **Brix Ölçer:** Refraktometre ile ağız sütünün kalitesini ölçün.
-3. **Kuzu İshali Sıvı Hesabı:** Kuzu ağırlığı (ortalama 4 kg) ve göz çökme durumuna göre 24 saatte verilmesi gereken serum ve can suyu (0.4 – 0.6 Litre) hesaplanır.
-4. **Göbek Kordonu:** Doğum anında tentürdiyota daldırılarak kurutulmalıdır.
+#### 📅 3.3. Akıllı Aşı Takvimi & Hatırlatıcı
+- Çelerme (Enterotoksemi), Çiçek, PPR Veba, Şap ve Brucella aşıları için takvim ve rapel sürelerini takip edin.
 
-### 📅 5.3. Akıllı Aşı Takvimi & Hatırlatıcı
-- Çelerme (Enterotoksemi), Çiçek, Veba (PPR), Şap ve Brucella aşıları için takvim ve rapel sürelerini takip edin.
-- Aşı yapıldığında bir sonraki tekrar tarihi otomatik oluşturulur.
+#### ⚖ 3.4. Şerit Metreyle Koyun Canlı Kilo Ölçer
+- Kantarın olmadığı ağıl ve mera şartlarında terzi mezurasıyla göğüs çevresi ve boyu ölçerek küçükbaş *Schaeffer Formülü* ile canlı ağırlık hesaplayın; vurulacak iğne dozlarını anında görün.
 
-### ⚖️ 5.4. Şerit Metreyle Koyun Canlı Kilo Ölçer
-Kantarın olmadığı ağıl ve mera şartlarında terzi mezurasıyla kilo hesaplar:
-1. **Göğüs Çevresi (cm):** Ön bacakların hemen arkasından mezurayla sarın (Koyunda genelde 75–95 cm arasıdır).
-2. **Vücut Uzunluğu (cm):** Omuz başı ile kalça yumrusu arası mesafe.
-3. Küçükbaş *Schaeffer Formülü* ile canlı ağırlık hesaplanır ve hayvana vurulacak iğne dozları listelenir.
-
-### 🌾 5.5. Yemlik Düzeni, İşkembe Ekşimesi & Geviş Sayacı
-1. **Geviş Getirme Sayacı:** Yem döküldükten 2 saat sonra ağıldaki yerde yatan koyunları ve geviş getirenleri sayıp yazın. Hedef en az %58-60'tır.
-2. **Koyun Fındığı / Zibin Kıvamı (1-5):**
-   - *Skor 1:* Fışkıran ishal (🚨 Çelerme veya ağır ekşime alarmı).
-   - *Skor 2:* Birbirine yapışmış cıvık fındıklar (Arpa fazla / kaba yem az).
-   - *Skor 3:* İdeal nemli ve parlak koyun zibini.
-3. **Karbonat Dozu:** Sağılan koyun sayısına göre günde **15–30 gram/koyun** yem karbonatı miktarını hesaplayın.
+#### 🌾 3.5. Yemlik Düzeni, İşkembe Ekşimesi & Geviş Sayacı
+- Yem döküldükten 2 saat sonra ağıldaki yerde yatan koyunların geviş getirmesini sayın (Hedef: En az %58-60).
+- Koyun fındığı/zibin kıvamını (1-5) kontrol edin; sürüye günde **15–30 gram/koyun** yem karbonatı miktarını hesaplayın.
 
 ---
 
-## 💾 6. Veri Yedekleme & Telefona Aktarma
-
-- Sağımcı ekranının en altında yer alan **"📥 Yedeği İndir (JSON)"** butonuna basarak tüm koyun, kuzu ve aşı kayıtlarınızı tek bir yedek dosyası olarak indirebilirsiniz.
-- Başka bir telefona geçtiğinizde **"📤 Yedeği Yükle"** diyerek saniyeler içinde tüm ağıl verilerinizi geri yükleyebilirsiniz.
-- Tüm veriler telefonunuzun kendi güvenli hafızasında (LocalStorage) saklanır; internet olmasa dahi kaybolmaz.
+### 💾 SENARYO 4: Günün Sonunda / Hafta Sonu (Veri Güvenliği)
+- Sağımcı ekranının en altında yer alan **"📥 Yedeği İndir (JSON)"** butonuna basarak tüm koyun, kuzu ve aşı kayıtlarınızı telefonunuza yedekleyin.
+- Başka bir telefona geçtiğinizde **"📤 Yedeği Yükle"** diyerek saniyeler içinde tüm ağıl verilerinizi geri yükleyin.
+- Verileriniz telefonunuzun kendi güvenli hafızasında kalır, internete bağımlı değildir.
