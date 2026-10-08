@@ -20,14 +20,24 @@ Uygulamayı ilk defa açtıysanız ve nereden başlayacağınızı bilmiyorsanı
   - Siz günlük işlerinizi yaptıkça sürünüz arka planda kendiliğinden eksiksiz oluşacaktır.
 
 ### 3. Adım: Şu An Ağılda veya Merada Hangi Durumdasınız? (Doğru Kapıyı Seçin)
-Uygulama ana ekranında işlemler 3 ana öncelik kapısına göre dizilmiştir:
-- 🚨 **Ölüm-kalım, kurt ısırması, donma veya zehirlenme mi var?** $\rightarrow$ Doğrudan **1. Kapı: Acil Durum & Hayat Kurtarma**'ya girin.
-- 🥛 **Veteriner geldi, koyuna iğne mi yapıldı?** $\rightarrow$ Sütü ve eti korumak için **2. Kapı: Günlük İlaç & Süt/Et Güvenliği**'ne girin.
-- 📋 **Sakin bir gün, rutin ağıl işleri mi yapacaksınız?** $\rightarrow$ **3. Kapı: Sürü Yönetimi, Büyüme & Rutin Takip**'e girin.
+Uygulama ana ekranında işlemler 5 büyük **Koyun Durumu Ana Menüsü** merkezine göre dizilmiştir:
+- 🚨 **Ölüm-kalım, kurt ısırması, donma veya zehirlenme mi var?** $\rightarrow$ **1. HASTA / ACİL KOYUN**
+- 🥛 **Veteriner geldi, koyuna iğne mi yapıldı?** $\rightarrow$ Sütü ve eti korumak için **2. SAĞIM & SÜT/ET GÜVENLİĞİ**
+- 🍼 **Koyun doğurdu veya koç katımı mı var?** $\rightarrow$ **3. YENİ DOĞUM, KUZU & KOÇ KATIMI**
+- 🐑 **Sürüye yeni hayvan mı girdi veya aşı günü mü?** $\rightarrow$ **4. YENİ KOYUN GİRİŞİ & AŞI**
+- 🌾 **Yemlik durumu, dışkı kıvamı veya kilo ölçümü mü?** $\rightarrow$ **5. YEMLİK, İŞKEMBE & GEVİŞ**
 
 ---
 
-## 🔄 2. Nasıl Devam Etmeliyim? (Ağılda ve Merada 4 Günlük Senaryo ve İş Akışı)
+## 📊 2. Gösterge Paneli ve Küpe Numaralı Takip
+
+- **🩸 Tohumlama / Koç Katımı:** Önceki aşımdan/tohumlamadan 14–19 gün geçmiş (17 günlük östrus siklusu) koyunlar ile 12–20 aylık damızlık toklular otomatik hesaplanır. Mor karta dokunarak üreme takvimine geçebilirsiniz.
+- **🔔 Uyarılı Küpe Numaraları:** Sayfa başındaki kritik takip listesinde kafa karıştırıcı sayılar yerine doğrudan **Küpe Numaraları** listelenir.
+- **🏷️ Koyun Uyarı & Sağlık Kartı:** Herhangi bir küpeye dokunduğunuzda koyunun acil sağlık kartı açılır; kalan süt arınma süresi, kesim kilidi, koç dönüşü veya yaklaşan aşısı doğrudan aksiyon butonlarıyla yönetilebilir.
+
+---
+
+## 🔄 3. Nasıl Devam Etmeliyim? (Ağılda ve Merada Günlük Senaryolar ve İş Akışı)
 
 Ağıl ve mera koşullarında karşılaştığınız her duruma göre adım adım izleyeceğiniz iş akışları şunlardır:
 
@@ -98,7 +108,7 @@ Sürünün üremesini, kuzu sağlığını ve mera verimini yönetin:
 #### 📅 3.3. Akıllı Aşı Takvimi & Hatırlatıcı
 - Çelerme (Enterotoksemi), Çiçek, PPR Veba, Şap ve Brucella aşıları için takvim ve rapel sürelerini takip edin.
 
-#### ⚖ 3.4. Şerit Metreyle Koyun Canlı Kilo Ölçer
+#### ⚖️ 3.4. Şerit Metreyle Koyun Canlı Kilo Ölçer
 - Kantarın olmadığı ağıl ve mera şartlarında terzi mezurasıyla göğüs çevresi ve boyu ölçerek küçükbaş *Schaeffer Formülü* ile canlı ağırlık hesaplayın; vurulacak iğne dozlarını anında görün.
 
 #### 🌾 3.5. Yemlik Düzeni, İşkembe Ekşimesi & Geviş Sayacı
