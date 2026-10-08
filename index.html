@@ -896,7 +896,11 @@
           <div class="stat-val" style="color:var(--warning);" id="stat-quarantine">0</div>
           <div class="stat-label">Ayrı Bölmede (Karantina)</div>
         </div>
-        <div class="stat-card" style="grid-column: span 2;">
+        <div class="stat-card" style="border-left: 4px solid #7c3aed; cursor:pointer;" onclick="switchTab('repro')" title="Üreme & Koç Katımı Ekranını Aç">
+          <div class="stat-val" style="color:#7c3aed;" id="stat-insemination-due">0</div>
+          <div class="stat-label">🩸 Tohumlama / Koç Katımı</div>
+        </div>
+        <div class="stat-card" style="border-left: 4px solid var(--info);">
           <div class="stat-val" style="color:var(--info);" id="stat-upcoming-vaccines">0</div>
           <div class="stat-label">Günü Gelen Aşı</div>
         </div>
@@ -2665,6 +2669,24 @@
       if (elMeatStat) elMeatStat.textContent = blockedMeatTags.length;
       document.getElementById("stat-quarantine").textContent = animals.filter(a => a.quarantine).length;
       document.getElementById("stat-upcoming-vaccines").textContent = vaccineRecords.length;
+
+      // Tohumlama / Koç Katımı Zamanı Gelen Hayvan Sayısı
+      let insemDueCount = 0;
+      animals.forEach(a => {
+        const isFem = !a.gender || a.gender.toLowerCase().includes("dişi") || a.gender.toLowerCase().includes("koyun") || a.gender.toLowerCase().includes("toklu");
+        if (!isFem) return;
+
+        const myRepros = reproRecords.filter(r => r.animalId === a.id || r.earTag === a.earTag);
+        if (myRepros.length > 0) {
+          const latestRepro = myRepros.reduce((acc, cur) => new Date(cur.date) > new Date(acc.date) ? cur : acc);
+          const daysPassed = Math.floor((now - new Date(latestRepro.date)) / (1000 * 60 * 60 * 24));
+          if (daysPassed >= 14 && daysPassed <= 19) insemDueCount++;
+        } else {
+          if (a.ageMonths >= 12 && a.ageMonths <= 20) insemDueCount++;
+        }
+      });
+      const elInsemStat = document.getElementById("stat-insemination-due");
+      if (elInsemStat) elInsemStat.textContent = insemDueCount;
 
       // Tüm hayvanların uyarılarını topla
       const animalAlertsMap = [];
