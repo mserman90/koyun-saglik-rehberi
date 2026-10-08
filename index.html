@@ -2723,12 +2723,8 @@
           </div>
         `;
       } else {
-        alertHtml = `
-          <div class="banner-alert banner-success">
-            ✅ Sürüde hiçbir koyunda aktif süt/kesim kısıtı, gecikmiş aşı veya kritik sağlık uyarısı bulunmamaktadır. Tüm hayvanlar güvendedir.
-          </div>
-        `;
-      }
+          alertHtml = "";
+        }
       alertBox.innerHTML = alertHtml;
 
       // 2. Süt İKAS Özet Listesi
