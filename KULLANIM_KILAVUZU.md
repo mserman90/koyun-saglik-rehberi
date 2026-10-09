@@ -31,7 +31,7 @@ Uygulama ana ekranında işlemler 5 büyük **Koyun Durumu Ana Menüsü** merkez
 
 ## 2. Gösterge Paneli ve Küpe Numaralı Takip
 
-- **Tohumlama / Koç Katımı:** Önceki aşımdan/tohumlamadan 14–19 gün geçmiş (17 günlük östrus siklusu) koyunlar ile 12–20 aylık damızlık toklular otomatik hesaplanır. Mor karta dokunarak üreme takvimine geçebilirsiniz.
+- **Tohumlama / Koç Katımı:** Önceki aşımdan/tohumlamadan 14–19 gün geçmiş (17 günlük kızgınlık döngüsü) koyunlar ile 12–20 aylık damızlık toklular otomatik hesaplanır. Mor karta dokunarak üreme takvimine geçebilirsiniz.
 - **Uyarılı Küpe Numaraları:** Sayfa başındaki kritik takip listesinde kafa karıştırıcı sayılar yerine doğrudan **Küpe Numaraları** listelenir.
 - **Koyun Uyarı & Sağlık Kartı:** Herhangi bir küpeye dokunduğunuzda koyunun acil sağlık kartı açılır; kalan süt arınma süresi, kesim kilidi, koç dönüşü veya yaklaşan aşısı doğrudan aksiyon butonlarıyla yönetilebilir.
 
@@ -49,13 +49,13 @@ Veteriner hekim ağıla ulaşana kadar geçen kritik dakikalarda hayat kurtarır
 #### 1.1. Küçükbaş Acil İlk Yardım
 - **Aşı Şoku / İğne Alerjisi:** Koyun aşıdan sonra titremeye ve fenalaşmaya başlarsa kiloyu kutuya yazın; sistem hayat kurtaran **Adrenalin Dozunu** (1:1000 Adrenalin, her 45 kg için 1 mL) otomatik hesaplar.
 - **Gebelik Zehirlenmesi (İkiz Koması / Ketozis):** Doğuma 2-3 hafta kala yerde yatan, kör gibi yürüyen gebe koyunlara derhal ağızdan propilen glikol veya pekmez içirin; damardan glikoz serumu desteği sağlayın.
-- **Çelerme / Yem Çarpması (Enterotoksemi):** Ani tane yem veya taze ot sonrası çırpınan hayvanda yemi derhal kesin; ağızdan karbonatlı su ve Clostridium antitoksin serumu uygulayın.
+- **Çelerme / Yem Çarpması (Bağırsak Zehirlenmesi):** Ani tane yem veya taze ot sonrası çırpınan hayvanda yemi derhal kesin; ağızdan karbonatlı su ve Clostridium antitoksin serumu uygulayın.
 - **Yeni Doğan Kuzu Donması & Üşüme (Hipotermi):** Ağzı buz gibi kuzuya zorla süt içirmeyin (akciğere kaçar); ısıtma lambası veya kutusuyla vücut ısındıktan sonra ilk ağız sütünü verin.
 - **Sidik Zoru & İdrar Yolu Tıkanması:** Besi tokluları ve koçlarda penis ucu uzantısındaki tuz kristallerini temizleyin; ağrı kesici ve rasyona amonyum klorür uygulayın.
 - **Kurt / Köpek Isırması & Kanama:** Basınçlı bez tampon uygulayın, tentürdiyotla temizleyin, tetanoz aşısı ve antibiyotik kalkanı yapın.
-- **İşkembe Gazı (Timpani):** Sol böğür davul gibi şiştiğinde 100-200 mL sıvı yağ içirin; gerekirse trokar uygulayın.
+- **İşkembe Gazı ve Şişmesi:** Sol böğür davul gibi şiştiğinde 100-200 mL sıvı yağ içirin; gerekirse trokar uygulayın.
 
-#### 1.2. Hasta Muayene Et (Küçükbaş Saha Triyajı)
+#### 1.2. Hasta Muayene Et (Küçükbaş Hasta Muayenesi & Durum Tespiti)
 Bir koyunun veya kuzunun hastalandığından şüphelendiğinizde:
 1. Dereceyle makat ateşini ölçüp yazın (Normal: 38.5–40.0 °C. 40.2 °C üzeri yüksek ateştir).
 2. Nabız (70–90) ve nefes sayısını girin.
@@ -99,17 +99,17 @@ Sürünün üremesini, kuzu sağlığını ve mera verimini yönetin:
 - Koç aşım tarihini ve koçun küpesini kaydedin:
   - **17. Gün:** Koç aşım / kızgınlık dönüş kontrolü (Tutmadıysa koç ister).
   - **35. Gün:** Ultrason ile gebelik kontrolü ve tekiz/ikiz tespiti.
-  - **120. Gün:** Doğuma 1 ay kala Çelerme (Enterotoksemi) pekiştirme aşısı (Ağız sütüyle kuzuya antikor geçmesi için).
+  - **120. Gün:** Doğuma 1 ay kala Çelerme (Yem Çarpması) pekiştirme aşısı (Ağız sütüyle kuzuya antikor geçmesi için).
   - **150. Gün:** Beklenen kuzulama günü.
 
 #### 3.2. Kuzu Hayatta Tutma & İlk Ağız Sütü (Kolostrum)
 - **İlk 2 Saat Kuralı:** Yeni doğan kuzuya ilk 2 saatte en az **300–400 mL (2 çay bardağı dolusu)** koyu ağız sütü mutlaka içirilmelidir!
-- **Brix Kalite Ölçer:** Refraktometre ile ağız sütünün kalitesini ölçün.
+- **Brix Kalite Ölçer:** Ağız sütü ölçer (refraktometre) ile ağız sütünün kalitesini ölçün.
 - **Kuzu İshali Sıvı Hesabı:** Kuzu ağırlığı (ortalama 4 kg) ve göz çökme durumuna göre 24 saatte verilmesi gereken serum ve can suyu (0.4 – 0.6 Litre) hesaplanır.
 - **Göbek Kordonu:** Doğum anında tentürdiyota daldırılarak kurutulmalıdır.
 
 #### 3.3. Akıllı Aşı Takvimi & Hatırlatıcı
-- Çelerme (Enterotoksemi), Çiçek, PPR Veba, Şap ve Brucella aşıları için takvim ve rapel sürelerini takip edin.
+- Çelerme (Yem Çarpması), Çiçek, PPR Veba, Şap ve Brucella aşıları için takvim ve rapel sürelerini takip edin.
 
 #### 3.4. Şerit Metreyle Koyun Canlı Kilo Ölçer
 - Kantarın olmadığı ağıl ve mera şartlarında terzi mezurasıyla göğüs çevresi ve boyu ölçerek küçükbaş *Schaeffer Formülü* ile canlı ağırlık hesaplayın; vurulacak iğne dozlarını anında görün.

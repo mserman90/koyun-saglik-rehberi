@@ -22,11 +22,11 @@ Bu uygulama, **koyun ve keçi yetiştiricileri, çobanlar ve küçükbaş çiftl
 
 ## Saha Öncelikli Durum Merkezleri (Status Hubs)
 
-Ağıl ve mera koşullarındaki **klinik aciliyet** ve eldivenli kullanıma göre optimize edilmiştir. Sayfa altındaki gezinme ikonları yerine ana ekranda 5 büyük **Koyun Durumu Ana Menüsü** merkezi yer alır:
+Ağıl ve mera koşullarındaki **acil müdahale önceliği** ve eldivenli kullanıma göre optimize edilmiştir. Sayfa altındaki gezinme ikonları yerine ana ekranda 5 büyük **Koyun Durumu Ana Menüsü** merkezi yer alır:
 
-1. **HASTA / ACİL KOYUN:** İlk Yardım (Gebelik Zehirlenmesi / İkiz Koması, Çelerme / Enterotoksemi, Kuzu Donması / Hipotermi, Sidik Zoru, Kurt Isırması, Timpani şişmesi, Adrenalin şok dozu), Saha Triyajı & Makat Ateşi (38.5–40.0°C), İlaç Yap & Süt/Et Kilitle (İKAS).
+1. **HASTA / ACİL KOYUN:** İlk Yardım (Gebelik Zehirlenmesi / İkiz Koması, Çelerme / Çelerme (Yem Çarpması), Kuzu Donması / Hipotermi, Sidik Zoru, Kurt Isırması, İşkembe Gaz Şişmesi şişmesi, Adrenalin şok dozu), Hasta Muayenesi & Durum Tespiti & Makat Ateşi (38.5–40.0°C), İlaç Yap & Süt/Et Kilitle (İKAS).
 2. **SAĞIM & SÜT/ET GÜVENLİĞİ:** Sağımcı Ekranı (Dev puntolu yeşil/kırmızı izin, mezbaha kesim kilitleri), Dökülen Süt Zarar & Masraf Defteri.
-3. **YENİ DOĞUM, KUZU & KOÇ KATIMI:** Kuzu Kolostrumu (İlk 2 saatte 300-400 mL), Brix Kalite Ölçer, Kuzu İshali Sıvı Hesabı, Koç Katımı & Doğum Çarkı (17 gün östrus, 150 gün gebelik).
+3. **YENİ DOĞUM, KUZU & KOÇ KATIMI:** Kuzu Kolostrumu (İlk 2 saatte 300-400 mL), Brix Kalite Ölçer, Kuzu İshali Sıvı Hesabı, Koç Katımı & Doğum Çarkı (17 gün kızgınlık, 150 gün gebelik).
 4. **YENİ KOYUN GİRİŞİ & AŞI:** Yeni Koyun/Kuzu Kaydı (Karantina Bölmesi), Akıllı Aşı Takvimi (Çelerme, Çiçek, PPR Veba, Şap, Brucella).
 5. **YEMLİK, İŞKEMBE & GEVİŞ:** Geviş Getirme Sayacı (%58-60 hedef), Koyun Fındığı/Zibin Kıvamı (1-5), Tampon Karbonat Hesabı (15-30 gr/koyun), Şerit Metre ile Kilo Ölçer.
 
@@ -34,7 +34,7 @@ Ağıl ve mera koşullarındaki **klinik aciliyet** ve eldivenli kullanıma gör
 
 ## Gösterge Paneli & Küpe Numaralı Kritik Takip
 
-- **Tohumlama / Koç Katımı Zamanı Göstergesi:** Önceki aşımdan/tohumlamadan 14–19 gün geçmiş (17 günlük östrus siklusu) koyunlar ile 12–20 aylık damızlık toklular otomatik hesaplanır. Mor karta dokunarak üreme takvimini açabilirsiniz.
+- **Tohumlama / Koç Katımı Zamanı Göstergesi:** Önceki aşımdan/tohumlamadan 14–19 gün geçmiş (17 günlük kızgınlık döngüsü) koyunlar ile 12–20 aylık damızlık toklular otomatik hesaplanır. Mor karta dokunarak üreme takvimini açabilirsiniz.
 - **Uyarılı Küpe Numaraları Çipleri:** Sayfa başındaki kritik takip listesinde kafa karıştırıcı sayılar yerine doğrudan hayvanların **Sarı Kulak Küpe Numaraları** listelenir.
 - **Koyun Uyarı & Sağlık Kartı Modalı:** Herhangi bir küpeye dokunulduğunda koyunun aktif süt engeli, kesim kilidi, koç katımı dönüşü, yaklaşan aşısı veya sağlık uyarısı tek ekranda açılır; ilgili butonla doğrudan müdahaleye yönlendirir.
 - **Kategori Filtreleme:** Uyarılı hayvanları *Tümü*, *İlaç & İKAS*, *Üreme & Doğum*, *Aşı* ve *Sağlık & Karantina* olarak tek dokunuşla süzebilirsiniz.
@@ -49,13 +49,13 @@ Ağıl ve mera koşullarındaki **klinik aciliyet** ve eldivenli kullanıma gör
 
 1. **Küçükbaş Acil İlk Yardım & Hayat Kurtarma:**
    - **Gebelik Zehirlenmesi (İkiz Koması / Ketozis):** Ağızdan propilen glikol/pekmez ve damardan serum desteği.
-   - **Çelerme / Yem Çarpması (Enterotoksemi):** Yemi kesme, karbonatlı su ve Clostridium antitoksin serumu.
+   - **Çelerme / Yem Çarpması (Bağırsak Zehirlenmesi):** Yemi kesme, karbonatlı su ve Clostridium antitoksin serumu.
    - **Yeni Doğan Kuzu Donması (Hipotermi):** Isıtma lambası/kutusu ve ısındıktan sonra kolostrum protokolü.
    - **Sidik Zoru & İdrar Yolu Tıkanması:** Koçlarda penis ucu taş uzantısı müdahalesi ve amonyum klorür.
    - **Kurt/Köpek Isırması & Kanama:** Basınçlı tampon, tentürdiyot ve tetanoz koruması.
-   - **Timpani & Şişme:** Sıvı yağ içirme, trokar ve anafilaktik şokta otomatik adrenalin dozu hesabı.
+   - **İşkembe Gazı & Şişmesi:** Sıvı yağ içirme, trokar ve aşı ve ilaç alerji şokunda otomatik adrenalin dozu hesabı.
 
-2. **Saha Triyajı & Klinik Muayene:**
+2. **Ahırda Muayene & Durum Tespiti:**
    - Makat ateşi (38.5–40.0 °C koyun referansı, >40.2 °C yüksek ateş alarmı), nabız (70–90), nefes (15–30), işkembe ve klinik skorlama motoru.
 
 3. **Küçükbaş İKAS & Hayati İlaç Kuralları:**
@@ -66,7 +66,7 @@ Ağıl ve mera koşullarındaki **klinik aciliyet** ve eldivenli kullanıma gör
    - Sağımhane için büyük puntolu "SAĞIMA UYGUN" veya "BU KOYUNU TANKA SAĞMA" onayı. Mezbaha kesim kilitleri anlık listelenir.
 
 5. **Kuzu Hayatta Tutma & İlk Ağız Sütü (Kolostrum):**
-   - İlk 2 saatte en az 300–400 mL (2 çay bardağı) koyu ağız sütü kuralı, Brix refraktometre kalite ölçümü ve kuzu ishalinde sıvı/can suyu hesabı.
+   - İlk 2 saatte en az 300–400 mL (2 çay bardağı) koyu ağız sütü kuralı, Brix ağız sütü kalite ölçümü ve kuzu ishalinde sıvı/can suyu hesabı.
 
 6. **Koç Katımı, Tohumlama & Doğum Çarkı:**
    - 17 gün aşım döngüsü, 35 gün ultrason, 120 gün doğuma hazırlık/çelerme pekiştirme aşısı ve 150 gün doğum (kuzulama) geri sayımı.
@@ -78,7 +78,7 @@ Ağıl ve mera koşullarındaki **klinik aciliyet** ve eldivenli kullanıma gör
    - Kantar yokken mezurayla göğüs çevresi ve boydan küçükbaş Schaeffer formülü ile canlı ağırlık tahmini ve otomatik ilaç dozajı.
 
 9. **Akıllı Aşı Takvimi & Hatırlatıcı:**
-   - Çelerme (Enterotoksemi), Çiçek, Veba (PPR), Şap ve Brucella aşıları için takvim ve rapel süreleri.
+   - Çelerme (Yem Çarpması), Çiçek, Veba (PPR), Şap ve Brucella aşıları için takvim ve rapel süreleri.
 
 10. **Hastalık Masrafı & Dökülen Süt Zarar Defteri:**
     - Çiğ koyun sütü litre fiyatı üzerinden dökülen sütün ve veteriner tedavilerinin ekonomik maliyet analizi.

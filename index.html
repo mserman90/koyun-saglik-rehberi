@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta name="theme-color" content="#0d9488">
   <meta name="description" content="Koyun Çiftliği Rehberi - Ağıl, mera ve küçükbaş çiftlikleri için %100 internetsiz çalışan koyun ve kuzu hastalık teşhisi, acil ilk yardım (çelerme, ikiz koması, kuzu donması), aşı takvimi, koç katımı ve İKAS süt arınma süresi asistanı.">
-  <meta name="keywords" content="koyun sağlık rehberi, küçükbaş hastalıkları, kuzu bakımı, çelerme aşısı, gebelik zehirlenmesi, ikiz koması, enterotoksemi, koç katımı takvimi, İKAS koyun sütü süresi, koyun kilosu ölçme, çoban rehberi offline">
+  <meta name="keywords" content="koyun sağlık rehberi, küçükbaş hastalıkları, kuzu bakımı, çelerme aşısı, gebelik zehirlenmesi, ikiz koması, çelerme (yem çarpması), koç katımı takvimi, İKAS koyun sütü süresi, koyun kilosu ölçme, çoban rehberi offline">
   <meta name="author" content="Dr. Mert Serman / Koyun Çiftliği Rehberi">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <link rel="canonical" href="https://mserman90.github.io/koyun-saglik-rehberi/">
@@ -271,7 +271,7 @@
     .btn-info { background: var(--info); color: white; }
     .btn-outline { background: transparent; border: 2px solid var(--border); color: var(--text); }
 
-    /* DART ve Skor Seçiciler */
+    /* Hastalık ve Nefes Skoru Seçicileri */
     .score-group {
       margin-bottom: 12px;
       padding-bottom: 10px;
@@ -924,7 +924,7 @@
                 <div style="font-weight:800; font-size:0.98rem; color:#b91c1c; display:flex; align-items:center; gap:6px;">
                   HASTA / ACİL KOYUN & KUZU
                 </div>
-                <div style="font-size:0.75rem; color:#64748b; margin-top:2px;">İlk yardım, klinik triyaj ve sütü kilitleyen tedaviler</div>
+                <div style="font-size:0.75rem; color:#64748b; margin-top:2px;">İlk yardım, hasta muayenesi, ateş kontrolü ve sütü kilitleyen tedaviler</div>
               </div>
             </div>
             <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:6px;">
@@ -1016,7 +1016,7 @@
         </div>
       </div>
 
-      <!-- Hayvan Bazlı Aktif Uyarılar ve Klinik Görevler -->
+      <!-- Hayvan Bazlı Aktif Uyarılar ve Sağlık Takip Listesi -->
       <div class="card" id="card-animal-alerts" style="border-left: 4px solid var(--primary);">
         <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; flex-wrap:wrap; gap:6px;">
           <div class="card-title" style="margin-bottom:0;">Hayvan Bazlı Kritik Uyarılar & Takip Listesi</div>
@@ -1073,7 +1073,7 @@
       </div>
     </section>
 
-    <!-- ================= 2. SAHA TRİYAJI VE DART SKORLAMA ================= -->
+    <!-- ================= 2. HASTA MUAYENESİ VE NEFES/ZATÜRRE PUANLAMA ================= -->
     <section id="tab-triage" class="tab-section">
       <!-- Üst Geri Dönüş Butonu -->
       <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
@@ -1232,7 +1232,7 @@
           </div>
           <div>
             <label for="treatment-vet">Reçete Veren Veteriner Hekim:</label>
-            <input type="text" id="treatment-vet" placeholder="Veteriner Adı / Klinik">
+            <input type="text" id="treatment-vet" placeholder="Veteriner Hekim Adı">
           </div>
         </div>
 
@@ -1312,14 +1312,14 @@
               <label for="cost-disease">Nesi Vardı? (Hastalık):</label>
               <select id="cost-disease">
                 <option value="Meme Yangısı (Mastitis / Gök Meme)">Meme Yangısı / Gök Meme (Mastitis)</option>
-                <option value="Çelerme / Enterotoksemi">Çelerme / Bağırsak Zehirlenmesi (Enterotoksemi)</option>
+                <option value="Çelerme / Çelerme (Yem Çarpması)">Çelerme / Bağırsak Zehirlenmesi (Çelerme (Yem Çarpması))</option>
                 <option value="Gebelik Zehirlenmesi (İkiz Koması)">Gebelik Zehirlenmesi / İkiz Koması (Ketozis)</option>
                 <option value="Zatürre / Ciğer Hastalığı">Zatürre / Ciğer Ağrısı / Hırıltı (Plöropnömoni)</option>
                 <option value="Piyeten / Ayak Çürüğü">Piyeten / Tırnak Çürüğü (Bulaşıcı Ayak Yarası)</option>
                 <option value="Agalaksi (Süt Kesen)">Agalaksi / Süt Kesen Hastalığı</option>
                 <option value="Kuzu İshali / Koksidiyoz">Kuzu İshali (Sarı/Kanlı İshal)</option>
                 <option value="Ektima (Ağız/Dudak Yarası)">Ektima (Koyun-Kuzu Ağız Yarası)</option>
-                <option value="Doğum Felci / Hipokalsemi">Doğum Felci (Kalsiyum Çökmesi)</option>
+                <option value="Doğum Felci / Doğum Felci (Süt Humması)">Doğum Felci (Kalsiyum Çökmesi)</option>
                 <option value="Diğer Tedavi">Diğer İğne / Şurup / İlaç</option>
               </select>
             </div>
@@ -1411,7 +1411,7 @@
       </div>
     </section>
 
-    <!-- ================= 5. YEMLİK, ASİDOZ (SARA) & RUMEN İŞKEMBESİ TAKİPÇİSİ ================= -->
+    <!-- ================= 5. YEMLİK, İŞKEMBE EKŞİMESİ (ASİDOZ) & SİNDİRİM TAKİPÇİSİ ================= -->
     <section id="tab-feed" class="tab-section">
       <!-- Üst Geri Dönüş Butonu -->
       <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
@@ -1423,7 +1423,7 @@
       <div class="card" style="border-top: 4px solid #0f766e;">
         <div class="card-title" style="color:#0f766e;">Yemlik Düzeni, İşkembe Ekşimesi & Geviş Sayacı</div>
         <p style="font-size:0.8rem; color:#475569; margin-bottom:12px;">
-          Fabrika yemi fazla gelip saman az kaldığında işkembe ekşir <strong>(Asidoz / SARA)</strong>. Geviş getirme oranına ve tezek kıvamına bakarak erkenden önlem alın.
+          Fabrika yemi fazla gelip saman az kaldığında işkembe ekşir <strong>(İşkembe Ekşimesi (Asidoz))</strong>. Geviş getirme oranına ve tezek kıvamına bakarak erkenden önlem alın.
         </p>
 
         <!-- 1. Geviş Getirme (Rumination) İndeksi -->
@@ -1502,7 +1502,7 @@
           </div>
         </div>
 
-        <!-- 4. Rumen Tamponlayıcı (Sodyum Bikarbonat) Hesaplayıcı -->
+        <!-- 4. İşkembe Rahatlatıcı Karbonat (Sodyum Bikarbonat) Hesaplayıcı -->
         <div class="card" style="background:#eff6ff; border:1px solid #93c5fd;">
           <div style="font-weight:700; color:#1d4ed8; font-size:0.9rem; margin-bottom:6px;">
             4. Yeme Katılacak Karbonat (Sodyum Bikarbonat) Miktarı
@@ -1533,7 +1533,7 @@
 
         <!-- Bilimsel Saha İpuçları (Merck Vet) -->
         <div class="card" style="background:#fafafa; border:1px dashed #cbd5e1; margin-top:12px; font-size:0.8rem; line-height:1.6; color:#334155;">
-          <strong>Ağıl İpuçları - İşkembe Ekşimesi (Gizli Asidoz / SARA) Rehberi:</strong>
+          <strong>Ağıl İpuçları - İşkembe Ekşimesi (Gizli İşkembe Ekşimesi (Hafif Asidoz)) Rehberi:</strong>
           <br>• <strong>İşkembenin Asit Eşiği:</strong> Fabrika yemi çok verilip saman az tutulduğunda işkembenin asidi yükselir (pH 5.5 altına iner) ve mikrop düzeni bozulur, koyun yemi sindiremez.
           <br>• <strong>Ağılda Nasıl Anlaşılır?:</strong> Koyunların biri yiyip biri yemez, süt yağı birden düşer, tırnaklar uzayıp hayvan topallamaya başlar, tezek sarı ve köpüklü çıkar.
           <br>• <strong>Geviş Getirten Uzun Kaba Yem:</strong> Yemin içinde en az 3 santim uzunluğunda kuru ot, yonca veya saman olmalıdır ki koyun geviş getirsin. Geviş getiren koyun günde 10-15 litre doğal karbonatlı tükürük üreterek kendi işkembesini kendi iyileştirir.
@@ -1587,7 +1587,7 @@
       <div class="card">
         <div class="card-title">Aşı Takvimi Rehberi & İkinci Doz (Aşı Tazeleme) Kuralları</div>
         <div style="font-size:0.82rem; line-height:1.6; color:#334155;">
-          <p><strong>• Çelerme / Enterotoksemi (Yem Zehirlenmesi):</strong> Yılda en az 2 kez (özellikle ilkbahar meraya çıkışta ve koç katımı öncesi) vurulmalıdır. Gebe koyunlara doğuma 4-6 hafta kala yapılırsa kuzuyu ağız sütüyle çelermeden korur.</p>
+          <p><strong>• Çelerme / Çelerme (Yem Çarpması) (Yem Zehirlenmesi):</strong> Yılda en az 2 kez (özellikle ilkbahar meraya çıkışta ve koç katımı öncesi) vurulmalıdır. Gebe koyunlara doğuma 4-6 hafta kala yapılırsa kuzuyu ağız sütüyle çelermeden korur.</p>
           <p><strong>• Koyun Vebası (PPR):</strong> Bakanlık tarafından yürütülen zorunlu aşıdır. 3 aylıktan büyük toklu ve koyunlara tek doz ömür boyu veya periyodik koruma sağlar.</p>
           <p><strong>• Koyun Çiçeği:</strong> Her yıl ilkbahar aylarında meraya çıkmadan önce zorunlu olarak uygulanır.</p>
           <p><strong>• Brusella (Rev-1 Göz Damlası):</strong> 3-6 aylık dişi ve damızlık erkek toklulara göze damlatılarak uygulanır.</p>
@@ -1852,12 +1852,12 @@
       </div>
 
       <div class="emergency-card" onclick="toggleEmergency('em-enterotoxemia')">
-        <h3><span>Çelerme / Yem Çarpması (Enterotoksemi)</span> <span>▼</span></h3>
+        <h3><span>Çelerme / Yem Çarpması (Bağırsak Zehirlenmesi)</span> <span>▼</span></h3>
         <div id="em-enterotoxemia" class="emergency-details">
           <p style="font-size:0.75rem; color:#64748b; margin-bottom:6px;"><strong>İlk Yardım Talimatı:</strong> Fazla arpa/tahıl yiyen toklu veya koyun birden havaya sıçrayıp çırpınarak yere düşüyorsa:</p>
           <ol style="padding-left:18px; line-height:1.6;">
             <li><strong>Hemen Sürüden Ayırın ve Yemi Kesin:</strong> Kesif yemlikleri hemen süpürün, sadece kuru saman/ot verin.</li>
-            <li><strong>Enterotoksemi Serumu (Antitoksin):</strong> Varsa yüksek doz Clostridium antitoksin serumu deri altı uygulanır.</li>
+            <li><strong>Çelerme Serumu (Antitoksin):</strong> Varsa yüksek doz Clostridium antitoksin serumu deri altı uygulanır.</li>
             <li><strong>İşkembe Asidini Nötrleyin:</strong> Ağızdan 1 bardak ılık suya 1 yemek kaşığı karbonat karıştırıp yavaşça içirin.</li>
             <li>Veterineri hemen arayın; çelerme dakikalar içinde öldürebilen çok hızlı bir zehirlenmedir.</li>
           </ol>
@@ -1877,7 +1877,7 @@
       </div>
 
       <div class="emergency-card" onclick="toggleEmergency('em-bloat')">
-        <h3><span>İşkembe Şişmesi & Gaz Patlaması (Timpani)</span> <span>▼</span></h3>
+        <h3><span>İşkembe Gazı & Şişmesi (Gaz Şişkinliği)</span> <span>▼</span></h3>
         <div id="em-bloat" class="emergency-details">
           <p style="font-size:0.75rem; color:#64748b; margin-bottom:6px;"><strong>İlk Yardım Talimatı:</strong> Taze yonca yedikten sonra sol açlık çukuru davul gibi şişip nefes alamıyorsa:</p>
           <ol style="padding-left:18px; line-height:1.6;">
@@ -2100,7 +2100,7 @@
 
       <label for="vac-type-select">Aşı Türü:</label>
       <select id="vac-type-select">
-        <option value="Enterotoksemi (Çelerme Karma)">Çelerme / Bağırsak Zehirlenmesi (Enterotoksemi Karma)</option>
+        <option value="Çelerme (Yem Çarpması) (Çelerme Karma)">Çelerme / Bağırsak Zehirlenmesi (Çelerme (Yem Çarpması) Karma)</option>
         <option value="Koyun Keçi Çiçeği">Koyun-Keçi Çiçeği [Zorunlu Bakanlık Aşısı]</option>
         <option value="Veba (PPR)">Koyun-Keçi Vebası (PPR) [Zorunlu Bakanlık Aşısı]</option>
         <option value="Brusella (Rev-1 Göz Damlası)">Brusella Rev-1 Genç/Ergin [Zorunlu Bakanlık Aşısı]</option>
@@ -2190,7 +2190,7 @@
           <h4 style="color:#6d28d9; margin:0 0 6px 0; font-size:0.95rem; display:flex; align-items:center; gap:6px;">
             2. Gösterge Paneli ve Küpe Numaralı Takip
           </h4>
-          <p style="margin:0 0 6px 0;"><strong>• Tohumlama / Koç Katımı:</strong> Önceki aşımdan/tohumlamadan 14–19 gün geçmiş (17 günlük östrus siklusu) koyunlar ve 12–20 aylık damızlık toklular otomatik hesaplanır. Mor karta dokunarak üreme takvimine geçebilirsiniz.</p>
+          <p style="margin:0 0 6px 0;"><strong>• Tohumlama / Koç Katımı:</strong> Önceki aşımdan/tohumlamadan 14–19 gün geçmiş (17 günlük kızgınlık döngüsü) koyunlar ve 12–20 aylık damızlık toklular otomatik hesaplanır. Mor karta dokunarak üreme takvimine geçebilirsiniz.</p>
           <p style="margin:0;"><strong>• Uyarılı Küpe Numaraları:</strong> Sayfa başındaki kritik takip listesinde kafa karıştırıcı sayılar yerine doğrudan <strong>Küpe Numaraları</strong> listelenir. Herhangi bir küpeye dokunarak koyunun acil sağlık kartına ve eylem adımlarına tek tıkla ulaşabilirsiniz.</p>
         </div>
 
@@ -2204,8 +2204,8 @@
           <h5 style="color:#dc2626; margin:0 0 4px 0; font-size:0.88rem; font-weight:800;">
             Senaryo 1: Ağılda / Merada Acil Durum & Hayat Kurtarma (Kapı A)
           </h5>
-          <p style="margin:0 0 4px 0;">• <strong>Acil İlk Yardım:</strong> Aşı şokunda kiloyu girip anında <strong>Adrenalin Dozunu</strong> hesaplayın. <strong>Gebelik Zehirlenmesi / İkiz Koması</strong> (propilen glikol/pekmez ve glikoz serumu), <strong>Çelerme / Enterotoksemi</strong> (yemi kesme, karbonatlı su, Clostridium antitoksin), <strong>Yeni Doğan Kuzu Donması / Hipotermi</strong> (ısıtma lambası ve vücut ısınmadan süt zorlamama), <strong>Sidik Zoru & İdrar Taşı</strong>, <strong>Kurt Isırması / Kanama</strong> ve <strong>Timpani Gaz Şişmesi</strong> protokollerini adım adım uygulayın.</p>
-          <p style="margin:0;">• <strong>Hasta Muayene Et (Triyaj):</strong> Koyun durgunsa veya yatıyorsa makat ateşini dereceyle ölçüp yazın (Normal: 38.5–40.0°C. 40.2°C üzeri yüksek ateştir), klinik puanı verin; sistem hastalığın ağırlığını ve ne yapmanız gerektiğini söylesin.</p>
+          <p style="margin:0 0 4px 0;">• <strong>Acil İlk Yardım:</strong> Aşı şokunda kiloyu girip anında <strong>Adrenalin Dozunu</strong> hesaplayın. <strong>Gebelik Zehirlenmesi / İkiz Koması</strong> (propilen glikol/pekmez ve glikoz serumu), <strong>Çelerme / Çelerme (Yem Çarpması)</strong> (yemi kesme, karbonatlı su, Clostridium antitoksin), <strong>Yeni Doğan Kuzu Donması / Hipotermi</strong> (ısıtma lambası ve vücut ısınmadan süt zorlamama), <strong>Sidik Zoru & İdrar Taşı</strong>, <strong>Kurt Isırması / Kanama</strong> ve <strong>İşkembe Gaz Şişmesi Gaz Şişmesi</strong> protokollerini adım adım uygulayın.</p>
+          <p style="margin:0;">• <strong>Hasta Muayenesi (Ateş ve Durum Kontrolü):</strong> Koyun durgunsa veya yatıyorsa makat ateşini dereceyle ölçüp yazın (Normal: 38.5–40.0°C. 40.2°C üzeri yüksek ateştir), klinik puanı verin; sistem hastalığın ağırlığını ve ne yapmanız gerektiğini söylesin.</p>
         </div>
 
         <!-- Senaryo 2: İlaç Yapıldığında -->
@@ -2224,8 +2224,8 @@
             Senaryo 3: Günlük Ağıl Rutini, Koç Katımı & Kuzu Büyütme (Kapı C)
           </h5>
           <p style="margin:0 0 4px 0;">• <strong>Koç Katımı & Doğum Çarkı:</strong> Koç aşım tarihini girin; 17. gün koç dönüşünü, 35. gün ultrason kontrolünü, 120. gün doğuma 1 ay kala çelerme aşısını ve 150. gün beklenen kuzulama gününü takip edin.</p>
-          <p style="margin:0 0 4px 0;">• <strong>Kuzu Hayatta Tutma & İlk Ağız Sütü:</strong> İlk 2 saatte en az 300–400 mL (2 çay bardağı) koyu ağız sütünü içirin. Brix optik refraktometreyle kaliteyi ölçün; ishal kuzularda göz çökmesine göre 24 saatlik serum/can suyu litresini hesaplayın.</p>
-          <p style="margin:0 0 4px 0;">• <strong>Akıllı Aşı Takvimi:</strong> Çelerme (Enterotoksemi), Çiçek, PPR Veba, Şap ve Brucella aşılarının takvim ve rapel sürelerini takip edin.</p>
+          <p style="margin:0 0 4px 0;">• <strong>Kuzu Hayatta Tutma & İlk Ağız Sütü:</strong> İlk 2 saatte en az 300–400 mL (2 çay bardağı) koyu ağız sütünü içirin. Brix ağız sütü kalite ölçerle kaliteyi ölçün; ishal kuzularda göz çökmesine göre 24 saatlik serum/can suyu litresini hesaplayın.</p>
+          <p style="margin:0 0 4px 0;">• <strong>Akıllı Aşı Takvimi:</strong> Çelerme (Yem Çarpması), Çiçek, PPR Veba, Şap ve Brucella aşılarının takvim ve rapel sürelerini takip edin.</p>
           <p style="margin:0 0 4px 0;">• <strong>Şerit Metreyle Canlı Kilo Ölçümü:</strong> Kantar yokken koyunun veya toklunun göğüs çevresini ve boyunu mezurayla ölçün; küçükbaş formülüyle canlı ağırlığı ve iğne dozlarını anında görün.</p>
           <p style="margin:0;">• <strong>Yemlik & Geviş Sayacı:</strong> Yemden 2 saat sonra yerde yatan koyunların geviş getirmesini sayın (Hedef: %58-60); koyun fındığı/zibin kıvamını kontrol edip sürüye günlük karbonat miktarını (15-30 gr/koyun) hesaplayın.</p>
         </div>
@@ -2303,7 +2303,7 @@
       localStorage.setItem("sheepsys_cleaned_demo_v1", "true");
     }
 
-    // DART Skorları için anlık seçimler
+    // Hastalık Puanları için anlık seçimler
     let currentDart = { d: 0, a: 0, r: 0, t: 0 };
 
     /* =========================================================================
@@ -2490,7 +2490,7 @@
           badgeText: "Karantinada",
           title: "Ayrı Bölmede (Karantina / Tecrit)",
           desc: "Bu koyun sürüden ayrı bölmede tutulmaktadır (pazardan yeni geliş veya hastalık şüphesi).",
-          timeInfo: "Ağıl içi izolasyon devam ediyor",
+          timeInfo: "Ağıl içi ayrı bölmede bakım devam ediyor",
           actionText: "Ortak suluk ve yemlik kullandırmayın, bakımı diğer hayvanlardan sonra yapın.",
           urgency: 2
         });
@@ -2549,7 +2549,7 @@
             category: "repro",
             icon: "",
             badgeText: "Çelerme Aşısı",
-            title: `Doğum Öncesi Çelerme (Enterotoksemi) Aşısı (Gün ${daysPassed})`,
+            title: `Doğum Öncesi Çelerme (Yem Çarpması) Aşısı (Gün ${daysPassed})`,
             desc: "Doğacak kuzuların ağız sütüyle (kolostrum) antikor alması için anneye aşı zamanı.",
             timeInfo: "Kuzulamaya 3-4 hafta kaldı",
             actionText: "Koyunlara karma clostridial / çelerme aşısı yaparak kuzuları ani ölümlerden koruyun.",
@@ -2623,15 +2623,15 @@
         }
       });
 
-      // 6. Kondisyon & Triyaj Sağlık Riski
+      // 6. Et-Yağ Durumu & Muayene Riski
       if (animal.bcs <= 2.0) {
         alerts.push({
           id: "alert-bcs-low",
           type: "danger",
           category: "health",
           icon: "",
-          badgeText: `Çok Zayıf (BCS ${animal.bcs.toFixed(1)})`,
-          title: `Kondisyon Tehlikesi: Aşırı Zayıf (BCS ${animal.bcs.toFixed(1)})`,
+          badgeText: `Çok Zayıf (Kondisyon: ${animal.bcs.toFixed(1)})`,
+          title: `Kondisyon Tehlikesi: Aşırı Zayıf (Kondisyon: ${animal.bcs.toFixed(1)})`,
           desc: "Sırt ve bel sivri. Gebelik toksemisi (ikiz kuzu hastalığı) ve döl tutmama riski çok yüksektir!",
           timeInfo: "Kritik Kondisyon Kaybı",
           actionText: "Enerji/arpa takviyesi yapın, iç parazit kontrolü ve mineral desteği sağlayın.",
@@ -2643,8 +2643,8 @@
           type: "warning",
           category: "health",
           icon: "",
-          badgeText: `Aşırı Yağlı (BCS ${animal.bcs.toFixed(1)})`,
-          title: `Kondisyon Uyarısı: Aşırı Yağlı / Hantal (BCS ${animal.bcs.toFixed(1)})`,
+          badgeText: `Aşırı Yağlı (Kondisyon: ${animal.bcs.toFixed(1)})`,
+          title: `Kondisyon Uyarısı: Aşırı Yağlı / Hantal (Kondisyon: ${animal.bcs.toFixed(1)})`,
           desc: "Kuyruk ve bel aşırı yağ toplamış. Güç doğum ve doğum sonrası karaciğer yağlanması riski!",
           timeInfo: "Yağlanma Eğilimi",
           actionText: "Arpa ve yoğun yem miktarını azaltın, kaliteli kaba yem verin.",
@@ -2652,7 +2652,7 @@
         });
       }
 
-      // Son Triyaj Muayenesi (Ateş / Hastalık kontrolü - Koyunda normal 38.5 - 40.0°C)
+      // Son Muayene ve Durum Kontrolü (Ateş / Hastalık kontrolü - Koyunda normal 38.5 - 40.0°C)
       const myTriages = triageRecords.filter(t => t.animalId === animalId || t.earTag === earTag);
       if (myTriages.length > 0) {
         const latestTriage = myTriages.reduce((a, b) => new Date(a.date) > new Date(b.date) ? a : b);
@@ -2665,8 +2665,8 @@
             category: "health",
             icon: "",
             badgeText: `Hasta / Ateşli (${latestTriage.temp || '40.2+'}°C)`,
-            title: "Klinik Alarm: Yüksek Ateş / Hastalık Belirtisi",
-            desc: `Son muayenede ateş: ${latestTriage.temp}°C, DART hastalık skoru: ${latestTriage.dartScore}/12.`,
+            title: "Acil Sağlık Alarmı: Yüksek Ateş / Hastalık Belirtisi",
+            desc: `Son muayenede ateş: ${latestTriage.temp}°C, hastalık ve nefes puanı: ${latestTriage.dartScore}/12.`,
             timeInfo: `Muayene: ${triageDate.toLocaleDateString('tr-TR')}`,
             actionText: "Veteriner hekim tedavi protokolünü aksatmayın, ateşi sabah-akşam takip edin.",
             urgency: 1
@@ -3005,7 +3005,7 @@
       if (alerts.length === 0) {
         alertsHtml = `
           <div style="padding:14px; background:#f0fdf4; border:1px solid #86efac; border-radius:8px; color:#166534; font-size:0.85rem; margin-bottom:12px;">
-            <strong>HERHANGİ BİR RİSK YOK:</strong> Bu koyun için şu anda aktif süt yasağı, kesim kilidi, gecikmiş aşı veya kritik klinik uyarı bulunmamaktadır. Tüm sağlık parametreleri uygundur.
+            <strong>HERHANGİ BİR RİSK YOK:</strong> Bu koyun için şu anda aktif süt yasağı, kesim kilidi, gecikmiş aşı veya kritik sağlık uyarısı bulunmamaktadır. Tüm sağlık parametreleri uygundur.
           </div>
         `;
       } else {
@@ -3042,12 +3042,12 @@
           <div><strong>Küpe:</strong> ${animal.earTag}</div>
           <div><strong>Irk/Yön:</strong> ${animal.type}</div>
           <div><strong>Cinsiyet/Yaş:</strong> ${animal.gender} (${animal.ageMonths} ay)</div>
-          <div><strong>Kondisyon (BCS):</strong> ${animal.bcs.toFixed(2)} / 5.0</div>
+          <div><strong>Et-Yağ Durumu (Kondisyon):</strong> ${animal.bcs.toFixed(2)} / 5.0</div>
           <div><strong>Ayrı Bölme:</strong> ${animal.quarantine ? 'Evet (Karantina)' : 'Hayır'}</div>
           <div><strong>Son Durum:</strong> ${animal.lastStatus || 'Normal'}</div>
         </div>
 
-        <h4 style="font-size:0.9rem; margin-bottom:8px; color:var(--primary); font-weight:800;">Aktif Uyarılar & Klinik Görevler:</h4>
+        <h4 style="font-size:0.9rem; margin-bottom:8px; color:var(--primary); font-weight:800;">Aktif Uyarılar & Sağlık Takip Listesi:</h4>
         ${alertsHtml}
       `;
 
@@ -3081,7 +3081,7 @@
     }
 
     /* =========================================================================
-       2. TRİYAJ VE DART SKORLAMA MOTORU
+       2. HASTA MUAYENESİ VE NEFES/ZATÜRRE KONTROLÜ
        ========================================================================= */
     function setScore(metric, val, btn) {
       currentDart[metric] = val;
@@ -3127,7 +3127,7 @@
       let bannerType = "banner-success";
       let actionText = "Hayvan genel olarak sağlıklı görünüyor. Normal takibe devam edin.";
 
-      // Hayati Tehlike / Şiddetli Triyaj Kriterleri
+      // Hayati Tehlike / Ağır Hastalık Kriterleri
       const isShock = pulse > 120 || temp > 41.0 || temp < 38.0 || dehydration >= 9 || rumen === "0";
 
       if (isShock || totalDart >= 7) {
@@ -3168,9 +3168,9 @@
       // Otomatik DART Tetikleyicisi (total_dart_score >= 4 ise karantina uyarısı)
       if (totalDart >= 4) {
         animal.quarantine = true;
-        animal.lastStatus = `Hasta (DART: ${totalDart}, Ateş: ${temp}°C) - İzolasyona Alındı`;
+        animal.lastStatus = `Hasta (Hastalık Puanı: ${totalDart}, Ateş: ${temp}°C) - Ayrı Bölmeye Alındı`;
       } else {
-        animal.lastStatus = `Kontrol Edildi (DART: ${totalDart})`;
+        animal.lastStatus = `Kontrol Edildi (Hastalık Puanı: ${totalDart})`;
       }
 
       triageRecords.push({
@@ -3186,7 +3186,7 @@
       renderAnimalTable();
       updateDashboardStats();
 
-      alert(`${animal.earTag} triyajı kaydedildi!\nToplam DART Skoru: ${totalDart}\nDurum güncellendi.`);
+      alert(`${animal.earTag} muayenesi kaydedildi!\nToplam Hastalık Puanı: ${totalDart}\nDurum güncellendi.`);
       switchTab("dashboard");
     }
 
@@ -3412,7 +3412,7 @@
       let boosterText = "Yıllık Tekrar";
       let isMandatory = vacType.includes("Şap") || vacType.includes("Bruselloz") || vacType.includes("LSD");
 
-      if (vacType.includes("Çelerme") || vacType.includes("Enterotoksemi")) {
+      if (vacType.includes("Çelerme") || vacType.includes("Çelerme (Yem Çarpması)")) {
         const b = new Date(d.getTime() + 21 * 24 * 3600 * 1000);
         boosterText = b.toISOString().slice(0, 10) + " (İlk aşıysa 21 gün sonra 2. doz, yoksa 6 ayda bir)";
       } else if (vacType.includes("Şap")) {
@@ -3464,7 +3464,7 @@
       itemsDiv.innerHTML = `
         <div><strong>Koç Aşım Dönüşü (16-18. Günler):</strong> ${heatDate.toLocaleDateString('tr-TR')} (Tutmadıysa tekrar koç ister!)</div>
         <div><strong>Ultrason ile Gebelik Kontrolü (35-45. Günler):</strong> ${pregCheckDate.toLocaleDateString('tr-TR')} (Tekiz/ikiz teşhisi)</div>
-        <div><strong>Doğuma 1 Ay Kala Çelerme / Enterotoksemi Aşısı (120. Gün):</strong> ${dryDate.toLocaleDateString('tr-TR')} (Ağız sütüyle kuzuya antikor geçer)</div>
+        <div><strong>Doğuma 1 Ay Kala Çelerme / Çelerme (Yem Çarpması) Aşısı (120. Gün):</strong> ${dryDate.toLocaleDateString('tr-TR')} (Ağız sütüyle kuzuya antikor geçer)</div>
         <div><strong>Beklenen Doğum / Kuzulama (150. Gün):</strong> <span style="color:var(--primary); font-weight:800;">${calvingDate.toLocaleDateString('tr-TR')}</span></div>
       `;
     }
@@ -3589,10 +3589,10 @@
       const dmiKg = (weightKg * 0.035).toFixed(1);
 
       dosesUl.innerHTML = `
-        <li><strong>Adrenalin (1:1000 - Anafilaksi):</strong> <span style="color:var(--danger); font-weight:700;">${epiDose} mL</span> (SC / IM)</li>
-        <li><strong>Meloksikam (Ateş/Ağrı):</strong> <strong>${meloxDose} mL</strong> (SC / IV)</li>
-        <li><strong>Fluniksin (Toksemi/Ateş):</strong> <strong>${flunixinDose} mL</strong> (Yavaş IV)</li>
-        <li><strong>Tulatromisin (BRD Solunum):</strong> <strong>${tulaDose} mL</strong> (Tek doz SC)</li>
+        <li><strong>Adrenalin (1:1000 - Alerji Şoku):</strong> <span style="color:var(--danger); font-weight:700;">${epiDose} mL</span> (Deri Altı veya Kas İçi)</li>
+        <li><strong>Meloksikam (Ateş/Ağrı):</strong> <strong>${meloxDose} mL</strong> (Deri Altı veya Damar İçi)</li>
+        <li><strong>Fluniksin (Zehirlenme/Yüksek Ateş):</strong> <strong>${flunixinDose} mL</strong> (Damardan Çok Yavaş)</li>
+        <li><strong>Tulatromisin (BRD Solunum):</strong> <strong>${tulaDose} mL</strong> (Tek Doz Deri Altı)</li>
         <li><strong>Tahmini Günlük Kuru Madde İhtiyacı:</strong> ~${dmiKg} kg KM / gün</li>
       `;
     }
@@ -3789,7 +3789,7 @@
     }
 
     /* =========================================================================
-       YEMLİK, ASİDOZ (SARA) & RUMEN İŞKEMBESİ TAKİP MOTORU
+       YEMLİK, İŞKEMBE EKŞİMESİ (ASİDOZ) & SİNDİRİM TAKİP MOTORU
        ========================================================================= */
     function calculateRuminationIndex() {
       const lying = parseInt(document.getElementById("feed-lying-cows").value) || 0;
