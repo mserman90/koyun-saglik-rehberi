@@ -1,6 +1,6 @@
-# Koyun Sağlık Rehberi - Kullanım Kılavuzu
+# Koyun Çiftliği Rehberi - Kullanım Kılavuzu
 
-**Koyun Sağlık Rehberi**, internet bağlantısı ve sunucu kurulumu gerektirmeyen, doğrudan telefon ve bilgisayar tarayıcısında çalışan, Progressive Web App (PWA) mimarili çevrimdışı (%100 offline) bir küçükbaş sürü sağlığı, acil müdahale, aşı, koç katımı ve kuzu takip asistanıdır.
+**Koyun Çiftliği Rehberi**, internet bağlantısı ve sunucu kurulumu gerektirmeyen, doğrudan telefon ve bilgisayar tarayıcısında çalışan, Progressive Web App (PWA) mimarili çevrimdışı (%100 offline) bir küçükbaş sürü sağlığı, acil müdahale, aşı, koç katımı ve kuzu takip asistanıdır.
 
 ---
 

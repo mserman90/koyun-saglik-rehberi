@@ -1,6 +1,6 @@
 {
-  "name": "Koyun Sağlık Rehberi",
-  "short_name": "KoyunRehberi",
+  "name": "Koyun Çiftliği Rehberi",
+  "short_name": "KoyunÇiftliği",
   "description": "Ağıl ve çiftlikler için %100 internetsiz çalışan koyun ve kuzu sağlık teşhisi, acil ilk yardım, aşı takvimi, ilaçlı süt arınma süresi ve sürü yönetim rehberi.",
   "start_url": "./index.html",
   "scope": "./",
@@ -8,7 +8,12 @@
   "orientation": "portrait-primary",
   "background_color": "#0f172a",
   "theme_color": "#0d9488",
-  "categories": ["medical", "business", "utilities", "productivity"],
+  "categories": [
+    "medical",
+    "business",
+    "utilities",
+    "productivity"
+  ],
   "icons": [
     {
       "src": "./favicon-16x16.png",
@@ -44,21 +49,36 @@
       "short_name": "İlk Yardım",
       "description": "Gebelik zehirlenmesi, çelerme ve donma müdahaleleri",
       "url": "./index.html#emergency",
-      "icons": [{ "src": "./icon-192.png", "sizes": "192x192" }]
+      "icons": [
+        {
+          "src": "./icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
     },
     {
       "name": "Kuzu Bakımı & Kolostrum",
       "short_name": "Kuzu Bakımı",
       "description": "Kuzu ağız sütü ve ishal serum hesabı",
       "url": "./index.html#calf",
-      "icons": [{ "src": "./icon-192.png", "sizes": "192x192" }]
+      "icons": [
+        {
+          "src": "./icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
     },
     {
       "name": "Koç Katımı Çarkı",
       "short_name": "Koç Katımı",
       "description": "150 günlük gebelik ve kuzulama takvimi",
       "url": "./index.html#repro",
-      "icons": [{ "src": "./icon-192.png", "sizes": "192x192" }]
+      "icons": [
+        {
+          "src": "./icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
     }
   ]
 }

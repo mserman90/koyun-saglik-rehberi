@@ -1,4 +1,4 @@
-# Koyun Sağlık Rehberi (Offline-First & PWA)
+# Koyun Çiftliği Rehberi (Offline-First & PWA)
 
 **Canlı Yayın (Web & Mobil PWA):** [https://mserman90.github.io/koyun-saglik-rehberi/](https://mserman90.github.io/koyun-saglik-rehberi/)  
 **GitHub Deposu:** [https://github.com/mserman90/koyun-saglik-rehberi](https://github.com/mserman90/koyun-saglik-rehberi)  
