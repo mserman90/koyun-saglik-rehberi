@@ -861,15 +861,15 @@
   <!-- Başlık -->
   <header>
     <div style="display:flex; align-items:center; gap:8px;">
-      <button id="header-back-btn" onclick="switchTab('dashboard')" style="display:none; background:rgba(255,255,255,0.22); color:white; border:1.5px solid rgba(255,255,255,0.6); padding:6px 12px; border-radius:8px; font-size:0.82rem; font-weight:800; cursor:pointer; min-height:38px; touch-action:manipulation;">⬅️ Ana Menü</button>
+      <button id="header-back-btn" onclick="switchTab('dashboard')" style="display:none; background:rgba(255,255,255,0.22); color:white; border:1.5px solid rgba(255,255,255,0.6); padding:6px 12px; border-radius:8px; font-size:0.82rem; font-weight:800; cursor:pointer; min-height:38px; touch-action:manipulation;">Ana Menü</button>
       <div>
-        <h1>🐑 Koyun Sağlık Rehberi</h1>
+        <h1>Koyun Sağlık Rehberi</h1>
         <small style="opacity:0.85; font-size:0.75rem;">Hasta Muayenesi • İlaçlı Süt Takibi • Aşı & Doğum Takvimi</small>
       </div>
     </div>
     <div style="display:flex; align-items:center; gap:8px;">
-      <button onclick="openGuideModal()" style="background:rgba(255,255,255,0.22); color:white; border:1.5px solid rgba(255,255,255,0.6); padding:8px 14px; border-radius:8px; font-size:0.85rem; font-weight:700; cursor:pointer; min-height:44px; touch-action:manipulation;">📖 Kılavuz</button>
-      <button id="theme-toggle-btn" onclick="toggleTheme()" title="Koyu / Açık Mod" style="background:rgba(255,255,255,0.18); color:white; border:1.5px solid rgba(255,255,255,0.4); padding:8px 12px; border-radius:8px; font-size:0.85rem; font-weight:700; cursor:pointer; min-height:44px; touch-action:manipulation;">🌙 Gece</button>
+      <button onclick="openGuideModal()" style="background:rgba(255,255,255,0.22); color:white; border:1.5px solid rgba(255,255,255,0.6); padding:8px 14px; border-radius:8px; font-size:0.85rem; font-weight:700; cursor:pointer; min-height:44px; touch-action:manipulation;">Kılavuz</button>
+      <button id="theme-toggle-btn" onclick="toggleTheme()" title="Koyu / Açık Mod" style="background:rgba(255,255,255,0.18); color:white; border:1.5px solid rgba(255,255,255,0.4); padding:8px 12px; border-radius:8px; font-size:0.85rem; font-weight:700; cursor:pointer; min-height:44px; touch-action:manipulation;">Gece Modu</button>
     </div>
   </header>
 
@@ -890,7 +890,7 @@
         </div>
         <div class="stat-card" style="border-left: 4px solid #b91c1c;">
           <div class="stat-val" style="color:#b91c1c;" id="stat-meat-blocked">0</div>
-          <div class="stat-label">🥩 Kesim Kilitli (Et İKAS)</div>
+          <div class="stat-label">Kesim Kilitli (Et İKAS)</div>
         </div>
         <div class="stat-card">
           <div class="stat-val" style="color:var(--warning);" id="stat-quarantine">0</div>
@@ -898,7 +898,7 @@
         </div>
         <div class="stat-card" style="border-left: 4px solid #7c3aed; cursor:pointer;" onclick="switchTab('repro')" title="Üreme & Koç Katımı Ekranını Aç">
           <div class="stat-val" style="color:#7c3aed;" id="stat-insemination-due">0</div>
-          <div class="stat-label">🩸 Tohumlama / Koç Katımı</div>
+          <div class="stat-label">Tohumlama / Koç Katımı</div>
         </div>
         <div class="stat-card" style="border-left: 4px solid var(--info);">
           <div class="stat-val" style="color:var(--info);" id="stat-upcoming-vaccines">0</div>
@@ -910,7 +910,7 @@
       <div class="status-hubs-section" style="margin-bottom:16px;">
         <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; padding:0 2px;">
           <h3 style="font-size:1.05rem; font-weight:800; color:var(--primary); margin:0; display:flex; align-items:center; gap:6px;">
-            <span>🐾 Hayvan Durumu Ana Menüsü</span>
+            <span>Hayvan Durumu Ana Menüsü</span>
           </h3>
           <span style="font-size:0.75rem; color:#64748b; font-weight:600;">Duruma göre tek tıkla işlem</span>
         </div>
@@ -922,15 +922,15 @@
             <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
               <div>
                 <div style="font-weight:800; font-size:0.98rem; color:#b91c1c; display:flex; align-items:center; gap:6px;">
-                  🚨 HASTA / ACİL KOYUN & KUZU
+                  HASTA / ACİL KOYUN & KUZU
                 </div>
                 <div style="font-size:0.75rem; color:#64748b; margin-top:2px;">İlk yardım, klinik triyaj ve sütü kilitleyen tedaviler</div>
               </div>
             </div>
             <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:6px;">
-              <button class="btn btn-danger" style="padding:10px 4px; font-size:0.82rem; font-weight:700;" onclick="switchTab('emergency')">🆘 İlk Yardım</button>
-              <button class="btn btn-primary" style="padding:10px 4px; font-size:0.82rem; font-weight:700;" onclick="switchTab('triage')">🩺 Muayene</button>
-              <button class="btn btn-warning" style="padding:10px 4px; font-size:0.82rem; font-weight:700;" onclick="switchTab('ikas')">💊 İlaç & Süt</button>
+              <button class="btn btn-danger" style="padding:10px 4px; font-size:0.82rem; font-weight:700;" onclick="switchTab('emergency')">İlk Yardım</button>
+              <button class="btn btn-primary" style="padding:10px 4px; font-size:0.82rem; font-weight:700;" onclick="switchTab('triage')">Muayene</button>
+              <button class="btn btn-warning" style="padding:10px 4px; font-size:0.82rem; font-weight:700;" onclick="switchTab('ikas')">İlaç & Süt</button>
             </div>
           </div>
 
@@ -939,14 +939,14 @@
             <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
               <div>
                 <div style="font-weight:800; font-size:0.98rem; color:#0f766e; display:flex; align-items:center; gap:6px;">
-                  🥛 SAĞIM & SÜT GÜVENLİĞİ
+                  SAĞIM & SÜT GÜVENLİĞİ
                 </div>
                 <div style="font-size:0.75rem; color:#64748b; margin-top:2px;">Mandıra/peynir sütü kirlenmesini ve et cezalarını önleyin</div>
               </div>
             </div>
             <div style="display:grid; grid-template-columns:1fr 1fr; gap:6px;">
-              <button class="btn btn-outline" style="border-color:#0f766e; color:#0f766e; font-weight:800; padding:10px 6px; font-size:0.83rem;" onclick="switchTab('milker')">🥛 Sağımcı Ekranı (Büyük)</button>
-              <button class="btn btn-danger" style="background:#b91c1c; color:white; padding:10px 6px; font-size:0.83rem;" onclick="switchTab('cost')">💰 Zarar & Masraf Defteri</button>
+              <button class="btn btn-outline" style="border-color:#0f766e; color:#0f766e; font-weight:800; padding:10px 6px; font-size:0.83rem;" onclick="switchTab('milker')">Sağımcı Ekranı (Büyük)</button>
+              <button class="btn btn-danger" style="background:#b91c1c; color:white; padding:10px 6px; font-size:0.83rem;" onclick="switchTab('cost')">Zarar & Masraf Defteri</button>
             </div>
           </div>
 
@@ -955,14 +955,14 @@
             <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
               <div>
                 <div style="font-weight:800; font-size:0.98rem; color:#c2410c; display:flex; align-items:center; gap:6px;">
-                  🍼 YENİ DOĞUM, KUZU & KOÇ KATIMI
+                  YENİ DOĞUM, KUZU & KOÇ KATIMI
                 </div>
                 <div style="font-size:0.75rem; color:#64748b; margin-top:2px;">Ağız sütü kalitesi, kuzu ishal serumu ve 150 gün doğum çarkı</div>
               </div>
             </div>
             <div style="display:grid; grid-template-columns:1fr 1fr; gap:6px;">
-              <button class="btn btn-warning" style="background:#ea580c; color:white; padding:10px 6px; font-size:0.83rem;" onclick="switchTab('calf')">🍼 Kuzu & Ağız Sütü</button>
-              <button class="btn btn-info" style="padding:10px 6px; font-size:0.83rem;" onclick="switchTab('repro')">🩸 Koç Katımı & Doğum</button>
+              <button class="btn btn-warning" style="background:#ea580c; color:white; padding:10px 6px; font-size:0.83rem;" onclick="switchTab('calf')">Kuzu & Ağız Sütü</button>
+              <button class="btn btn-info" style="padding:10px 6px; font-size:0.83rem;" onclick="switchTab('repro')">Koç Katımı & Doğum</button>
             </div>
           </div>
 
@@ -971,14 +971,14 @@
             <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
               <div>
                 <div style="font-weight:800; font-size:0.98rem; color:#334155; display:flex; align-items:center; gap:6px;">
-                  🐑 YENİ GELEN / SÜRÜYE GİRİŞ & AŞI
+                  YENİ GELEN / SÜRÜYE GİRİŞ & AŞI
                 </div>
                 <div style="font-size:0.75rem; color:#64748b; margin-top:2px;">Yeni koyun/kuzu kaydı, karantina ve aşı takvimi</div>
               </div>
             </div>
             <div style="display:grid; grid-template-columns:1fr 1fr; gap:6px;">
-              <button class="btn btn-primary" style="background:#0f766e; color:white; padding:10px 6px; font-size:0.83rem;" onclick="openAnimalModal()">➕ Yeni Hayvan Kaydet</button>
-              <button class="btn btn-info" style="background:#475569; color:white; padding:10px 6px; font-size:0.83rem;" onclick="switchTab('vaccine')">📅 Akıllı Aşı Takvimi</button>
+              <button class="btn btn-primary" style="background:#0f766e; color:white; padding:10px 6px; font-size:0.83rem;" onclick="openAnimalModal()">Yeni Hayvan Kaydet</button>
+              <button class="btn btn-info" style="background:#475569; color:white; padding:10px 6px; font-size:0.83rem;" onclick="switchTab('vaccine')">Akıllı Aşı Takvimi</button>
             </div>
           </div>
 
@@ -987,14 +987,14 @@
             <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
               <div>
                 <div style="font-weight:800; font-size:0.98rem; color:#047857; display:flex; align-items:center; gap:6px;">
-                  ⚖️ BESİ, KİLO & YEMLİK TAKİBİ
+                  BESİ, KİLO & YEMLİK TAKİBİ
                 </div>
                 <div style="font-size:0.75rem; color:#64748b; margin-top:2px;">Şerit metreyle canlı kilo, geviş sayacı ve zibin/fındık kontrolü</div>
               </div>
             </div>
             <div style="display:grid; grid-template-columns:1fr 1fr; gap:6px;">
-              <button class="btn btn-success" style="background:#047857; color:white; padding:10px 6px; font-size:0.83rem;" onclick="switchTab('weight')">⚖️ Şerit Metreyle Kilo Ölç</button>
-              <button class="btn btn-success" style="background:#0f766e; color:white; padding:10px 6px; font-size:0.83rem;" onclick="switchTab('feed')">🌾 Yemlik & Geviş</button>
+              <button class="btn btn-success" style="background:#047857; color:white; padding:10px 6px; font-size:0.83rem;" onclick="switchTab('weight')">Şerit Metreyle Kilo Ölç</button>
+              <button class="btn btn-success" style="background:#0f766e; color:white; padding:10px 6px; font-size:0.83rem;" onclick="switchTab('feed')">Yemlik & Geviş</button>
             </div>
           </div>
 
@@ -1002,14 +1002,14 @@
       </div>
 
       <div class="card">
-        <div class="card-title">🚨 Tanka Katılması Yasak İlaçlı Sütler</div>
+        <div class="card-title">Tanka Katılması Yasak İlaçlı Sütler</div>
         <div id="dashboard-ikas-list" style="font-size:0.85rem; color:#475569;">
           Şu an sütü yasaklı koyun bulunmuyor.
         </div>
       </div>
 
       <div class="card" style="border-left: 4px solid #b91c1c;">
-        <div class="card-title" style="color:#b91c1c;">🥩 Mezbahaya / Kesime Gönderilmesi Yasak Hayvanlar (Et İKAS)</div>
+        <div class="card-title" style="color:#b91c1c;">Mezbahaya / Kesime Gönderilmesi Yasak Hayvanlar (Et İKAS)</div>
         <p style="font-size:0.78rem; color:#64748b; margin-bottom:8px;">İlaç yapıldıktan sonra karkasta antibiyotik/ağrı kesici kalıntısı kalan koyunlar yasal olarak kesilemez.</p>
         <div id="dashboard-meat-list" style="font-size:0.85rem; color:#475569;">
           Şu an kesim kilidi olan koyun bulunmuyor.
@@ -1019,7 +1019,7 @@
       <!-- Hayvan Bazlı Aktif Uyarılar ve Klinik Görevler -->
       <div class="card" id="card-animal-alerts" style="border-left: 4px solid var(--primary);">
         <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; flex-wrap:wrap; gap:6px;">
-          <div class="card-title" style="margin-bottom:0;">🔔 Hayvan Bazlı Kritik Uyarılar & Takip Listesi</div>
+          <div class="card-title" style="margin-bottom:0;">Hayvan Bazlı Kritik Uyarılar & Takip Listesi</div>
           <span class="tag tag-danger" id="animal-alerts-count-badge" style="font-size:0.75rem; font-weight:800;">0 Uyarı</span>
         </div>
         <p style="font-size:0.78rem; color:#64748b; margin-bottom:10px;">
@@ -1027,14 +1027,14 @@
         </p>
         <div style="display:flex; gap:6px; margin-bottom:10px; overflow-x:auto; padding-bottom:4px;" id="animal-alert-filter-pills">
           <button class="btn btn-primary" style="min-height:30px; padding:3px 10px; font-size:0.75rem; border-radius:15px; font-weight:700; width:auto;" onclick="filterAnimalAlerts('all', this)" id="filter-pill-all">Tümü</button>
-          <button class="btn btn-outline" style="min-height:30px; padding:3px 10px; font-size:0.75rem; border-radius:15px; width:auto;" onclick="filterAnimalAlerts('ikas', this)">🚫 İlaç & İKAS</button>
-          <button class="btn btn-outline" style="min-height:30px; padding:3px 10px; font-size:0.75rem; border-radius:15px; width:auto;" onclick="filterAnimalAlerts('repro', this)">🩸 Üreme & Doğum</button>
-          <button class="btn btn-outline" style="min-height:30px; padding:3px 10px; font-size:0.75rem; border-radius:15px; width:auto;" onclick="filterAnimalAlerts('vaccine', this)">💉 Aşı</button>
-          <button class="btn btn-outline" style="min-height:30px; padding:3px 10px; font-size:0.75rem; border-radius:15px; width:auto;" onclick="filterAnimalAlerts('health', this)">⚠️ Sağlık & Karantina</button>
+          <button class="btn btn-outline" style="min-height:30px; padding:3px 10px; font-size:0.75rem; border-radius:15px; width:auto;" onclick="filterAnimalAlerts('ikas', this)">İlaç & İKAS</button>
+          <button class="btn btn-outline" style="min-height:30px; padding:3px 10px; font-size:0.75rem; border-radius:15px; width:auto;" onclick="filterAnimalAlerts('repro', this)">Üreme & Doğum</button>
+          <button class="btn btn-outline" style="min-height:30px; padding:3px 10px; font-size:0.75rem; border-radius:15px; width:auto;" onclick="filterAnimalAlerts('vaccine', this)">Aşı</button>
+          <button class="btn btn-outline" style="min-height:30px; padding:3px 10px; font-size:0.75rem; border-radius:15px; width:auto;" onclick="filterAnimalAlerts('health', this)">Sağlık & Karantina</button>
         </div>
         <div id="animal-alerts-eartags-bar" style="margin-bottom:10px; padding:8px 10px; background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; font-size:0.82rem;">
           <div style="font-weight:700; color:#334155; margin-bottom:4px; display:flex; align-items:center; gap:6px;">
-            <span>🏷️ Uyarılı Küpe Numaraları:</span>
+            <span>Uyarılı Küpe Numaraları:</span>
           </div>
           <div id="animal-alerts-eartags-chips" style="display:flex; flex-wrap:wrap; gap:5px;">
             <span style="color:#94a3b8; font-size:0.78rem;">Aktif uyarılı hayvan bulunmuyor.</span>
@@ -1048,12 +1048,12 @@
       </div>
 
       <div class="card">
-        <div class="card-title">📋 Hayvan Listesi & Durumlar</div>
+        <div class="card-title">Hayvan Listesi & Durumlar</div>
         <div style="display:flex; gap:6px; margin-bottom:8px;">
           <input type="text" id="animal-search" placeholder="Küpe No Yaz veya Ara (örn: TR16001)" oninput="renderAnimalTable()" style="margin-bottom:0;">
-          <button class="btn btn-primary" style="width:auto; padding:0 14px; white-space:nowrap;" onclick="openNewAnimalModal()">+ Yeni Ekle</button>
-          <button class="btn btn-warning" style="width:auto; padding:0 12px; white-space:nowrap;" onclick="startQrScanner('search')" title="Kamerayla Küpe Oku">📷 Oku</button>
-          <button id="btn-animal-search-voice" class="btn btn-primary" style="width:auto; padding:0 12px; font-size:1.05rem; white-space:nowrap; background:#0f766e;" onclick="startVoiceAnimalSearch()" title="Sesle Küpe Ara">🎙️</button>
+          <button class="btn btn-primary" style="width:auto; padding:0 14px; white-space:nowrap;" onclick="openNewAnimalModal()">Yeni Ekle</button>
+          <button class="btn btn-warning" style="width:auto; padding:0 12px; white-space:nowrap;" onclick="startQrScanner('search')" title="Kamerayla Küpe Oku">Kamera</button>
+          <button id="btn-animal-search-voice" class="btn btn-primary" style="width:auto; padding:0 12px; font-size:1.05rem; white-space:nowrap; background:#0f766e;" onclick="startVoiceAnimalSearch()" title="Sesle Küpe Ara">Sesle Ara</button>
         </div>
         <div class="table-container">
           <table id="animal-table">
@@ -1063,7 +1063,7 @@
                 <th>Cinsiyet/Yaş</th>
                 <th>Et-Yağ Durumu</th>
                 <th>Ayrı Bölme</th>
-                <th>⚡ Hayvan Uyarıları & Durumu</th>
+                <th>Hayvan Uyarıları & Durumu</th>
                 <th>İşlem</th>
               </tr>
             </thead>
@@ -1078,12 +1078,12 @@
       <!-- Üst Geri Dönüş Butonu -->
       <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
         <button class="btn btn-outline" onclick="switchTab('dashboard')" style="width:auto; padding:6px 14px; font-weight:800; font-size:0.82rem; border-color:var(--primary); color:var(--primary); background:white; display:inline-flex; align-items:center; gap:6px;">
-          ⬅️ Ana Menüye Dön
+          Ana Menüye Dön
         </button>
         <span style="font-size:0.75rem; color:#64748b; font-weight:600;">Ağıl Özeti ✕</span>
       </div>
       <div class="card">
-        <div class="card-title">🩺 Hasta Hayvan Kontrolü & Ateş Ölçümü</div>
+        <div class="card-title">Hasta Hayvan Kontrolü & Ateş Ölçümü</div>
         <p style="font-size:0.8rem; color:#475569; margin-bottom:10px;">
           Hasta görünen koyunun ateşini, nabzını ve işkembesini ölçüp aciliyet derecesini anlayın:
         </p>
@@ -1091,7 +1091,7 @@
         <label for="triage-animal-select">Muayene Edilen Hayvan (Küpe No):</label>
         <div style="display:flex; gap:6px; margin-bottom:10px;">
           <select id="triage-animal-select" style="margin-bottom:0;"></select>
-          <button class="btn btn-warning" style="width:auto; padding:0 12px; white-space:nowrap;" onclick="startQrScanner('triage')" title="Kamerayla Küpe Oku">📷 Küpe Oku</button>
+          <button class="btn btn-warning" style="width:auto; padding:0 12px; white-space:nowrap;" onclick="startQrScanner('triage')" title="Kamerayla Küpe Oku">Kamera</button>
         </div>
 
         <div style="display:grid; grid-template-columns:1fr 1fr; gap:8px;">
@@ -1133,7 +1133,7 @@
       </div>
 
       <div class="card">
-        <div class="card-title">🫁 Ciğer ve Öksürük / Zatürre Tehlike Derecesi</div>
+        <div class="card-title">Ciğer ve Öksürük / Zatürre Tehlike Derecesi</div>
         
         <div class="score-group">
           <div class="score-label"><span>1. Keyifsizlik / Durgunluk</span><span id="score-val-d">0/3</span></div>
@@ -1173,12 +1173,12 @@
         <!-- Karar Kutusu -->
         <div id="triage-result-box" style="margin-top:12px;"></div>
 
-        <button class="btn btn-primary" onclick="saveTriageRecord()" style="margin-top:10px;">💾 Muayeneyi Kaydet & Hayvan Durumunu İşle</button>
+        <button class="btn btn-primary" onclick="saveTriageRecord()" style="margin-top:10px;">Muayeneyi Kaydet & Hayvan Durumunu İşle</button>
       </div>
     
       <div style="text-align:center; margin:16px 0 8px 0;">
         <button class="btn btn-outline" onclick="switchTab('dashboard')" style="width:auto; padding:8px 20px; font-weight:800; font-size:0.84rem; border-color:var(--primary); color:var(--primary); background:white;">
-          ⬅️ Ana Menüye Dön (Ağıl Özeti)
+          Ana Menüye Dön (Ağıl Özeti)
         </button>
       </div>
     </section>
@@ -1188,12 +1188,12 @@
       <!-- Üst Geri Dönüş Butonu -->
       <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
         <button class="btn btn-outline" onclick="switchTab('dashboard')" style="width:auto; padding:6px 14px; font-weight:800; font-size:0.82rem; border-color:var(--primary); color:var(--primary); background:white; display:inline-flex; align-items:center; gap:6px;">
-          ⬅️ Ana Menüye Dön
+          Ana Menüye Dön
         </button>
         <span style="font-size:0.75rem; color:#64748b; font-weight:600;">Ağıl Özeti ✕</span>
       </div>
       <div class="card">
-        <div class="card-title">💊 İlaç Kaydı & Sütü/Eti Tanka Yasaklama (İKAS)</div>
+        <div class="card-title">İlaç Kaydı & Sütü/Eti Tanka Yasaklama (İKAS)</div>
         <p style="font-size:0.8rem; color:#475569; margin-bottom:10px;">
           İğne veya meme tüpü yapıldığında sütü ve eti ne kadar süre satamayacağınızı otomatik hesaplar. Aynı anda iki ilaç yapıldıysa süresi en uzun olanı bekletir.
         </p>
@@ -1201,7 +1201,7 @@
         <label for="treatment-animal-select">İlaç Yapılan Hayvanı Seç:</label>
         <div style="display:flex; gap:6px; margin-bottom:10px;">
           <select id="treatment-animal-select" style="margin-bottom:0;"></select>
-          <button class="btn btn-warning" style="width:auto; padding:0 12px; white-space:nowrap;" onclick="startQrScanner('treatment')" title="Kamerayla Küpe Oku">📷 Küpe Oku</button>
+          <button class="btn btn-warning" style="width:auto; padding:0 12px; white-space:nowrap;" onclick="startQrScanner('treatment')" title="Kamerayla Küpe Oku">Kamera</button>
         </div>
 
         <label for="treatment-drug-select">Yapılan İlaç (İğne / Şurup / Meme Tüpü):</label>
@@ -1238,11 +1238,11 @@
 
         <div id="calculated-ikas-preview" class="banner-alert banner-warning" style="display:none;"></div>
 
-        <button class="btn btn-warning" onclick="saveTreatment()">🔒 İlacı Kaydet & Süt/Et Kilidini Başlat</button>
+        <button class="btn btn-warning" onclick="saveTreatment()">İlacı Kaydet & Süt/Et Kilidini Başlat</button>
       </div>
 
       <div class="card">
-        <div class="card-title">🚫 Şu An Sütü ve Eti Yasaklı Olan Hayvanlar</div>
+        <div class="card-title">Şu An Sütü ve Eti Yasaklı Olan Hayvanlar</div>
         <div class="table-container">
           <table id="active-ikas-table">
             <thead>
@@ -1262,7 +1262,7 @@
     
       <div style="text-align:center; margin:16px 0 8px 0;">
         <button class="btn btn-outline" onclick="switchTab('dashboard')" style="width:auto; padding:8px 20px; font-weight:800; font-size:0.84rem; border-color:var(--primary); color:var(--primary); background:white;">
-          ⬅️ Ana Menüye Dön (Ağıl Özeti)
+          Ana Menüye Dön (Ağıl Özeti)
         </button>
       </div>
     </section>
@@ -1272,19 +1272,19 @@
       <!-- Üst Geri Dönüş Butonu -->
       <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
         <button class="btn btn-outline" onclick="switchTab('dashboard')" style="width:auto; padding:6px 14px; font-weight:800; font-size:0.82rem; border-color:var(--primary); color:var(--primary); background:white; display:inline-flex; align-items:center; gap:6px;">
-          ⬅️ Ana Menüye Dön
+          Ana Menüye Dön
         </button>
         <span style="font-size:0.75rem; color:#64748b; font-weight:600;">Ağıl Özeti ✕</span>
       </div>
       <div class="card" style="border-top: 4px solid #b91c1c;">
-        <div class="card-title" style="color:#b91c1c;">💰 Hastalık Masrafı & Dökülen Süt Zarar Defteri</div>
+        <div class="card-title" style="color:#b91c1c;">Hastalık Masrafı & Dökülen Süt Zarar Defteri</div>
         <p style="font-size:0.8rem; color:#475569; margin-bottom:12px;">
           Hasta koyunun veteriner parası, ilaç masrafı ve <strong>ilaç yüzünden lavaboya dökülen sütün cebinizden götürdüğü parayı</strong> kuruşu kuruşuna hesaplar.
         </p>
 
         <!-- Çiftlik Referans Fiyat Ayarları -->
         <div style="background:#f8fafc; border:1px solid #cbd5e1; border-radius:8px; padding:10px; margin-bottom:12px;">
-          <div style="font-weight:700; font-size:0.85rem; color:#1e293b; margin-bottom:6px;">⚙️ Süt Satış Fiyatınız:</div>
+          <div style="font-weight:700; font-size:0.85rem; color:#1e293b; margin-bottom:6px;">Süt Satış Fiyatınız:</div>
           <div style="display:grid; grid-template-columns:1fr 1fr; gap:8px;">
             <div>
               <label for="farm-milk-price">Sütün Litre Satış Fiyatı (TL):</label>
@@ -1299,12 +1299,12 @@
 
         <!-- Yeni Maliyet & Zarar Kaydı Formu -->
         <div class="card" style="background:#fff; border:1px solid #e2e8f0;">
-          <div style="font-weight:700; color:var(--primary); font-size:0.9rem; margin-bottom:8px;">➕ Yeni Masraf & Zarar Yaz</div>
+          <div style="font-weight:700; color:var(--primary); font-size:0.9rem; margin-bottom:8px;">Yeni Masraf & Zarar Yaz</div>
 
           <label for="cost-animal-select">Tedavi Olan Koyun (Küpe No):</label>
           <div style="display:flex; gap:6px; margin-bottom:10px;">
             <select id="cost-animal-select" style="margin-bottom:0;"></select>
-            <button class="btn btn-warning" style="width:auto; padding:0 12px; white-space:nowrap;" onclick="startQrScanner('cost')" title="Kamerayla Küpe Oku">📷 Küpe Oku</button>
+            <button class="btn btn-warning" style="width:auto; padding:0 12px; white-space:nowrap;" onclick="startQrScanner('cost')" title="Kamerayla Küpe Oku">Kamera</button>
           </div>
 
           <div style="display:grid; grid-template-columns:1fr 1fr; gap:8px;">
@@ -1356,7 +1356,7 @@
             <!-- Dinamik doldurulur -->
           </div>
 
-          <button class="btn btn-danger" style="margin-top:10px;" onclick="saveCostRecord()">💾 Zarar Kaydını Deftere İşle</button>
+          <button class="btn btn-danger" style="margin-top:10px;" onclick="saveCostRecord()">Zarar Kaydını Deftere İşle</button>
         </div>
       </div>
 
@@ -1385,7 +1385,7 @@
 
       <!-- Kayıtlı Maliyet Defteri Tablosu -->
       <div class="card">
-        <div class="card-title">📖 Hastalık Tedavi & Kayıp Defteri</div>
+        <div class="card-title">Hastalık Tedavi & Kayıp Defteri</div>
         <div class="table-container">
           <table id="cost-records-table">
             <thead>
@@ -1406,7 +1406,7 @@
     
       <div style="text-align:center; margin:16px 0 8px 0;">
         <button class="btn btn-outline" onclick="switchTab('dashboard')" style="width:auto; padding:8px 20px; font-weight:800; font-size:0.84rem; border-color:var(--primary); color:var(--primary); background:white;">
-          ⬅️ Ana Menüye Dön (Ağıl Özeti)
+          Ana Menüye Dön (Ağıl Özeti)
         </button>
       </div>
     </section>
@@ -1416,12 +1416,12 @@
       <!-- Üst Geri Dönüş Butonu -->
       <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
         <button class="btn btn-outline" onclick="switchTab('dashboard')" style="width:auto; padding:6px 14px; font-weight:800; font-size:0.82rem; border-color:var(--primary); color:var(--primary); background:white; display:inline-flex; align-items:center; gap:6px;">
-          ⬅️ Ana Menüye Dön
+          Ana Menüye Dön
         </button>
         <span style="font-size:0.75rem; color:#64748b; font-weight:600;">Ağıl Özeti ✕</span>
       </div>
       <div class="card" style="border-top: 4px solid #0f766e;">
-        <div class="card-title" style="color:#0f766e;">🌾 Yemlik Düzeni, İşkembe Ekşimesi & Geviş Sayacı</div>
+        <div class="card-title" style="color:#0f766e;">Yemlik Düzeni, İşkembe Ekşimesi & Geviş Sayacı</div>
         <p style="font-size:0.8rem; color:#475569; margin-bottom:12px;">
           Fabrika yemi fazla gelip saman az kaldığında işkembe ekşir <strong>(Asidoz / SARA)</strong>. Geviş getirme oranına ve tezek kıvamına bakarak erkenden önlem alın.
         </p>
@@ -1429,7 +1429,7 @@
         <!-- 1. Geviş Getirme (Rumination) İndeksi -->
         <div class="card" style="background:#f0fdf4; border:1px solid #86efac; margin-bottom:12px;">
           <div style="font-weight:700; color:#115e59; font-size:0.9rem; margin-bottom:6px;">
-            🐄 1. Yatan Koyunların Geviş Getirme Oranı (Hedef: En Az 10 Koyunten 6'sı)
+            1. Yatan Koyunların Geviş Getirme Oranı (Hedef: En Az 10 Koyunten 6'sı)
           </div>
           <p style="font-size:0.78rem; color:#374151; margin-bottom:8px;">
             Yem döküldükten veya sağımdan 2 saat sonra içeri girin. Yatan koyunlari sayın; en az yarısından fazlası (%58-60) ağzını gevişle geveliyor olmalıdır.
@@ -1454,11 +1454,11 @@
         <!-- 2. Dışkı Skoru ve Sindirim Eleği Değerlendirmesi -->
         <div class="card" style="background:#fff; border:1px solid #e2e8f0; margin-bottom:12px;">
           <div style="font-weight:700; color:#1e293b; font-size:0.9rem; margin-bottom:6px;">
-            💩 2. Tezek Kıvamı &amp; Tezeğe Kaçan Bütün Yem Tanesi (1-5 Puanı)
+            2. Tezek Kıvamı &amp; Tezeğe Kaçan Bütün Yem Tanesi (1-5 Puanı)
           </div>
           <label for="feed-manure-score">Ağıldaki Dışkının (Koyun Fındığının/Zibinin) Durumu Nasıl?:</label>
           <select id="feed-manure-score" onchange="evaluateManureScore()">
-            <option value="1">1: Su Gibi Cıvık / Fışkırıyor (🚨 Tehlike! Çelerme, İshal veya Ağır Asidoz)</option>
+            <option value="1">1: Su Gibi Cıvık / Fışkırıyor (Tehlike! Çelerme, İshal veya Ağır Asidoz)</option>
             <option value="2">2: Birbirine Yapışmış Cıvık Hamur (Arpa fazla / Saman az, işkembe ekşimesi)</option>
             <option value="3" selected>3: İdeal Koyun Fındığı (Tane tane, nemli ve parlak zibin - Tam Dengeli)</option>
             <option value="4">4: Çok Kuru ve Sert Topaklar (Kaba yem çok kuru, konsantre yem veya su az)</option>
@@ -1468,7 +1468,7 @@
           <div style="margin-top:8px;">
             <label style="display:flex; align-items:center; gap:8px; font-size:0.82rem; font-weight:600; cursor:pointer;">
               <input type="checkbox" id="feed-undigested-grains" onchange="evaluateManureScore()" style="width:auto; margin:0;">
-              ⚠️ Tezeğin içinde sindirilmemiş, bütün halde mısır/arpa taneleri çıkıyor (Yem boşa gidiyor)
+              Tezeğin içinde sindirilmemiş, bütün halde mısır/arpa taneleri çıkıyor (Yem boşa gidiyor)
             </label>
           </div>
 
@@ -1480,7 +1480,7 @@
         <!-- 3. Yemlik Kalan Yem (Ortus) & Seçme Kontrolü -->
         <div class="card" style="background:#fff; border:1px solid #e2e8f0; margin-bottom:12px;">
           <div style="font-weight:700; color:#1e293b; font-size:0.9rem; margin-bottom:6px;">
-            🥣 3. Yemlikte Kalan Artık Yem Miktarı
+            3. Yemlikte Kalan Artık Yem Miktarı
           </div>
           <p style="font-size:0.78rem; color:#475569; margin-bottom:8px;">
             Yeni yem dökmeden hemen önce yemliğin dibinde dökülen yemin %3 ila %5'i kadar artık kalmalıdır (Yemlik ne bomboş ne de tepeleme olmalı).
@@ -1505,7 +1505,7 @@
         <!-- 4. Rumen Tamponlayıcı (Sodyum Bikarbonat) Hesaplayıcı -->
         <div class="card" style="background:#eff6ff; border:1px solid #93c5fd;">
           <div style="font-weight:700; color:#1d4ed8; font-size:0.9rem; margin-bottom:6px;">
-            🧪 4. Yeme Katılacak Karbonat (Sodyum Bikarbonat) Miktarı
+            4. Yeme Katılacak Karbonat (Sodyum Bikarbonat) Miktarı
           </div>
           <p style="font-size:0.78rem; color:#1e40af; margin-bottom:8px;">
             İşkembenin ekşimesini ve ayak yanmasını önlemek için koyun başına günde 15–30 gram yem karbonatı verilir.
@@ -1533,7 +1533,7 @@
 
         <!-- Bilimsel Saha İpuçları (Merck Vet) -->
         <div class="card" style="background:#fafafa; border:1px dashed #cbd5e1; margin-top:12px; font-size:0.8rem; line-height:1.6; color:#334155;">
-          <strong>📚 Ağıl İpuçları - İşkembe Ekşimesi (Gizli Asidoz / SARA) Rehberi:</strong>
+          <strong>Ağıl İpuçları - İşkembe Ekşimesi (Gizli Asidoz / SARA) Rehberi:</strong>
           <br>• <strong>İşkembenin Asit Eşiği:</strong> Fabrika yemi çok verilip saman az tutulduğunda işkembenin asidi yükselir (pH 5.5 altına iner) ve mikrop düzeni bozulur, koyun yemi sindiremez.
           <br>• <strong>Ağılda Nasıl Anlaşılır?:</strong> Koyunların biri yiyip biri yemez, süt yağı birden düşer, tırnaklar uzayıp hayvan topallamaya başlar, tezek sarı ve köpüklü çıkar.
           <br>• <strong>Geviş Getirten Uzun Kaba Yem:</strong> Yemin içinde en az 3 santim uzunluğunda kuru ot, yonca veya saman olmalıdır ki koyun geviş getirsin. Geviş getiren koyun günde 10-15 litre doğal karbonatlı tükürük üreterek kendi işkembesini kendi iyileştirir.
@@ -1543,7 +1543,7 @@
     
       <div style="text-align:center; margin:16px 0 8px 0;">
         <button class="btn btn-outline" onclick="switchTab('dashboard')" style="width:auto; padding:8px 20px; font-weight:800; font-size:0.84rem; border-color:var(--primary); color:var(--primary); background:white;">
-          ⬅️ Ana Menüye Dön (Ağıl Özeti)
+          Ana Menüye Dön (Ağıl Özeti)
         </button>
       </div>
     </section>
@@ -1553,18 +1553,18 @@
       <!-- Üst Geri Dönüş Butonu -->
       <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
         <button class="btn btn-outline" onclick="switchTab('dashboard')" style="width:auto; padding:6px 14px; font-weight:800; font-size:0.82rem; border-color:var(--primary); color:var(--primary); background:white; display:inline-flex; align-items:center; gap:6px;">
-          ⬅️ Ana Menüye Dön
+          Ana Menüye Dön
         </button>
         <span style="font-size:0.75rem; color:#64748b; font-weight:600;">Ağıl Özeti ✕</span>
       </div>
       <div class="card">
-        <div class="card-title">📅 Akıllı Küçükbaş & Koyun Aşı Takvimi</div>
+        <div class="card-title">Akıllı Küçükbaş & Koyun Aşı Takvimi</div>
         <p style="font-size:0.8rem; color:#475569; margin-bottom:10px;">
           T.C. Tarım ve Orman Bakanlığı zorunlu aşıları (Şap, Brusella, LSD) ve koruyucu sürü bağışıklık protokolleri.
         </p>
 
         <div style="display:flex; gap:6px; margin-bottom:10px;">
-          <button class="btn btn-primary" onclick="openVaccineModal()">💉 Yeni Aşı Uygula</button>
+          <button class="btn btn-primary" onclick="openVaccineModal()">Yeni Aşı Uygula</button>
         </div>
 
         <div class="table-container">
@@ -1585,7 +1585,7 @@
       </div>
 
       <div class="card">
-        <div class="card-title">📚 Aşı Takvimi Rehberi & İkinci Doz (Aşı Tazeleme) Kuralları</div>
+        <div class="card-title">Aşı Takvimi Rehberi & İkinci Doz (Aşı Tazeleme) Kuralları</div>
         <div style="font-size:0.82rem; line-height:1.6; color:#334155;">
           <p><strong>• Çelerme / Enterotoksemi (Yem Zehirlenmesi):</strong> Yılda en az 2 kez (özellikle ilkbahar meraya çıkışta ve koç katımı öncesi) vurulmalıdır. Gebe koyunlara doğuma 4-6 hafta kala yapılırsa kuzuyu ağız sütüyle çelermeden korur.</p>
           <p><strong>• Koyun Vebası (PPR):</strong> Bakanlık tarafından yürütülen zorunlu aşıdır. 3 aylıktan büyük toklu ve koyunlara tek doz ömür boyu veya periyodik koruma sağlar.</p>
@@ -1597,7 +1597,7 @@
     
       <div style="text-align:center; margin:16px 0 8px 0;">
         <button class="btn btn-outline" onclick="switchTab('dashboard')" style="width:auto; padding:8px 20px; font-weight:800; font-size:0.84rem; border-color:var(--primary); color:var(--primary); background:white;">
-          ⬅️ Ana Menüye Dön (Ağıl Özeti)
+          Ana Menüye Dön (Ağıl Özeti)
         </button>
       </div>
     </section>
@@ -1607,12 +1607,12 @@
       <!-- Üst Geri Dönüş Butonu -->
       <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
         <button class="btn btn-outline" onclick="switchTab('dashboard')" style="width:auto; padding:6px 14px; font-weight:800; font-size:0.82rem; border-color:var(--primary); color:var(--primary); background:white; display:inline-flex; align-items:center; gap:6px;">
-          ⬅️ Ana Menüye Dön
+          Ana Menüye Dön
         </button>
         <span style="font-size:0.75rem; color:#64748b; font-weight:600;">Ağıl Özeti ✕</span>
       </div>
       <div class="card">
-        <div class="card-title">🩸 Tohumlama & Üreme Takip Motoru</div>
+        <div class="card-title">Tohumlama & Üreme Takip Motoru</div>
         <p style="font-size:0.8rem; color:#475569; margin-bottom:10px;">
           17 gün koç aşım döngüsü, 35 gün ultrason gebelik kontrolü, 90 gün sütten kesim ve 150 gün doğum (kuzulama) geri sayımı.
         </p>
@@ -1620,7 +1620,7 @@
         <label for="repro-animal-select">Tohumlanan / Kızgınlıktaki Hayvanı Seç:</label>
         <div style="display:flex; gap:6px; margin-bottom:10px;">
           <select id="repro-animal-select" style="margin-bottom:0;"></select>
-          <button class="btn btn-warning" style="width:auto; padding:0 12px; white-space:nowrap;" onclick="startQrScanner('repro')" title="Kamerayla Küpe Oku">📷 Küpe Oku</button>
+          <button class="btn btn-warning" style="width:auto; padding:0 12px; white-space:nowrap;" onclick="startQrScanner('repro')" title="Kamerayla Küpe Oku">Kamera</button>
         </div>
 
         <div style="display:grid; grid-template-columns:1fr 1fr; gap:8px;">
@@ -1636,15 +1636,15 @@
 
         <!-- Canlı Hesaplanan Üreme Zaman Çizelgesi -->
         <div id="repro-timeline-preview" class="card" style="background:#f8fafc; border:1px solid #cbd5e1; margin-top:8px; display:none;">
-          <div style="font-weight:700; color:var(--primary); font-size:0.9rem; margin-bottom:6px;">⏱️ Hesaplanan Otomatik Takvim & Alarmlar:</div>
+          <div style="font-weight:700; color:var(--primary); font-size:0.9rem; margin-bottom:6px;">Hesaplanan Otomatik Takvim & Alarmlar:</div>
           <div id="repro-timeline-items" style="font-size:0.82rem; line-height:1.7;"></div>
         </div>
 
-        <button class="btn btn-primary" onclick="saveReproRecord()" style="margin-top:10px;">💾 Tohumlamayı Kaydet & Alarmları Başlat</button>
+        <button class="btn btn-primary" onclick="saveReproRecord()" style="margin-top:10px;">Tohumlamayı Kaydet & Alarmları Başlat</button>
       </div>
 
       <div class="card">
-        <div class="card-title">🐄 Aktif Üreme & Gebelik Takip Listesi</div>
+        <div class="card-title">Aktif Üreme & Gebelik Takip Listesi</div>
         <div class="table-container">
           <table id="repro-records-table">
             <thead>
@@ -1665,7 +1665,7 @@
     
       <div style="text-align:center; margin:16px 0 8px 0;">
         <button class="btn btn-outline" onclick="switchTab('dashboard')" style="width:auto; padding:8px 20px; font-weight:800; font-size:0.84rem; border-color:var(--primary); color:var(--primary); background:white;">
-          ⬅️ Ana Menüye Dön (Ağıl Özeti)
+          Ana Menüye Dön (Ağıl Özeti)
         </button>
       </div>
     </section>
@@ -1675,12 +1675,12 @@
       <!-- Üst Geri Dönüş Butonu -->
       <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
         <button class="btn btn-outline" onclick="switchTab('dashboard')" style="width:auto; padding:6px 14px; font-weight:800; font-size:0.82rem; border-color:var(--primary); color:var(--primary); background:white; display:inline-flex; align-items:center; gap:6px;">
-          ⬅️ Ana Menüye Dön
+          Ana Menüye Dön
         </button>
         <span style="font-size:0.75rem; color:#64748b; font-weight:600;">Ağıl Özeti ✕</span>
       </div>
       <div class="card">
-        <div class="card-title">⚖️ Şerit Metre ile Canlı Ağırlık Ölçer (Kantar Yokken!)</div>
+        <div class="card-title">Şerit Metre ile Canlı Ağırlık Ölçer (Kantar Yokken!)</div>
         <p style="font-size:0.8rem; color:#475569; margin-bottom:10px;">
           Baskülün olmadığı saha ve mera şartlarında bilimsel <strong>Schaeffer Formülü</strong> ile canlı ağırlık tahmini ve otomatik ilaç dozajı.
         </p>
@@ -1688,11 +1688,11 @@
         <label for="weight-animal-select">Ölçülen Hayvanı Seç (İsteğe Bağlı):</label>
         <div style="display:flex; gap:6px; margin-bottom:10px;">
           <select id="weight-animal-select" style="margin-bottom:0;"></select>
-          <button class="btn btn-warning" style="width:auto; padding:0 12px; white-space:nowrap;" onclick="startQrScanner('weight')" title="Kamerayla Küpe Oku">📷 Küpe Oku</button>
+          <button class="btn btn-warning" style="width:auto; padding:0 12px; white-space:nowrap;" onclick="startQrScanner('weight')" title="Kamerayla Küpe Oku">Kamera</button>
         </div>
 
         <div style="background:#f1f5f9; padding:10px; border-radius:8px; margin-bottom:12px; font-size:0.8rem; color:#334155;">
-          📏 <strong>Nasıl Ölçülür?</strong><br>
+          <strong>Nasıl Ölçülür?</strong><br>
           1. <strong>Göğüs Çevresi:</strong> Ön ayakların hemen arkasından, kürek kemiği üzerinden mezurayla sarın.<br>
           2. <strong>Vücut Uzunluğu:</strong> Omuz başı (kürek kemiği çıkıntısı) ile kalça yumrusu (oturga kemiği) arası mesafe.
         </div>
@@ -1717,7 +1717,7 @@
 
         <!-- Otomatik Dozaj ve Yem Tüketimi Rehberi -->
         <div class="card" style="background:#fff; border:1px solid #cbd5e1; margin-top:10px;">
-          <div style="font-weight:700; color:#334155; font-size:0.88rem; margin-bottom:6px;">💊 Bu Kiloya Göre Otomatik Klinik Dozlar:</div>
+          <div style="font-weight:700; color:#334155; font-size:0.88rem; margin-bottom:6px;">Bu Kiloya Göre Otomatik Klinik Dozlar:</div>
           <ul id="weight-drug-doses" style="font-size:0.82rem; line-height:1.7; padding-left:18px; color:#334155;"></ul>
         </div>
 
@@ -1725,7 +1725,7 @@
     
       <div style="text-align:center; margin:16px 0 8px 0;">
         <button class="btn btn-outline" onclick="switchTab('dashboard')" style="width:auto; padding:8px 20px; font-weight:800; font-size:0.84rem; border-color:var(--primary); color:var(--primary); background:white;">
-          ⬅️ Ana Menüye Dön (Ağıl Özeti)
+          Ana Menüye Dön (Ağıl Özeti)
         </button>
       </div>
     </section>
@@ -1735,29 +1735,29 @@
       <!-- Üst Geri Dönüş Butonu -->
       <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
         <button class="btn btn-outline" onclick="switchTab('dashboard')" style="width:auto; padding:6px 14px; font-weight:800; font-size:0.82rem; border-color:var(--primary); color:var(--primary); background:white; display:inline-flex; align-items:center; gap:6px;">
-          ⬅️ Ana Menüye Dön
+          Ana Menüye Dön
         </button>
         <span style="font-size:0.75rem; color:#64748b; font-weight:600;">Ağıl Özeti ✕</span>
       </div>
       <div class="card">
-        <div class="card-title">🍼 Kuzu Hayatta Tutma & İlk Ağız Sütü Takibi</div>
+        <div class="card-title">Kuzu Hayatta Tutma & İlk Ağız Sütü Takibi</div>
         <p style="font-size:0.8rem; color:#475569; margin-bottom:10px;">
           Yeni doğan kuzunun ilk 2 saatlik altın kuralı, optik camla (Brix) ağız sütü kalitesi ölçümü ve ishalde su kaybı/serum hesabı.
         </p>
 
         <!-- Altın Kural Kartı -->
         <div class="banner-alert banner-warning" style="margin-bottom:12px;">
-          ⏱️ <strong>İLK 2 SAAT ALTIN KURALI:</strong> Kuzunun bağırsağı birkaç saat içinde kapanır, sonradan verilen şifa etmez! Doğumdan sonraki ilk 2 saat içinde ananın ilk sağılan koyu ağız sütünden (300–400 mL, yani 2 çay bardağı dolusu) mutlaka içirilmelidir!
+          <strong>İLK 2 SAAT ALTIN KURALI:</strong> Kuzunun bağırsağı birkaç saat içinde kapanır, sonradan verilen şifa etmez! Doğumdan sonraki ilk 2 saat içinde ananın ilk sağılan koyu ağız sütünden (300–400 mL, yani 2 çay bardağı dolusu) mutlaka içirilmelidir!
         </div>
 
         <div style="background:#fff; border:1px solid #cbd5e1; border-radius:8px; padding:12px; margin-bottom:12px;">
-          <div style="font-weight:700; color:var(--primary); font-size:0.92rem; margin-bottom:8px;">🔬 Ağız Sütü (İlk Süt) Kalite Ölçer (Brix Cihazı)</div>
+          <div style="font-weight:700; color:var(--primary); font-size:0.92rem; margin-bottom:8px;">Ağız Sütü (İlk Süt) Kalite Ölçer (Brix Cihazı)</div>
           
           <label for="colostrum-brix">Ölçülen Kalite Değeri (% Brix):</label>
           <div style="display:flex; gap:8px;">
             <input type="number" id="colostrum-brix" value="24" step="0.5" oninput="calculateColostrumQuality()" style="margin-bottom:0;">
             <div id="brix-quality-badge" style="padding:8px 12px; border-radius:6px; font-weight:800; font-size:0.95rem; white-space:nowrap; display:flex; align-items:center; background:#dcfce7; color:#0f766e;">
-              🟢 MÜKEMMEL KALİTE
+              MÜKEMMEL KALİTE
             </div>
           </div>
           <div id="brix-quality-desc" style="font-size:0.8rem; color:#475569; margin-top:6px;">
@@ -1767,7 +1767,7 @@
 
         <!-- Kuzu Dehidrasyon & İshal Sıvı Hesaplayıcı -->
         <div style="background:#fff; border:1px solid #cbd5e1; border-radius:8px; padding:12px;">
-          <div style="font-weight:700; color:var(--danger); font-size:0.92rem; margin-bottom:8px;">🚨 Kuzu İshali: Su Kaybı & Damar/Ağız Serumu Hesabı</div>
+          <div style="font-weight:700; color:var(--danger); font-size:0.92rem; margin-bottom:8px;">Kuzu İshali: Su Kaybı & Damar/Ağız Serumu Hesabı</div>
           
           <div style="display:grid; grid-template-columns:1fr 1fr; gap:8px;">
             <div>
@@ -1798,7 +1798,7 @@
 
         <!-- Göbek Kordonu Bakımı -->
         <div class="card" style="background:#fafafa; border:1px dashed #cbd5e1; margin-top:10px; font-size:0.82rem; line-height:1.6;">
-          <strong>🛡️ Doğum Sonrası Kritik Kontrol Listesi:</strong>
+          <strong>Doğum Sonrası Kritik Kontrol Listesi:</strong>
           <br>1. <strong>Göbek İpi Dezenfeksiyonu:</strong> Doğar doğmaz %7'lik İyot (Tentürdiyot) içine batırarak daldırın (Göz damlalığıyla damlatmayın, tamamen daldırın).
           <br>2. <strong>Doğumdan 1-2 Saat Sonra:</strong> İyot uygulamasını tekrarlayın.
           <br>3. <strong>Altlık Hijyeni:</strong> Kuzu bölmesini kuru, temiz ve bol samanlı tutun.
@@ -1807,7 +1807,7 @@
     
       <div style="text-align:center; margin:16px 0 8px 0;">
         <button class="btn btn-outline" onclick="switchTab('dashboard')" style="width:auto; padding:8px 20px; font-weight:800; font-size:0.84rem; border-color:var(--primary); color:var(--primary); background:white;">
-          ⬅️ Ana Menüye Dön (Ağıl Özeti)
+          Ana Menüye Dön (Ağıl Özeti)
         </button>
       </div>
     </section>
@@ -1817,17 +1817,17 @@
       <!-- Üst Geri Dönüş Butonu -->
       <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
         <button class="btn btn-outline" onclick="switchTab('dashboard')" style="width:auto; padding:6px 14px; font-weight:800; font-size:0.82rem; border-color:var(--primary); color:var(--primary); background:white; display:inline-flex; align-items:center; gap:6px;">
-          ⬅️ Ana Menüye Dön
+          Ana Menüye Dön
         </button>
         <span style="font-size:0.75rem; color:#64748b; font-weight:600;">Ağıl Özeti ✕</span>
       </div>
       <div class="banner-alert banner-danger">
-        ⚠️ <strong>ÖNEMLİ:</strong> Bu protokoller veteriner hekim çiftliğe ulaşana kadar hastanın yaşama şansını artırmak için acil ilk yardım adımlarıdır.
+        <strong>ÖNEMLİ:</strong> Bu protokoller veteriner hekim çiftliğe ulaşana kadar hastanın yaşama şansını artırmak için acil ilk yardım adımlarıdır.
       </div>
 
       <!-- Canlı Ağırlık Doz Hesaplayıcı -->
       <div class="card">
-        <div class="card-title">⚖️ Acil Adrenalin Doz Hesaplayıcı (Anafilaktik Şok)</div>
+        <div class="card-title">Acil Adrenalin Doz Hesaplayıcı (Anafilaktik Şok)</div>
         <label for="emergency-weight">Hayvanın Tahmini Canlı Ağırlığı (kg):</label>
         <div style="display:flex; gap:8px;">
           <input type="number" id="emergency-weight" value="55" step="25" oninput="calculateEpiDose()">
@@ -1840,7 +1840,7 @@
 
       <!-- Acil Kartlar -->
       <div class="emergency-card" onclick="toggleEmergency('em-pregnancy-tox')">
-        <h3><span>🧠 Gebelik Zehirlenmesi (İkiz Koması / Ketozis)</span> <span>▼</span></h3>
+        <h3><span>Gebelik Zehirlenmesi (İkiz Koması / Ketozis)</span> <span>▼</span></h3>
         <div id="em-pregnancy-tox" class="emergency-details">
           <p style="font-size:0.75rem; color:#64748b; margin-bottom:6px;"><strong>İlk Yardım Talimatı:</strong> Doğuma 2-3 hafta kala gebe koyun sürüden geri kalıyor, başını duvara yaslıyor, kör gibi basıyor ve titriyorsa (enerji/şeker çökmesi):</p>
           <ol style="padding-left:18px; line-height:1.6;">
@@ -1852,7 +1852,7 @@
       </div>
 
       <div class="emergency-card" onclick="toggleEmergency('em-enterotoxemia')">
-        <h3><span>⚡ Çelerme / Yem Çarpması (Enterotoksemi)</span> <span>▼</span></h3>
+        <h3><span>Çelerme / Yem Çarpması (Enterotoksemi)</span> <span>▼</span></h3>
         <div id="em-enterotoxemia" class="emergency-details">
           <p style="font-size:0.75rem; color:#64748b; margin-bottom:6px;"><strong>İlk Yardım Talimatı:</strong> Fazla arpa/tahıl yiyen toklu veya koyun birden havaya sıçrayıp çırpınarak yere düşüyorsa:</p>
           <ol style="padding-left:18px; line-height:1.6;">
@@ -1865,7 +1865,7 @@
       </div>
 
       <div class="emergency-card" onclick="toggleEmergency('em-anaphylaxis')">
-        <h3><span>💉 İğne / Aşı Şoku (Alerji & Yere Yıkılma)</span> <span>▼</span></h3>
+        <h3><span>İğne / Aşı Şoku (Alerji & Yere Yıkılma)</span> <span>▼</span></h3>
         <div id="em-anaphylaxis" class="emergency-details">
           <p style="font-size:0.75rem; color:#64748b; margin-bottom:6px;"><strong>İlk Yardım Talimatı:</strong> Aşı veya iğne yapılır yapılmaz koyun titreyip yere devrilirse:</p>
           <ol style="padding-left:18px; line-height:1.6;">
@@ -1877,7 +1877,7 @@
       </div>
 
       <div class="emergency-card" onclick="toggleEmergency('em-bloat')">
-        <h3><span>🎈 İşkembe Şişmesi & Gaz Patlaması (Timpani)</span> <span>▼</span></h3>
+        <h3><span>İşkembe Şişmesi & Gaz Patlaması (Timpani)</span> <span>▼</span></h3>
         <div id="em-bloat" class="emergency-details">
           <p style="font-size:0.75rem; color:#64748b; margin-bottom:6px;"><strong>İlk Yardım Talimatı:</strong> Taze yonca yedikten sonra sol açlık çukuru davul gibi şişip nefes alamıyorsa:</p>
           <ol style="padding-left:18px; line-height:1.6;">
@@ -1889,7 +1889,7 @@
       </div>
 
       <div class="emergency-card" onclick="toggleEmergency('em-prolapse')">
-        <h3><span>🔴 Doğum Sonrası Rahim Çıkması / Vajina Fırlaması</span> <span>▼</span></h3>
+        <h3><span>Doğum Sonrası Rahim Çıkması / Vajina Fırlaması</span> <span>▼</span></h3>
         <div id="em-prolapse" class="emergency-details">
           <p style="font-size:0.75rem; color:#64748b; margin-bottom:6px;"><strong>İlk Yardım Talimatı:</strong> Doğum öncesi veya sonrası döl yatağı dışarı fırlamışsa:</p>
           <ol style="padding-left:18px; line-height:1.6;">
@@ -1901,7 +1901,7 @@
       </div>
 
       <div class="emergency-card" onclick="toggleEmergency('em-lamb-hypothermia')">
-        <h3><span>❄️ Yeni Doğan Kuzu Donması & Üşüme (Hipotermi)</span> <span>▼</span></h3>
+        <h3><span>Yeni Doğan Kuzu Donması & Üşüme (Hipotermi)</span> <span>▼</span></h3>
         <div id="em-lamb-hypothermia" class="emergency-details">
           <p style="font-size:0.75rem; color:#64748b; margin-bottom:6px;"><strong>İlk Yardım Talimatı:</strong> Kuzu ıslak doğmuş, soğukta kalmış, ağzının içi buz gibi, emme refleksi yoksa ve vücut ısısı 37°C'nin altına düşmüşse:</p>
           <ol style="padding-left:18px; line-height:1.6;">
@@ -1914,7 +1914,7 @@
       </div>
 
       <div class="emergency-card" onclick="toggleEmergency('em-urinary-calculi')">
-        <h3><span>🪨 Sidik Zoru & İdrar Yolu Tıkanması (Koçlarda Taş / Su Karın)</span> <span>▼</span></h3>
+        <h3><span>Sidik Zoru & İdrar Yolu Tıkanması (Koçlarda Taş / Su Karın)</span> <span>▼</span></h3>
         <div id="em-urinary-calculi" class="emergency-details">
           <p style="font-size:0.75rem; color:#64748b; margin-bottom:6px;"><strong>İlk Yardım Talimatı:</strong> Besi toklusu veya koç idrar yapamıyor, kuyruğunu sallıyor, karnını tekmeliyor, diş gıcırdatıyor ve karnı şişiyorsa:</p>
           <ol style="padding-left:18px; line-height:1.6;">
@@ -1927,7 +1927,7 @@
       </div>
 
       <div class="emergency-card" onclick="toggleEmergency('em-dog-attack')">
-        <h3><span>🐺 Köpek / Kurt Isırması & Ağır Yara Kanaması</span> <span>▼</span></h3>
+        <h3><span>Köpek / Kurt Isırması & Ağır Yara Kanaması</span> <span>▼</span></h3>
         <div id="em-dog-attack" class="emergency-details">
           <p style="font-size:0.75rem; color:#64748b; margin-bottom:6px;"><strong>İlk Yardım Talimatı:</strong> Sürüye kurt veya sahipsiz köpek saldırdığında boyundan veya buttan yaralanıp kan fışkıran koyunlar için:</p>
           <ol style="padding-left:18px; line-height:1.6;">
@@ -1940,7 +1940,7 @@
       </div>
 
       <div class="emergency-card" onclick="toggleEmergency('em-copper-poisoning')">
-        <h3><span>☠️ Bakır / Zehirli Ot Yeme (Kronik ve Akut Zehirlenme)</span> <span>▼</span></h3>
+        <h3><span>Bakır / Zehirli Ot Yeme (Kronik ve Akut Zehirlenme)</span> <span>▼</span></h3>
         <div id="em-copper-poisoning" class="emergency-details">
           <p style="font-size:0.75rem; color:#64748b; margin-bottom:6px;"><strong>İlk Yardım Talimatı:</strong> Sığır yemi yiyen tokluda veya merada zehirli ot yiyen koyunlarda göz akları sapsarı (sarılık), idrar kola/kahve rengi ve hayvan solgun ise:</p>
           <ol style="padding-left:18px; line-height:1.6;">
@@ -1954,7 +1954,7 @@
     
       <div style="text-align:center; margin:16px 0 8px 0;">
         <button class="btn btn-outline" onclick="switchTab('dashboard')" style="width:auto; padding:8px 20px; font-weight:800; font-size:0.84rem; border-color:var(--primary); color:var(--primary); background:white;">
-          ⬅️ Ana Menüye Dön (Ağıl Özeti)
+          Ana Menüye Dön (Ağıl Özeti)
         </button>
       </div>
     </section>
@@ -1964,58 +1964,58 @@
       <!-- Üst Geri Dönüş Butonu -->
       <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
         <button class="btn btn-outline" onclick="switchTab('dashboard')" style="width:auto; padding:6px 14px; font-weight:800; font-size:0.82rem; border-color:var(--primary); color:var(--primary); background:white; display:inline-flex; align-items:center; gap:6px;">
-          ⬅️ Ana Menüye Dön
+          Ana Menüye Dön
         </button>
         <span style="font-size:0.75rem; color:#64748b; font-weight:600;">Ağıl Özeti ✕</span>
       </div>
       <div class="card">
-        <div class="card-title">👨‍🌾 Sağımhane Hızlı Kontrol Paneli</div>
+        <div class="card-title">Sağımhane Hızlı Kontrol Paneli</div>
         <p style="font-size:0.85rem; color:#475569; margin-bottom:12px;">
           Sağımcı için büyük harfli hızlı kontrol. Küpe numarasını yazın veya seçin:
         </p>
 
         <div style="display:flex; gap:6px; margin-bottom:8px;">
           <input type="text" id="milker-search" placeholder="Örn: TR16001" oninput="checkMilkerStatus()" style="font-size:1.2rem; font-weight:800; padding:12px; text-transform:uppercase; margin-bottom:0;">
-          <button class="btn btn-warning" style="width:auto; padding:0 14px; font-size:1.1rem; white-space:nowrap;" onclick="startQrScanner('milker')" title="Kamerayla Küpe Oku">📷 Oku</button>
-          <button id="btn-milker-voice" class="btn btn-primary" style="width:auto; padding:0 14px; font-size:1.1rem; white-space:nowrap; background:#0f766e;" onclick="startVoiceMilkerSearch()" title="Sesle Küpe Sor (Eller Serbest)">🎙️ Sor</button>
+          <button class="btn btn-warning" style="width:auto; padding:0 14px; font-size:1.1rem; white-space:nowrap;" onclick="startQrScanner('milker')" title="Kamerayla Küpe Oku">Kamera</button>
+          <button id="btn-milker-voice" class="btn btn-primary" style="width:auto; padding:0 14px; font-size:1.1rem; white-space:nowrap; background:#0f766e;" onclick="startVoiceMilkerSearch()" title="Sesle Küpe Sor (Eller Serbest)">Sesle Sor</button>
         </div>
 
         <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; font-size:0.8rem; background:#f8fafc; padding:8px 12px; border-radius:8px; border:1px solid #e2e8f0; flex-wrap:wrap; gap:6px;">
           <div id="voice-milker-status" style="color:#64748b; font-weight:600; display:flex; align-items:center; gap:6px;">
-            <span>🎙️ <strong>Eller Serbest:</strong> Yeşil mikrofona dokunun ve küpeyi söyleyin</span>
+            <span><strong>Eller Serbest:</strong> Yeşil mikrofona dokunun ve küpeyi söyleyin</span>
           </div>
           <div style="display:flex; align-items:center; gap:12px;">
             <label style="display:inline-flex; align-items:center; gap:5px; margin-bottom:0; cursor:pointer; color:#475569; font-weight:700;">
               <input type="checkbox" id="milker-voice-feedback-toggle" checked style="margin-bottom:0; width:16px; height:16px; accent-color:var(--primary);">
-              🔊 Sesli Cevap
+              Sesli Cevap
             </label>
-            <button class="btn btn-outline" style="width:auto; padding:3px 8px; font-size:0.75rem;" onclick="speakMilkerCurrentResult()" title="Mevcut sonucu tekrar seslendir">🔊 Tekrar Oku</button>
+            <button class="btn btn-outline" style="width:auto; padding:3px 8px; font-size:0.75rem;" onclick="speakMilkerCurrentResult()" title="Mevcut sonucu tekrar seslendir">Tekrar Oku</button>
           </div>
         </div>
 
         <div id="milker-result-box" style="margin-top:14px;">
           <div class="milker-status-box milker-green">
-            🟢 SAĞIMA UYGUN
+            SAĞIMA UYGUN
             <div style="font-size:0.85rem; font-weight:400; margin-top:4px;">Kalıntı veya hastalık engeli yok.</div>
           </div>
         </div>
 
         <div class="card" style="margin-top:16px; border: 1.5px solid #ef4444;">
-          <div style="font-weight:700; color:#b91c1c; margin-bottom:6px;">🚫 ŞU AN TANKA SAĞILMASI YASAK TÜM KOYUNLAR:</div>
+          <div style="font-weight:700; color:#b91c1c; margin-bottom:6px;">ŞU AN TANKA SAĞILMASI YASAK TÜM KOYUNLAR:</div>
           <ul id="milker-blocked-list" style="padding-left:18px; font-weight:700; font-size:0.95rem; color:#b91c1c;">
             <li>Yasaklı hayvan yok.</li>
           </ul>
         </div>
       </div>
       <div class="card" style="border: 1px dashed #94a3b8; background: #f8fafc;">
-        <div class="card-title" style="font-size:0.9rem; color:#475569;">💾 Çevrimdışı Veri Yedekleme & Aktarım</div>
+        <div class="card-title" style="font-size:0.9rem; color:#475569;">Çevrimdışı Veri Yedekleme & Aktarım</div>
         <p style="font-size:0.75rem; color:#64748b; margin-bottom:8px;">
           Tüm veriler cihazınızda saklanır. Başka bir telefona veya bilgisayara aktarmak için yedek alabilir veya geri yükleyebilirsiniz.
         </p>
         <div style="display:grid; grid-template-columns:1fr 1fr; gap:6px;">
-          <button class="btn btn-outline" style="font-size:0.8rem; padding:8px;" onclick="exportDataJson()">📥 Yedeği İndir (JSON)</button>
+          <button class="btn btn-outline" style="font-size:0.8rem; padding:8px;" onclick="exportDataJson()">Yedeği İndir (JSON)</button>
           <label class="btn btn-outline" style="font-size:0.8rem; padding:8px; margin-bottom:0; cursor:pointer; text-align:center;">
-            📤 Yedeği Yükle
+            Yedeği Yükle
             <input type="file" id="backup-file-input" accept=".json" onchange="importDataJson(event)" style="display:none;">
           </label>
         </div>
@@ -2023,7 +2023,7 @@
     
       <div style="text-align:center; margin:16px 0 8px 0;">
         <button class="btn btn-outline" onclick="switchTab('dashboard')" style="width:auto; padding:8px 20px; font-weight:800; font-size:0.84rem; border-color:var(--primary); color:var(--primary); background:white;">
-          ⬅️ Ana Menüye Dön (Ağıl Özeti)
+          Ana Menüye Dön (Ağıl Özeti)
         </button>
       </div>
     </section>
@@ -2035,12 +2035,12 @@
   <!-- Hayvan Ekleme Modalı (Sadeleştirilmiş Div) -->
   <div id="modal-animal" class="modal-overlay" style="display:none; position:fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.5); z-index:200; align-items:center; justify-content:center; padding:16px; overflow-y:auto; -webkit-overflow-scrolling:touch;">
     <div class="modal-card" style="background:white; border-radius:10px; max-width:400px; width:100%; max-height:min(90vh, 90dvh); overflow-y:auto; padding:16px;">
-      <h3 style="margin-bottom:10px; color:var(--primary);">➕ Yeni Hayvan Kaydet</h3>
+      <h3 style="margin-bottom:10px; color:var(--primary);">Yeni Hayvan Kaydet</h3>
       
       <label for="new-eartag">Sarı Kulak Küpe Numarası:</label>
       <div style="display:flex; gap:6px; margin-bottom:10px;">
         <input type="text" id="new-eartag" placeholder="TR1600123456" style="margin-bottom:0;">
-        <button class="btn btn-warning" style="width:auto; padding:0 12px; white-space:nowrap;" onclick="startQrScanner('new_animal')" title="Kamerayla Küpe Oku">📷 Oku</button>
+        <button class="btn btn-warning" style="width:auto; padding:0 12px; white-space:nowrap;" onclick="startQrScanner('new_animal')" title="Kamerayla Küpe Oku">Kamera</button>
       </div>
 
       <div style="display:grid; grid-template-columns:1fr 1fr; gap:8px;">
@@ -2093,7 +2093,7 @@
   <!-- Aşı Ekleme Modalı -->
   <div id="modal-vaccine" class="modal-overlay" style="display:none; position:fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.5); z-index:200; align-items:center; justify-content:center; padding:16px; overflow-y:auto; -webkit-overflow-scrolling:touch;">
     <div class="modal-card" style="background:white; border-radius:10px; max-width:400px; width:100%; max-height:min(90vh, 90dvh); overflow-y:auto; padding:16px;">
-      <h3 style="margin-bottom:10px; color:var(--primary);">💉 Aşı Uygulama Kaydı</h3>
+      <h3 style="margin-bottom:10px; color:var(--primary);">Aşı Uygulama Kaydı</h3>
       
       <label for="vac-animal-select">Hayvan Seç:</label>
       <select id="vac-animal-select"></select>
@@ -2124,7 +2124,7 @@
     <div class="modal-card" style="background:white; border-radius:12px; max-width:440px; width:100%; max-height:min(92vh, 92dvh); overflow-y:auto; padding:16px; box-shadow:0 10px 25px rgba(0,0,0,0.3);">
       <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
         <h3 style="font-size:1.05rem; color:var(--primary); font-weight:800; display:flex; align-items:center; gap:6px;">
-          📷 Kulak Küpesi Barkod / QR Oku
+          Kulak Küpesi Barkod / QR Oku
         </h3>
         <button onclick="stopQrScanner()" style="background:transparent; border:none; font-size:1.3rem; font-weight:800; cursor:pointer; color:#64748b;">✕</button>
       </div>
@@ -2149,7 +2149,7 @@
     <div style="background:white; border-radius:12px; max-width:540px; width:100%; max-height:88vh; display:flex; flex-direction:column; box-shadow:0 10px 30px rgba(0,0,0,0.4);">
       <div style="padding:14px 18px; border-bottom:1px solid #e2e8f0; display:flex; justify-content:space-between; align-items:center; background:#f8fafc; border-top-left-radius:12px; border-top-right-radius:12px;">
         <h3 style="font-size:1.05rem; color:var(--primary); font-weight:800; margin:0; display:flex; align-items:center; gap:8px;" id="animal-alerts-modal-title">
-          🔔 Hayvan Uyarı & Sağlık Kartı
+          Hayvan Uyarı & Sağlık Kartı
         </h3>
         <button onclick="closeAnimalAlertsModal()" style="background:transparent; border:none; font-size:1.4rem; font-weight:800; cursor:pointer; color:#64748b; padding:0 4px; line-height:1;">✕</button>
       </div>
@@ -2170,7 +2170,7 @@
     <div style="background:white; border-radius:12px; max-width:600px; width:100%; max-height:85vh; display:flex; flex-direction:column; box-shadow:0 10px 30px rgba(0,0,0,0.3);">
       <div style="padding:14px 18px; border-bottom:1px solid #e2e8f0; display:flex; justify-content:space-between; align-items:center; background:#f8fafc; border-top-left-radius:12px; border-top-right-radius:12px;">
         <h3 style="font-size:1.05rem; color:var(--primary); font-weight:800; display:flex; align-items:center; gap:6px;">
-          📖 Koyun Sağlık Rehberi - Kullanım Kılavuzu
+          Koyun Sağlık Rehberi - Kullanım Kılavuzu
         </h3>
         <button onclick="closeGuideModal()" style="background:transparent; border:none; font-size:1.3rem; font-weight:800; cursor:pointer; color:#64748b;">✕</button>
       </div>
@@ -2178,64 +2178,64 @@
         <!-- 1. NEREDEN BAŞLAMALIYIM? -->
         <div style="background:#eff6ff; border-left:4px solid #0f766e; padding:10px 14px; border-radius:6px; margin-bottom:14px;">
           <h4 style="color:#0f766e; margin:0 0 6px 0; font-size:0.95rem; display:flex; align-items:center; gap:6px;">
-            🏁 1. Nereden Başlamalıyım? (İlk Kez Açanlar İçin)
+            1. Nereden Başlamalıyım? (İlk Kez Açanlar İçin)
           </h4>
           <p style="margin:0 0 6px 0;"><strong>• 1. Adım (Telefona İndir):</strong> Tarayıcı menüsünden <em>"Ana Ekrana Ekle"</em> veya <em>"Uygulamayı Yükle"</em> deyin. Artık internetsiz merada, yaylada ve taş ağılda şebeke hiç çekmese bile %100 çevrimdışı ve jet hızında çalışır.</p>
-          <p style="margin:0 0 6px 0;"><strong>• 2. Adım (Bütün sürüyü tek tek girmene gerek YOK!):</strong> Yüzlerce koyunu tek tek yazarak vakit kaybetmeyin. İlk etapta sadece o an işlem yapacağınız koyunu (hasta olanı, iğne yaptığınızı, tohumlanan/koçlanan anaç koyunu veya yeni doğan kuzuyu) <strong>"+ Yeni Ekle"</strong> veya sarı <strong>"📷 Oku"</strong> butonuyla (kulak küpesi barkodu/QR) saniyeler içinde kaydedin. Sürünüz iş yaptıkça kendiliğinden oluşacaktır.</p>
+          <p style="margin:0 0 6px 0;"><strong>• 2. Adım (Bütün sürüyü tek tek girmene gerek YOK!):</strong> Yüzlerce koyunu tek tek yazarak vakit kaybetmeyin. İlk etapta sadece o an işlem yapacağınız koyunu (hasta olanı, iğne yaptığınızı, tohumlanan/koçlanan anaç koyunu veya yeni doğan kuzuyu) <strong>"Yeni Ekle"</strong> veya sarı <strong>"Kamera"</strong> butonuyla (kulak küpesi barkodu/QR) saniyeler içinde kaydedin. Sürünüz iş yaptıkça kendiliğinden oluşacaktır.</p>
           <p style="margin:0;"><strong>• 3. Adım (Doğru Kapıyı Seç):</strong> O anki ihtiyacınıza göre ana sayfadaki renkli <strong>Koyun Durumu Ana Menüsü</strong> kartlarına dokunarak başlayın.</p>
         </div>
 
         <!-- 2. GÖSTERGE PANELİ & KÜPE NUMARALI TAKİP -->
         <div style="background:#fdf4ff; border-left:4px solid #7c3aed; padding:10px 14px; border-radius:6px; margin-bottom:14px;">
           <h4 style="color:#6d28d9; margin:0 0 6px 0; font-size:0.95rem; display:flex; align-items:center; gap:6px;">
-            📊 2. Gösterge Paneli ve Küpe Numaralı Takip
+            2. Gösterge Paneli ve Küpe Numaralı Takip
           </h4>
-          <p style="margin:0 0 6px 0;"><strong>• 🩸 Tohumlama / Koç Katımı:</strong> Önceki aşımdan/tohumlamadan 14–19 gün geçmiş (17 günlük östrus siklusu) koyunlar ve 12–20 aylık damızlık toklular otomatik hesaplanır. Mor karta dokunarak üreme takvimine geçebilirsiniz.</p>
-          <p style="margin:0;"><strong>• 🔔 Uyarılı Küpe Numaraları:</strong> Sayfa başındaki kritik takip listesinde kafa karıştırıcı sayılar yerine doğrudan <strong>Küpe Numaraları</strong> listelenir. Herhangi bir küpeye dokunarak koyunun acil sağlık kartına ve eylem adımlarına tek tıkla ulaşabilirsiniz.</p>
+          <p style="margin:0 0 6px 0;"><strong>• Tohumlama / Koç Katımı:</strong> Önceki aşımdan/tohumlamadan 14–19 gün geçmiş (17 günlük östrus siklusu) koyunlar ve 12–20 aylık damızlık toklular otomatik hesaplanır. Mor karta dokunarak üreme takvimine geçebilirsiniz.</p>
+          <p style="margin:0;"><strong>• Uyarılı Küpe Numaraları:</strong> Sayfa başındaki kritik takip listesinde kafa karıştırıcı sayılar yerine doğrudan <strong>Küpe Numaraları</strong> listelenir. Herhangi bir küpeye dokunarak koyunun acil sağlık kartına ve eylem adımlarına tek tıkla ulaşabilirsiniz.</p>
         </div>
 
         <!-- 3. NASIL DEVAM ETMELİYİM? -->
         <h4 style="color:#0f172a; margin:14px 0 8px 0; font-size:0.95rem; font-weight:800; border-bottom:2px solid #e2e8f0; padding-bottom:4px;">
-          🔄 3. Nasıl Devam Etmeliyim? (Ağılda ve Merada Günlük İş Akışı)
+          3. Nasıl Devam Etmeliyim? (Ağılda ve Merada Günlük İş Akışı)
         </h4>
 
         <!-- Senaryo 1: Acil Durum -->
         <div style="margin-bottom:12px; padding-left:4px;">
           <h5 style="color:#dc2626; margin:0 0 4px 0; font-size:0.88rem; font-weight:800;">
-            🚨 Senaryo 1: Ağılda / Merada Acil Durum & Hayat Kurtarma (Kapı A)
+            Senaryo 1: Ağılda / Merada Acil Durum & Hayat Kurtarma (Kapı A)
           </h5>
-          <p style="margin:0 0 4px 0;">• <strong>🆘 Acil İlk Yardım:</strong> Aşı şokunda kiloyu girip anında <strong>Adrenalin Dozunu</strong> hesaplayın. <strong>Gebelik Zehirlenmesi / İkiz Koması</strong> (propilen glikol/pekmez ve glikoz serumu), <strong>Çelerme / Enterotoksemi</strong> (yemi kesme, karbonatlı su, Clostridium antitoksin), <strong>Yeni Doğan Kuzu Donması / Hipotermi</strong> (ısıtma lambası ve vücut ısınmadan süt zorlamama), <strong>Sidik Zoru & İdrar Taşı</strong>, <strong>Kurt Isırması / Kanama</strong> ve <strong>Timpani Gaz Şişmesi</strong> protokollerini adım adım uygulayın.</p>
-          <p style="margin:0;">• <strong>🩺 Hasta Muayene Et (Triyaj):</strong> Koyun durgunsa veya yatıyorsa makat ateşini dereceyle ölçüp yazın (Normal: 38.5–40.0°C. 40.2°C üzeri yüksek ateştir), klinik puanı verin; sistem hastalığın ağırlığını ve ne yapmanız gerektiğini söylesin.</p>
+          <p style="margin:0 0 4px 0;">• <strong>Acil İlk Yardım:</strong> Aşı şokunda kiloyu girip anında <strong>Adrenalin Dozunu</strong> hesaplayın. <strong>Gebelik Zehirlenmesi / İkiz Koması</strong> (propilen glikol/pekmez ve glikoz serumu), <strong>Çelerme / Enterotoksemi</strong> (yemi kesme, karbonatlı su, Clostridium antitoksin), <strong>Yeni Doğan Kuzu Donması / Hipotermi</strong> (ısıtma lambası ve vücut ısınmadan süt zorlamama), <strong>Sidik Zoru & İdrar Taşı</strong>, <strong>Kurt Isırması / Kanama</strong> ve <strong>Timpani Gaz Şişmesi</strong> protokollerini adım adım uygulayın.</p>
+          <p style="margin:0;">• <strong>Hasta Muayene Et (Triyaj):</strong> Koyun durgunsa veya yatıyorsa makat ateşini dereceyle ölçüp yazın (Normal: 38.5–40.0°C. 40.2°C üzeri yüksek ateştir), klinik puanı verin; sistem hastalığın ağırlığını ve ne yapmanız gerektiğini söylesin.</p>
         </div>
 
         <!-- Senaryo 2: İlaç Yapıldığında -->
         <div style="margin-bottom:12px; padding-left:4px;">
           <h5 style="color:#d97706; margin:0 0 4px 0; font-size:0.88rem; font-weight:800;">
-            🥛 Senaryo 2: İğne / İlaç Yaptığınızda - Zararı ve Cezayı Önleyin (Kapı B)
+            Senaryo 2: İğne / İlaç Yaptığınızda - Zararı ve Cezayı Önleyin (Kapı B)
           </h5>
-          <p style="margin:0 0 4px 0;">• <strong>💊 İlaç Yap & Süt Kilitle (İKAS):</strong> İğne vurduğunuz an koyunu ve ilacı seçin. Sistem yasal süt ve et arınma süresini canlı saat-dakika geri sayımıyla kilitler. ⚠️ <em>Tilmikosin</em> koyunda yalnızca deri altı vurulur (damara KESİNLİKLE vurulmaz!). <em>Albendazol</em> erken gebelikte yavru attırır.</p>
-          <p style="margin:0 0 4px 0;">• <strong>🥛 Sağımcı Ekranı:</strong> Küpeyi yazınca dev ekranda <strong>"🟢 SAĞIMA UYGUN"</strong> veya <strong>"🔴 BU KOYUNU TANKA SAĞMA"</strong> uyarısı verir. Sütün mandıraya veya peynire karışmasını ve kasap/kesim cezasını engeller.</p>
-          <p style="margin:0;">• <strong>💰 Zarar & Masraf Defteri:</strong> Dökülen sütü ve veteriner masrafını girin; cebinizden çıkan net ekonomik zararı kuruşu kuruşuna görün.</p>
+          <p style="margin:0 0 4px 0;">• <strong>İlaç Yap & Süt Kilitle (İKAS):</strong> İğne vurduğunuz an koyunu ve ilacı seçin. Sistem yasal süt ve et arınma süresini canlı saat-dakika geri sayımıyla kilitler. <em>Tilmikosin</em> koyunda yalnızca deri altı vurulur (damara KESİNLİKLE vurulmaz!). <em>Albendazol</em> erken gebelikte yavru attırır.</p>
+          <p style="margin:0 0 4px 0;">• <strong>Sağımcı Ekranı:</strong> Küpeyi yazınca dev ekranda <strong>"SAĞIMA UYGUN"</strong> veya <strong>"BU KOYUNU TANKA SAĞMA"</strong> uyarısı verir. Sütün mandıraya veya peynire karışmasını ve kasap/kesim cezasını engeller.</p>
+          <p style="margin:0;">• <strong>Zarar & Masraf Defteri:</strong> Dökülen sütü ve veteriner masrafını girin; cebinizden çıkan net ekonomik zararı kuruşu kuruşuna görün.</p>
         </div>
 
         <!-- Senaryo 3: Günlük Rutin -->
         <div style="margin-bottom:12px; padding-left:4px;">
           <h5 style="color:#15803d; margin:0 0 4px 0; font-size:0.88rem; font-weight:800;">
-            📋 Senaryo 3: Günlük Ağıl Rutini, Koç Katımı & Kuzu Büyütme (Kapı C)
+            Senaryo 3: Günlük Ağıl Rutini, Koç Katımı & Kuzu Büyütme (Kapı C)
           </h5>
-          <p style="margin:0 0 4px 0;">• <strong>🩸 Koç Katımı & Doğum Çarkı:</strong> Koç aşım tarihini girin; 17. gün koç dönüşünü, 35. gün ultrason kontrolünü, 120. gün doğuma 1 ay kala çelerme aşısını ve 150. gün beklenen kuzulama gününü takip edin.</p>
-          <p style="margin:0 0 4px 0;">• <strong>🍼 Kuzu Hayatta Tutma & İlk Ağız Sütü:</strong> İlk 2 saatte en az 300–400 mL (2 çay bardağı) koyu ağız sütünü içirin. Brix optik refraktometreyle kaliteyi ölçün; ishal kuzularda göz çökmesine göre 24 saatlik serum/can suyu litresini hesaplayın.</p>
-          <p style="margin:0 0 4px 0;">• <strong>📅 Akıllı Aşı Takvimi:</strong> Çelerme (Enterotoksemi), Çiçek, PPR Veba, Şap ve Brucella aşılarının takvim ve rapel sürelerini takip edin.</p>
-          <p style="margin:0 0 4px 0;">• <strong>⚖️ Şerit Metreyle Canlı Kilo Ölçümü:</strong> Kantar yokken koyunun veya toklunun göğüs çevresini ve boyunu mezurayla ölçün; küçükbaş formülüyle canlı ağırlığı ve iğne dozlarını anında görün.</p>
-          <p style="margin:0;">• <strong>🌾 Yemlik & Geviş Sayacı:</strong> Yemden 2 saat sonra yerde yatan koyunların geviş getirmesini sayın (Hedef: %58-60); koyun fındığı/zibin kıvamını kontrol edip sürüye günlük karbonat miktarını (15-30 gr/koyun) hesaplayın.</p>
+          <p style="margin:0 0 4px 0;">• <strong>Koç Katımı & Doğum Çarkı:</strong> Koç aşım tarihini girin; 17. gün koç dönüşünü, 35. gün ultrason kontrolünü, 120. gün doğuma 1 ay kala çelerme aşısını ve 150. gün beklenen kuzulama gününü takip edin.</p>
+          <p style="margin:0 0 4px 0;">• <strong>Kuzu Hayatta Tutma & İlk Ağız Sütü:</strong> İlk 2 saatte en az 300–400 mL (2 çay bardağı) koyu ağız sütünü içirin. Brix optik refraktometreyle kaliteyi ölçün; ishal kuzularda göz çökmesine göre 24 saatlik serum/can suyu litresini hesaplayın.</p>
+          <p style="margin:0 0 4px 0;">• <strong>Akıllı Aşı Takvimi:</strong> Çelerme (Enterotoksemi), Çiçek, PPR Veba, Şap ve Brucella aşılarının takvim ve rapel sürelerini takip edin.</p>
+          <p style="margin:0 0 4px 0;">• <strong>Şerit Metreyle Canlı Kilo Ölçümü:</strong> Kantar yokken koyunun veya toklunun göğüs çevresini ve boyunu mezurayla ölçün; küçükbaş formülüyle canlı ağırlığı ve iğne dozlarını anında görün.</p>
+          <p style="margin:0;">• <strong>Yemlik & Geviş Sayacı:</strong> Yemden 2 saat sonra yerde yatan koyunların geviş getirmesini sayın (Hedef: %58-60); koyun fındığı/zibin kıvamını kontrol edip sürüye günlük karbonat miktarını (15-30 gr/koyun) hesaplayın.</p>
         </div>
 
         <!-- Senaryo 4: Veri Yedekleme -->
         <div style="background:#f8fafc; border:1px solid #e2e8f0; padding:10px 14px; border-radius:6px;">
           <h5 style="color:#475569; margin:0 0 4px 0; font-size:0.85rem; font-weight:800;">
-            💾 Senaryo 4: Günün Sonunda / Hafta Sonu (Veri Güvenliği)
+            Senaryo 4: Günün Sonunda / Hafta Sonu (Veri Güvenliği)
           </h5>
-          <p style="margin:0;">• Sağımcı ekranının en altındaki <strong>"📥 Yedeği İndir"</strong> butonuyla kayıtlarınızı JSON dosyası olarak telefonunuza indirin. Başka telefona geçtiğinizde <strong>"📤 Yedeği Yükle"</strong> ile tüm ağıl verilerinizi 2 saniyede geri yükleyin.</p>
+          <p style="margin:0;">• Sağımcı ekranının en altındaki <strong>"Yedeği İndir"</strong> butonuyla kayıtlarınızı JSON dosyası olarak telefonunuza indirin. Başka telefona geçtiğinizde <strong>"Yedeği Yükle"</strong> ile tüm ağıl verilerinizi 2 saniyede geri yükleyin.</p>
         </div>
       </div>
       <div style="padding:10px 18px; border-top:1px solid #e2e8f0; background:#f8fafc; border-bottom-left-radius:12px; border-bottom-right-radius:12px; text-align:right;">
@@ -2441,9 +2441,9 @@
           id: "alert-milk-ikas",
           type: "danger",
           category: "ikas",
-          icon: "🚫",
-          badgeText: `🚫 Süt Kilidi: ${timeStr}`,
-          title: "🚫 Süt Arınma Kısıtı (İlaçlı Süt)",
+          icon: "",
+          badgeText: `Süt Kilidi: ${timeStr}`,
+          title: "Süt Arınma Kısıtı (İlaçlı Süt)",
           desc: `Yapılan ${causeDrug} nedeniyle koyunun sütünde kalıntı vardır. Süt tankına kesinlikle sağmayın!`,
           timeInfo: `Kalan Süre: ${timeStr} (Serbest: ${latestMilkEnd.toLocaleString('tr-TR', {day:'2-digit', month:'2-digit', hour:'2-digit', minute:'2-digit'})})`,
           actionText: "Ayrı kovaya sağıp dökün veya kuzuya kesinlikle emzirmeyin.",
@@ -2470,9 +2470,9 @@
           id: "alert-meat-ikas",
           type: "danger",
           category: "ikas",
-          icon: "🥩",
-          badgeText: `🥩 Kesim Kilidi: ${daysLeft}g`,
-          title: "🥩 Kesim / Mezbaha Kilidi (Et İKAS)",
+          icon: "",
+          badgeText: `Kesim Kilidi: ${daysLeft}g`,
+          title: "Kesim / Mezbaha Kilidi (Et İKAS)",
           desc: `Karkasta ilaç kalıntısı vardır. Yasal olarak mezbaha, kasap veya kurbanlık kesimine sevk edilemez!`,
           timeInfo: `Kalan Süre: ${daysLeft} gün (Serbest: ${latestMeatEnd.toLocaleDateString('tr-TR')})`,
           actionText: "Arınma süresi dolana kadar hayvanı kesime veya pazara göndermeyin.",
@@ -2486,9 +2486,9 @@
           id: "alert-quarantine",
           type: "warning",
           category: "health",
-          icon: "⚠️",
-          badgeText: "⚠️ Karantinada",
-          title: "⚠️ Ayrı Bölmede (Karantina / Tecrit)",
+          icon: "",
+          badgeText: "Karantinada",
+          title: "Ayrı Bölmede (Karantina / Tecrit)",
           desc: "Bu koyun sürüden ayrı bölmede tutulmaktadır (pazardan yeni geliş veya hastalık şüphesi).",
           timeInfo: "Ağıl içi izolasyon devam ediyor",
           actionText: "Ortak suluk ve yemlik kullandırmayın, bakımı diğer hayvanlardan sonra yapın.",
@@ -2508,9 +2508,9 @@
             id: "alert-repro-heat",
             type: "info",
             category: "repro",
-            icon: "🔍",
-            badgeText: `🔍 Koç Takibi (${daysPassed}.g)`,
-            title: `🔍 Koç Aşım Dönüş Takibi (Gün ${daysPassed})`,
+            icon: "",
+            badgeText: `Koç Takibi (${daysPassed}.g)`,
+            title: `Koç Aşım Dönüş Takibi (Gün ${daysPassed})`,
             desc: "Koyunlarda döngü 16-17 gündür. Koç tutmadıysa tekrar koça gelebilir.",
             timeInfo: `Koç Katımı: ${new Date(latestRepro.date).toLocaleDateString('tr-TR')}`,
             actionText: "Arama koçu ile takip edin veya sürüde koçun peşinden gidip gitmediğini izleyin.",
@@ -2521,9 +2521,9 @@
             id: "alert-repro-pregcheck",
             type: "info",
             category: "repro",
-            icon: "🩺",
-            badgeText: `🩺 Ultrason Kontrolü (${daysPassed}.g)`,
-            title: `🩺 Ultrasonla Gebelik & İkizlik Kontrolü (Gün ${daysPassed})`,
+            icon: "",
+            badgeText: `Ultrason Kontrolü (${daysPassed}.g)`,
+            title: `Ultrasonla Gebelik & İkizlik Kontrolü (Gün ${daysPassed})`,
             desc: "35-50. günler koyunlarda yavru kesesi ve tekiz/ikiz tespiti için en uygun dönemdir.",
             timeInfo: `Koç Katımı: ${new Date(latestRepro.date).toLocaleDateString('tr-TR')}`,
             actionText: "Ultrasonla muayene ettirerek ikiz gebe koyunları ayırıp beslemeyi artırın.",
@@ -2534,9 +2534,9 @@
             id: "alert-repro-dry",
             type: "warning",
             category: "repro",
-            icon: "🛑",
-            badgeText: `🛑 Kuruya Çıkar (${daysPassed}.g)`,
-            title: "🛑 Kuruya Alma Zamanı (Doğuma ~40-50 gün)",
+            icon: "",
+            badgeText: `Kuruya Çıkar (${daysPassed}.g)`,
+            title: "Kuruya Alma Zamanı (Doğuma ~40-50 gün)",
             desc: "Yavru büyümesinin hızlandığı son döneme giriliyor, sağımı sonlandırın.",
             timeInfo: `Beklenen Doğum: ${new Date(latestRepro.calvingDate).toLocaleDateString('tr-TR')}`,
             actionText: "Sağımı kesin ve kaliteli kaba yemle koyunun kondisyonunu koruyun.",
@@ -2547,9 +2547,9 @@
             id: "alert-repro-clostridial",
             type: "info",
             category: "repro",
-            icon: "💉",
-            badgeText: "💉 Çelerme Aşısı",
-            title: `💉 Doğum Öncesi Çelerme (Enterotoksemi) Aşısı (Gün ${daysPassed})`,
+            icon: "",
+            badgeText: "Çelerme Aşısı",
+            title: `Doğum Öncesi Çelerme (Enterotoksemi) Aşısı (Gün ${daysPassed})`,
             desc: "Doğacak kuzuların ağız sütüyle (kolostrum) antikor alması için anneye aşı zamanı.",
             timeInfo: "Kuzulamaya 3-4 hafta kaldı",
             actionText: "Koyunlara karma clostridial / çelerme aşısı yaparak kuzuları ani ölümlerden koruyun.",
@@ -2561,9 +2561,9 @@
             id: "alert-repro-lambing-near",
             type: "danger",
             category: "repro",
-            icon: "🎉",
-            badgeText: `🎉 Kuzulama Yaklaştı (${daysToBirth > 0 ? daysToBirth + ' gün' : 'Bugünlerde'})`,
-            title: `🎉 Kuzulama Çok Yaklaştı! (Gebelik ${daysPassed}. Gün / 150)`,
+            icon: "",
+            badgeText: `Kuzulama Yaklaştı (${daysToBirth > 0 ? daysToBirth + ' gün' : 'Bugünlerde'})`,
+            title: `Kuzulama Çok Yaklaştı! (Gebelik ${daysPassed}. Gün / 150)`,
             desc: "150 günlük gebelik süresi doluyor! Koyun her an kuzulayabilir.",
             timeInfo: `Beklenen Kuzulama: ${new Date(latestRepro.calvingDate).toLocaleDateString('tr-TR')}`,
             actionText: "Koyunu temiz, ılık ferdi doğum boksuna alın. Göbek kordonu için tentürdiyot hazırlayın.",
@@ -2574,9 +2574,9 @@
             id: "alert-repro-lambing-overdue",
             type: "danger",
             category: "repro",
-            icon: "⏰",
-            badgeText: `⏰ Kuzulama Gecikti (${daysPassed - 150} gün)`,
-            title: `⏰ Beklenen Kuzulama Süresi Aşıldı (Gün ${daysPassed})`,
+            icon: "",
+            badgeText: `Kuzulama Gecikti (${daysPassed - 150} gün)`,
+            title: `Beklenen Kuzulama Süresi Aşıldı (Gün ${daysPassed})`,
             desc: "150 günlük gebelik süresi aşıldı. Güç doğum, yavru ölümü veya rahim enfeksiyonu kontrol edilmelidir.",
             timeInfo: `Beklenen Tarih: ${new Date(latestRepro.calvingDate).toLocaleDateString('tr-TR')}`,
             actionText: "Acilen veteriner hekime muayene ettirin.",
@@ -2597,9 +2597,9 @@
                 id: `alert-vac-overdue-${v.id}`,
                 type: "danger",
                 category: "vaccine",
-                icon: "💉",
-                badgeText: `💉 ${v.vaccine}: Gecikti (${Math.abs(diffDays)}g)`,
-                title: `💉 Aşı Gecikti: ${v.vaccine}`,
+                icon: "",
+                badgeText: `${v.vaccine}: Gecikti (${Math.abs(diffDays)}g)`,
+                title: `Aşı Gecikti: ${v.vaccine}`,
                 desc: `Bu koyunun tekrar/rapel aşısı ${Math.abs(diffDays)} gün önce yapılmalıydı!`,
                 timeInfo: `Planlanan: ${bDate.toLocaleDateString('tr-TR')}`,
                 actionText: "Sürü bağışıklığı zayıflamadan acilen aşıyı uygulayın.",
@@ -2610,9 +2610,9 @@
                 id: `alert-vac-soon-${v.id}`,
                 type: "warning",
                 category: "vaccine",
-                icon: "💉",
-                badgeText: `💉 ${v.vaccine}: ${diffDays === 0 ? 'Bugün' : diffDays + 'g kaldı'}`,
-                title: `💉 Yaklaşan Aşı: ${v.vaccine}`,
+                icon: "",
+                badgeText: `${v.vaccine}: ${diffDays === 0 ? 'Bugün' : diffDays + 'g kaldı'}`,
+                title: `Yaklaşan Aşı: ${v.vaccine}`,
                 desc: `Tekrar aşı tarihi yaklaşıyor (${diffDays === 0 ? 'BUGÜN' : diffDays + ' gün kaldı'}).`,
                 timeInfo: `Planlanan: ${bDate.toLocaleDateString('tr-TR')}`,
                 actionText: "Aşı flakonunu soğuk zincirde hazır bulundurun.",
@@ -2629,9 +2629,9 @@
           id: "alert-bcs-low",
           type: "danger",
           category: "health",
-          icon: "⚠️",
-          badgeText: `⚠️ Çok Zayıf (BCS ${animal.bcs.toFixed(1)})`,
-          title: `⚠️ Kondisyon Tehlikesi: Aşırı Zayıf (BCS ${animal.bcs.toFixed(1)})`,
+          icon: "",
+          badgeText: `Çok Zayıf (BCS ${animal.bcs.toFixed(1)})`,
+          title: `Kondisyon Tehlikesi: Aşırı Zayıf (BCS ${animal.bcs.toFixed(1)})`,
           desc: "Sırt ve bel sivri. Gebelik toksemisi (ikiz kuzu hastalığı) ve döl tutmama riski çok yüksektir!",
           timeInfo: "Kritik Kondisyon Kaybı",
           actionText: "Enerji/arpa takviyesi yapın, iç parazit kontrolü ve mineral desteği sağlayın.",
@@ -2642,9 +2642,9 @@
           id: "alert-bcs-high",
           type: "warning",
           category: "health",
-          icon: "⚠️",
-          badgeText: `⚠️ Aşırı Yağlı (BCS ${animal.bcs.toFixed(1)})`,
-          title: `⚠️ Kondisyon Uyarısı: Aşırı Yağlı / Hantal (BCS ${animal.bcs.toFixed(1)})`,
+          icon: "",
+          badgeText: `Aşırı Yağlı (BCS ${animal.bcs.toFixed(1)})`,
+          title: `Kondisyon Uyarısı: Aşırı Yağlı / Hantal (BCS ${animal.bcs.toFixed(1)})`,
           desc: "Kuyruk ve bel aşırı yağ toplamış. Güç doğum ve doğum sonrası karaciğer yağlanması riski!",
           timeInfo: "Yağlanma Eğilimi",
           actionText: "Arpa ve yoğun yem miktarını azaltın, kaliteli kaba yem verin.",
@@ -2663,9 +2663,9 @@
             id: "alert-triage-recent",
             type: "danger",
             category: "health",
-            icon: "🔥",
-            badgeText: `🔥 Hasta / Ateşli (${latestTriage.temp || '40.2+'}°C)`,
-            title: "🔥 Klinik Alarm: Yüksek Ateş / Hastalık Belirtisi",
+            icon: "",
+            badgeText: `Hasta / Ateşli (${latestTriage.temp || '40.2+'}°C)`,
+            title: "Klinik Alarm: Yüksek Ateş / Hastalık Belirtisi",
             desc: `Son muayenede ateş: ${latestTriage.temp}°C, DART hastalık skoru: ${latestTriage.dartScore}/12.`,
             timeInfo: `Muayene: ${triageDate.toLocaleDateString('tr-TR')}`,
             actionText: "Veteriner hekim tedavi protokolünü aksatmayın, ateşi sabah-akşam takip edin.",
@@ -2771,13 +2771,13 @@
       let alertHtml = "";
       if (animalAlertsMap.length > 0) {
         const earTagChips = animalAlertsMap.map(item => {
-          return `<span class="tag tag-danger" style="background:#fee2e2; color:#991b1b; cursor:pointer; font-weight:800; font-size:0.8rem; padding:3px 8px; border-radius:5px;" onclick="showAnimalAlertsModal('${item.animal.id}')" title="Detay için tıkla">🏷️ ${item.animal.earTag}</span>`;
+          return `<span class="tag tag-danger" style="background:#fee2e2; color:#991b1b; cursor:pointer; font-weight:800; font-size:0.8rem; padding:3px 8px; border-radius:5px;" onclick="showAnimalAlertsModal('${item.animal.id}')" title="Detay için tıkla">${item.animal.earTag}</span>`;
         }).join(" ");
 
         alertHtml = `
           <div class="banner-alert banner-danger" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
             <div>
-              <div style="font-weight:900; font-size:0.95rem; margin-bottom:4px;">🚨 Kritik Uyarılı Koyunlar (Küpe No):</div>
+              <div style="font-weight:900; font-size:0.95rem; margin-bottom:4px;">Kritik Uyarılı Koyunlar (Küpe No):</div>
               <div style="display:flex; flex-wrap:wrap; gap:5px; align-items:center;">
                 ${earTagChips}
               </div>
@@ -2795,7 +2795,7 @@
       // 2. Süt İKAS Özet Listesi
       const ikasList = document.getElementById("dashboard-ikas-list");
       if (blockedEarTags.length > 0) {
-        ikasList.innerHTML = `<strong>Sütü Yasaklılar:</strong> ` + blockedEarTags.map(tag => `<span class="tag tag-danger" style="cursor:pointer;" onclick="showAnimalAlertsByTag('${tag}')">🚫 ${tag}</span>`).join(" ");
+        ikasList.innerHTML = `<strong>Sütü Yasaklılar:</strong> ` + blockedEarTags.map(tag => `<span class="tag tag-danger" style="cursor:pointer;" onclick="showAnimalAlertsByTag('${tag}')">${tag}</span>`).join(" ");
       } else {
         ikasList.innerHTML = "Aktif süt arınma kısıtı yok.";
       }
@@ -2804,7 +2804,7 @@
       const meatList = document.getElementById("dashboard-meat-list");
       if (meatList) {
         if (blockedMeatTags.length > 0) {
-          meatList.innerHTML = `<strong>Kesimi Yasaklılar:</strong> ` + blockedMeatTags.map(tag => `<span class="tag tag-danger" style="background:#fee2e2; color:#b91c1c; cursor:pointer;" onclick="showAnimalAlertsByTag('${tag}')">🥩 ${tag}</span>`).join(" ");
+          meatList.innerHTML = `<strong>Kesimi Yasaklılar:</strong> ` + blockedMeatTags.map(tag => `<span class="tag tag-danger" style="background:#fee2e2; color:#b91c1c; cursor:pointer;" onclick="showAnimalAlertsByTag('${tag}')">${tag}</span>`).join(" ");
         } else {
           meatList.innerHTML = "Aktif kesim/et arınma kilidi olan koyun yok. Kesime uygundur.";
         }
@@ -2842,7 +2842,7 @@
             const matchingAlerts = currentAlertFilter === "all" ? item.alerts : item.alerts.filter(al => al.category === currentAlertFilter);
             const topAlert = matchingAlerts[0] || item.alerts[0];
             const cls = topAlert.type === "danger" ? "tag-danger" : (topAlert.type === "warning" ? "tag-warning" : "tag-info");
-            return `<button type="button" class="tag ${cls}" style="cursor:pointer; font-size:0.82rem; font-weight:800; padding:4px 8px; border-radius:6px; border:none; display:inline-flex; align-items:center; gap:4px;" onclick="showAnimalAlertsModal('${a.id}')" title="Detay ve eylemleri gör">🏷️ ${a.earTag} <small style="opacity:0.85;">(${topAlert.badgeText})</small></button>`;
+            return `<button type="button" class="tag ${cls}" style="cursor:pointer; font-size:0.82rem; font-weight:800; padding:4px 8px; border-radius:6px; border:none; display:inline-flex; align-items:center; gap:4px;" onclick="showAnimalAlertsModal('${a.id}')" title="Detay ve eylemleri gör">${a.earTag} <small style="opacity:0.85;">(${topAlert.badgeText})</small></button>`;
           }).join(" ");
         } else {
           chipsEl.innerHTML = `<span style="color:#94a3b8; font-size:0.78rem;">Bu kategoride uyarılı küpe bulunmuyor.</span>`;
@@ -2853,7 +2853,7 @@
         if (animalAlertsMap.length === 0) {
           container.innerHTML = `
             <div style="text-align:center; padding:16px; background:#f0fdf4; border:1px solid #bbf7d0; border-radius:8px; color:#166534; font-size:0.85rem;">
-              ✅ <strong>Harika!</strong> Sürüde herhangi bir aktif hayvan uyarısı bulunmuyor.
+              <strong>Harika!</strong> Sürüde herhangi bir aktif hayvan uyarısı bulunmuyor.
             </div>
           `;
         } else {
@@ -2887,18 +2887,18 @@
             <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:8px;">
               <div>
                 <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
-                  <strong style="font-size:1.05rem; color:var(--primary); background:#eff6ff; border:1px solid #bfdbfe; padding:2px 8px; border-radius:6px;">🏷️ ${a.earTag}</strong>
+                  <strong style="font-size:1.05rem; color:var(--primary); background:#eff6ff; border:1px solid #bfdbfe; padding:2px 8px; border-radius:6px;">${a.earTag}</strong>
                   <small style="color:#64748b; font-weight:600;">(${a.type} • ${a.gender})</small>
                 </div>
                 <div style="margin-top:6px; display:flex; flex-wrap:wrap; gap:4px; align-items:center;">
                   ${badgesHtml}
                 </div>
                 <div style="margin-top:6px; font-size:0.8rem; color:#475569;">
-                  <strong>⚡ Eylem:</strong> ${topAlert.actionText}
+                  <strong>Eylem:</strong> ${topAlert.actionText}
                 </div>
               </div>
               <button class="btn btn-outline" style="min-height:32px; padding:4px 12px; font-size:0.8rem; font-weight:700; color:var(--primary); border-color:var(--primary); width:auto;" onclick="showAnimalAlertsModal('${a.id}')">
-                📋 Detay & Eylem
+                Detay & Eylem
               </button>
             </div>
           </div>
@@ -2956,7 +2956,7 @@
             return `<span class="tag ${cls}" style="cursor:pointer; font-size:0.75rem; padding:3px 7px; margin:2px;" onclick="showAnimalAlertsModal('${a.id}')" title="${alt.title}: ${alt.desc}">${alt.badgeText}</span>`;
           }).join("");
         } else {
-          alertBadgesHtml = `<span class="tag animal-alert-badge-success" style="font-size:0.75rem; padding:3px 7px; cursor:pointer;" onclick="showAnimalAlertsModal('${a.id}')">✅ Sorun Yok</span>`;
+          alertBadgesHtml = `<span class="tag animal-alert-badge-success" style="font-size:0.75rem; padding:3px 7px; cursor:pointer;" onclick="showAnimalAlertsModal('${a.id}')">Sorun Yok</span>`;
         }
 
         tr.innerHTML = `
@@ -2971,7 +2971,7 @@
           </td>
           <td>
             <div style="display:flex; gap:4px; align-items:center;">
-              <button class="btn btn-outline" style="min-height:34px; padding:4px 10px; font-size:0.75rem; font-weight:700; color:var(--primary); border-color:#99f6e4; width:auto; touch-action:manipulation;" onclick="showAnimalAlertsModal('${a.id}')" title="Hayvan Uyarı ve Sağlık Kartı">📋 Uyarılar</button>
+              <button class="btn btn-outline" style="min-height:34px; padding:4px 10px; font-size:0.75rem; font-weight:700; color:var(--primary); border-color:#99f6e4; width:auto; touch-action:manipulation;" onclick="showAnimalAlertsModal('${a.id}')" title="Hayvan Uyarı ve Sağlık Kartı">Uyarılar</button>
               <button class="btn btn-outline" style="min-height:34px; padding:4px 8px; font-size:0.75rem; font-weight:700; color:#dc2626; border-color:#fca5a5; width:auto; touch-action:manipulation;" onclick="deleteAnimal('${a.id}')">Sil</button>
             </div>
           </td>
@@ -2999,13 +2999,13 @@
       const contentEl = document.getElementById("animal-alerts-modal-content");
       const actionsEl = document.getElementById("animal-alerts-modal-actions");
 
-      titleEl.innerHTML = `🔔 ${animal.earTag} • Sağlık & Uyarı Kartı`;
+      titleEl.innerHTML = `${animal.earTag} • Sağlık & Uyarı Kartı`;
 
       let alertsHtml = "";
       if (alerts.length === 0) {
         alertsHtml = `
           <div style="padding:14px; background:#f0fdf4; border:1px solid #86efac; border-radius:8px; color:#166534; font-size:0.85rem; margin-bottom:12px;">
-            ✅ <strong>HERHANGİ BİR RİSK YOK:</strong> Bu koyun için şu anda aktif süt yasağı, kesim kilidi, gecikmiş aşı veya kritik klinik uyarı bulunmamaktadır. Tüm sağlık parametreleri uygundur.
+            <strong>HERHANGİ BİR RİSK YOK:</strong> Bu koyun için şu anda aktif süt yasağı, kesim kilidi, gecikmiş aşı veya kritik klinik uyarı bulunmamaktadır. Tüm sağlık parametreleri uygundur.
           </div>
         `;
       } else {
@@ -3026,10 +3026,10 @@
                 ${alt.desc}
               </div>
               <div style="font-size:0.78rem; font-weight:700; color:#0f766e; margin-bottom:6px;">
-                ⏱️ ${alt.timeInfo}
+                ${alt.timeInfo}
               </div>
               <div style="font-size:0.82rem; background:rgba(255,255,255,0.7); padding:6px 10px; border-radius:6px; border:1px dashed #cbd5e1; color:#0f172a;">
-                <strong>💡 Yapılacak İşlem:</strong> ${alt.actionText}
+                <strong>Yapılacak İşlem:</strong> ${alt.actionText}
               </div>
             </div>
           `;
@@ -3043,7 +3043,7 @@
           <div><strong>Irk/Yön:</strong> ${animal.type}</div>
           <div><strong>Cinsiyet/Yaş:</strong> ${animal.gender} (${animal.ageMonths} ay)</div>
           <div><strong>Kondisyon (BCS):</strong> ${animal.bcs.toFixed(2)} / 5.0</div>
-          <div><strong>Ayrı Bölme:</strong> ${animal.quarantine ? '⚠️ Evet (Karantina)' : 'Hayır'}</div>
+          <div><strong>Ayrı Bölme:</strong> ${animal.quarantine ? 'Evet (Karantina)' : 'Hayır'}</div>
           <div><strong>Son Durum:</strong> ${animal.lastStatus || 'Normal'}</div>
         </div>
 
@@ -3053,9 +3053,9 @@
 
       // Hızlı Aksiyon Butonları
       actionsEl.innerHTML = `
-        <button class="btn btn-warning" style="width:auto; padding:6px 10px; font-size:0.75rem; white-space:nowrap;" onclick="jumpToAnimalAction('ikas', '${animal.id}')">💊 İlaç Yap</button>
-        <button class="btn btn-info" style="width:auto; padding:6px 10px; font-size:0.75rem; white-space:nowrap;" onclick="jumpToAnimalAction('repro', '${animal.id}')">🩸 Koç/Doğum</button>
-        <button class="btn btn-primary" style="width:auto; padding:6px 10px; font-size:0.75rem; white-space:nowrap;" onclick="jumpToAnimalAction('triage', '${animal.id}')">🩺 Muayene</button>
+        <button class="btn btn-warning" style="width:auto; padding:6px 10px; font-size:0.75rem; white-space:nowrap;" onclick="jumpToAnimalAction('ikas', '${animal.id}')">İlaç Yap</button>
+        <button class="btn btn-info" style="width:auto; padding:6px 10px; font-size:0.75rem; white-space:nowrap;" onclick="jumpToAnimalAction('repro', '${animal.id}')">Koç/Doğum</button>
+        <button class="btn btn-primary" style="width:auto; padding:6px 10px; font-size:0.75rem; white-space:nowrap;" onclick="jumpToAnimalAction('triage', '${animal.id}')">Muayene</button>
       `;
 
       document.getElementById("modal-animal-alerts").style.display = "flex";
@@ -3116,7 +3116,7 @@
       // Ateş Uyarı Metni
       const tempHint = document.getElementById("temp-hint");
       if (temp >= 39.5) {
-        tempHint.innerHTML = `<span style="color:var(--danger); font-weight:700;">⚠️ YÜKSEK ATEŞ (>39.5°C)</span>`;
+        tempHint.innerHTML = `<span style="color:var(--danger); font-weight:700;">YÜKSEK ATEŞ (>39.5°C)</span>`;
       } else {
         tempHint.textContent = "Normal: 38.5 - 40.0°C";
       }
@@ -3133,7 +3133,7 @@
       if (isShock || totalDart >= 7) {
         category = "ÇOK ACİL & AĞIR HASTA (VETERİNERİ HEMEN ÇAĞIR!)";
         bannerType = "banner-danger";
-        actionText = `🚨 <strong>HAYATİ TEHLİKE VAR!</strong><br>
+        actionText = `<strong>HAYATİ TEHLİKE VAR!</strong><br>
         • Hastalık Puanı: <strong>${totalDart}/12</strong> (Çok Yüksek Tehlike)<br>
         • Hayvanı derhal diğer koyunlarden ayırıp temiz ve kuru bir bölmeye (revire) çekin.<br>
         • Derhal damardan serum ve veteriner hekimin yazacağı ciğer iğnesi + ateş düşürücü yapılmalı.<br>
@@ -3141,7 +3141,7 @@
       } else if (totalDart >= 4 || temp >= 40.2 || rumen === "1" || dehydration >= 6) {
         category = "ORTA DERECE HASTA (İLAÇ / TEDAVİ LAZIM)";
         bannerType = "banner-warning";
-        actionText = `⚠️ <strong>HAYVAN HASTALANMIŞ, MÜDAHALE EDİN:</strong><br>
+        actionText = `<strong>HAYVAN HASTALANMIŞ, MÜDAHALE EDİN:</strong><br>
         • Hastalık Puanı: <strong>${totalDart}/12</strong><br>
         • Ateşi varsa ateş düşürücü vurun, veteriner hekiminize danışarak uygun antibiyotik başlatın.<br>
         • Yarına kadar düzelip düzelmediğini tekrar buradan puanlayarak takip edin.`;
@@ -3186,7 +3186,7 @@
       renderAnimalTable();
       updateDashboardStats();
 
-      alert(`✅ ${animal.earTag} triyajı kaydedildi!\nToplam DART Skoru: ${totalDart}\nDurum güncellendi.`);
+      alert(`${animal.earTag} triyajı kaydedildi!\nToplam DART Skoru: ${totalDart}\nDurum güncellendi.`);
       switchTab("dashboard");
     }
 
@@ -3204,7 +3204,7 @@
       if (drug.lactatingForbidden) {
         warnBox.innerHTML = `
           <div class="banner-alert banner-danger">
-            ⛔ <strong>DİKKAT! SÜT VEREN İNEĞE YASAK İLAÇ:</strong> ${drug.name} ilacı sağılan süt koyunlarine kesinlikle vurulamaz! Süte zehirli kalıntı bırakır.
+            <strong>DİKKAT! SÜT VEREN İNEĞE YASAK İLAÇ:</strong> ${drug.name} ilacı sağılan süt koyunlarine kesinlikle vurulamaz! Süte zehirli kalıntı bırakır.
           </div>
         `;
       } else {
@@ -3224,7 +3224,7 @@
 
         previewBox.style.display = "block";
         previewBox.innerHTML = `
-          ⏱️ <strong>Hesaplanan Bekleme Süresi:</strong><br>
+          <strong>Hesaplanan Bekleme Süresi:</strong><br>
           • <strong>Sütü Ne Zaman Tanka Katılabilir?:</strong> ${drug.milkHours === 0 ? 'Hemen Sağılabilir (Süte Geçmez)' : milkEnd.toLocaleString('tr-TR') + ' saatine kadar dökülecek'}<br>
           • <strong>Kesime / Kasaba Ne Zaman Gidebilir?:</strong> ${meatEnd.toLocaleDateString('tr-TR')} (${drug.meatDays} gün sonra etten temizlenir)
         `;
@@ -3284,7 +3284,7 @@
 
       renderActiveIkasTable();
       updateDashboardStats();
-      alert(`✅ Tedavi kaydedildi!\n${animal.earTag} için Süt Engel Saati: ${milkEndDate.toLocaleString('tr-TR')}\nSağımcı ekranına otomatik yasak gönderildi.`);
+      alert(`Tedavi kaydedildi!\n${animal.earTag} için Süt Engel Saati: ${milkEndDate.toLocaleString('tr-TR')}\nSağımcı ekranına otomatik yasak gönderildi.`);
       switchTab("dashboard");
     }
 
@@ -3361,7 +3361,7 @@
           <td>${v.mandatory ? '<span class="badge-mandatory">Bakanlık Zorunlu</span>' : '<span class="tag tag-info">İşletme</span>'}</td>
           <td>${v.date}</td>
           <td><strong>${v.boosterDate}</strong></td>
-          <td>${v.turkvet ? '✅ Senkronize' : '⏳ Bekliyor'}</td>
+          <td>${v.turkvet ? 'Senkronize' : 'Bekliyor'}</td>
         `;
         tbody.appendChild(tr);
       });
@@ -3393,7 +3393,7 @@
       const btn = document.getElementById("theme-toggle-btn");
       if (!btn) return;
       const isDark = document.body.classList.contains("dark-mode");
-      btn.innerHTML = isDark ? "☀️ Gündüz" : "🌙 Gece";
+      btn.innerHTML = isDark ? "Gündüz Modu" : "Gece Modu";
       btn.title = isDark ? "Açık Moda Geç" : "Koyu (Gece) Moda Geç";
     }
 
@@ -3438,7 +3438,7 @@
       closeVaccineModal();
       renderVaccineRecords();
       updateDashboardStats();
-      alert("✅ Aşı kaydı başarıyla oluşturuldu ve TÜRKVET formatına hazırlandı.");
+      alert("Aşı kaydı başarıyla oluşturuldu ve TÜRKVET formatına hazırlandı.");
     }
 
     /* =========================================================================
@@ -3462,10 +3462,10 @@
 
       previewDiv.style.display = "block";
       itemsDiv.innerHTML = `
-        <div>🔍 <strong>Koç Aşım Dönüşü (16-18. Günler):</strong> ${heatDate.toLocaleDateString('tr-TR')} (Tutmadıysa tekrar koç ister!)</div>
-        <div>🩺 <strong>Ultrason ile Gebelik Kontrolü (35-45. Günler):</strong> ${pregCheckDate.toLocaleDateString('tr-TR')} (Tekiz/ikiz teşhisi)</div>
-        <div>💉 <strong>Doğuma 1 Ay Kala Çelerme / Enterotoksemi Aşısı (120. Gün):</strong> ${dryDate.toLocaleDateString('tr-TR')} (Ağız sütüyle kuzuya antikor geçer)</div>
-        <div>🎉 <strong>Beklenen Doğum / Kuzulama (150. Gün):</strong> <span style="color:var(--primary); font-weight:800;">${calvingDate.toLocaleDateString('tr-TR')}</span></div>
+        <div><strong>Koç Aşım Dönüşü (16-18. Günler):</strong> ${heatDate.toLocaleDateString('tr-TR')} (Tutmadıysa tekrar koç ister!)</div>
+        <div><strong>Ultrason ile Gebelik Kontrolü (35-45. Günler):</strong> ${pregCheckDate.toLocaleDateString('tr-TR')} (Tekiz/ikiz teşhisi)</div>
+        <div><strong>Doğuma 1 Ay Kala Çelerme / Enterotoksemi Aşısı (120. Gün):</strong> ${dryDate.toLocaleDateString('tr-TR')} (Ağız sütüyle kuzuya antikor geçer)</div>
+        <div><strong>Beklenen Doğum / Kuzulama (150. Gün):</strong> <span style="color:var(--primary); font-weight:800;">${calvingDate.toLocaleDateString('tr-TR')}</span></div>
       `;
     }
 
@@ -3509,7 +3509,7 @@
       renderReproRecords();
       renderAnimalTable();
       updateDashboardStats();
-      alert(`✅ ${animal.earTag} için üreme kaydı oluşturuldu!\nBeklenen Doğum: ${new Date(calvingDate).toLocaleDateString('tr-TR')}`);
+      alert(`${animal.earTag} için üreme kaydı oluşturuldu!\nBeklenen Doğum: ${new Date(calvingDate).toLocaleDateString('tr-TR')}`);
       document.getElementById("repro-timeline-preview").style.display = "none";
     }
 
@@ -3589,11 +3589,11 @@
       const dmiKg = (weightKg * 0.035).toFixed(1);
 
       dosesUl.innerHTML = `
-        <li>💉 <strong>Adrenalin (1:1000 - Anafilaksi):</strong> <span style="color:var(--danger); font-weight:700;">${epiDose} mL</span> (SC / IM)</li>
-        <li>💊 <strong>Meloksikam (Ateş/Ağrı):</strong> <strong>${meloxDose} mL</strong> (SC / IV)</li>
-        <li>💊 <strong>Fluniksin (Toksemi/Ateş):</strong> <strong>${flunixinDose} mL</strong> (Yavaş IV)</li>
-        <li>💊 <strong>Tulatromisin (BRD Solunum):</strong> <strong>${tulaDose} mL</strong> (Tek doz SC)</li>
-        <li>🌾 <strong>Tahmini Günlük Kuru Madde İhtiyacı:</strong> ~${dmiKg} kg KM / gün</li>
+        <li><strong>Adrenalin (1:1000 - Anafilaksi):</strong> <span style="color:var(--danger); font-weight:700;">${epiDose} mL</span> (SC / IM)</li>
+        <li><strong>Meloksikam (Ateş/Ağrı):</strong> <strong>${meloxDose} mL</strong> (SC / IV)</li>
+        <li><strong>Fluniksin (Toksemi/Ateş):</strong> <strong>${flunixinDose} mL</strong> (Yavaş IV)</li>
+        <li><strong>Tulatromisin (BRD Solunum):</strong> <strong>${tulaDose} mL</strong> (Tek doz SC)</li>
+        <li><strong>Tahmini Günlük Kuru Madde İhtiyacı:</strong> ~${dmiKg} kg KM / gün</li>
       `;
     }
 
@@ -3604,7 +3604,7 @@
         emergencyInput.value = lastCalculatedWeightKg;
         calculateEpiDose();
       }
-      alert(`✅ ${lastCalculatedWeightKg} kg canlı ağırlık değeri acil müdahale ve ilaç dozaj motoruna başarıyla aktarıldı!`);
+      alert(`${lastCalculatedWeightKg} kg canlı ağırlık değeri acil müdahale ve ilaç dozaj motoruna başarıyla aktarıldı!`);
       switchTab("emergency");
     }
 
@@ -3617,20 +3617,20 @@
       const desc = document.getElementById("brix-quality-desc");
 
       if (brix >= 22) {
-        badge.textContent = "🟢 MÜKEMMEL KALİTE";
+        badge.textContent = "MÜKEMMEL KALİTE";
         badge.style.background = "#dcfce7";
         badge.style.color = "#0f766e";
         desc.innerHTML = `<strong>Brix %${brix}:</strong> Ananın sütü çok koyu ve şifalı (Mikrop kırıcı antikor çok yüksek). Yeni doğan kuzuya ilk 2 saat içinde 300–400 mL (biberonla) rahatlıkla içirilebilir. Kalanı şişeyle derin dondurucuya kaldırılabilir.`;
       } else if (brix >= 18) {
-        badge.textContent = "🟡 ORTA / SINIRDA";
+        badge.textContent = "ORTA / SINIRDA";
         badge.style.background = "#fef9c3";
         badge.style.color = "#854d0e";
         desc.innerHTML = `<strong>Brix %${brix}:</strong> Orta kalite (İlk aşı gücü sınırlı). İlk 2 saatte kuzuyu tam korumayabilir. Mümkünse dolapta önceden saklanmış kaliteli ağız sütüyle takviye edin veya 2. öğünde kuzuya verin.`;
       } else {
-        badge.textContent = "🔴 DÜŞÜK KALİTE (YETERSİZ)";
+        badge.textContent = "DÜŞÜK KALİTE (YETERSİZ)";
         badge.style.background = "#fee2e2";
         badge.style.color = "#b91c1c";
-        desc.innerHTML = `<strong>Brix %${brix}:</strong> Çok sulu ve zayıf süt. ⚠️ <strong>UYARI:</strong> Bu süt kuzuyu ishale ve mikroba karşı korumaz! Derhal derin dondurucudaki kaliteli ilk ağız sütünü ılık suda çözdürüp içirin.`;
+        desc.innerHTML = `<strong>Brix %${brix}:</strong> Çok sulu ve zayıf süt. <strong>UYARI:</strong> Bu süt kuzuyu ishale ve mikroba karşı korumaz! Derhal derin dondurucudaki kaliteli ilk ağız sütünü ılık suda çözdürüp içirin.`;
       }
     }
 
@@ -3653,7 +3653,7 @@
       } else if (dehPercent <= 8) {
         routeText = "Emme isteği zayıfsa kuzu sondası ile ılık ishal suyu içirin; göz çökmesi fazlaysa 1-2 Litre damardan serum takviyesi yapın.";
       } else {
-        routeText = "🚨 <strong>ACİL DAMARDAN SERUM ŞART:</strong> Hayvan yere serilmiş, emme isteği tamamen bitmiş. Ağızdan içirmek ciğere kaçabilir, derhal veteriner hekim çağırarak damardan tuzlu/karbonatlı serum bağlatın!";
+        routeText = "<strong>ACİL DAMARDAN SERUM ŞART:</strong> Hayvan yere serilmiş, emme isteği tamamen bitmiş. Ağızdan içirmek ciğere kaçabilir, derhal veteriner hekim çağırarak damardan tuzlu/karbonatlı serum bağlatın!";
       }
 
       resultBox.innerHTML = `
@@ -3684,7 +3684,7 @@
       const previewBox = document.getElementById("cost-live-preview");
       if (previewBox) {
         previewBox.innerHTML = `
-          <strong>📊 Tahmini Vaka Maliyeti:</strong><br>
+          <strong>Tahmini Vaka Maliyeti:</strong><br>
           • <strong>İmha Edilen / Dökülen Süt:</strong> ${dumpedLiters.toFixed(1)} Litre (${milkLoss.toLocaleString('tr-TR', {minimumFractionDigits: 1, maximumFractionDigits: 1})} ₺ Kayıp)<br>
           • <strong>Veteriner + İlaç Masrafı:</strong> ${medicalCost.toLocaleString('tr-TR')} ₺<br>
           • <strong style="font-size:0.95rem; color:#b91c1c;">Vakanın Toplam Ekonomik Zararı: ${totalLoss.toLocaleString('tr-TR', {minimumFractionDigits: 1, maximumFractionDigits: 1})} ₺</strong>
@@ -3725,7 +3725,7 @@
       costRecords.unshift(newRecord);
       setStore("costs", costRecords);
       renderCostRecords();
-      alert(`✅ Maliyet kaydı işlendi!\n${animal.earTag} - ${disease}\nToplam Zarar: ${totalLoss.toLocaleString('tr-TR')} TL`);
+      alert(`Maliyet kaydı işlendi!\n${animal.earTag} - ${disease}\nToplam Zarar: ${totalLoss.toLocaleString('tr-TR')} TL`);
     }
 
     function renderCostRecords() {
@@ -3812,7 +3812,7 @@
         resultBox.style.border = "1.5px solid #22c55e";
         resultBox.style.color = "#0f766e";
         resultBox.innerHTML = `
-          <strong>🟢 GEVİŞ GETİRME MÜKEMMEL (%${ratio}):</strong><br>
+          <strong>GEVİŞ GETİRME MÜKEMMEL (%${ratio}):</strong><br>
           • Yatan koyunlarin %${ratio}'si geviş getiriyor (Hedef: &gt; %58).<br>
           • <strong>Rumen Durumu:</strong> İşkembede lif sindirimi sağlıklı, tükürük salgısı yeterli. Asidoz riski düşük.
         `;
@@ -3821,7 +3821,7 @@
         resultBox.style.border = "1.5px solid #eab308";
         resultBox.style.color = "#854d0e";
         resultBox.innerHTML = `
-          <strong>🟡 UYARI: GEVİŞ GETİRME AZALMIŞ (%${ratio}):</strong><br>
+          <strong>UYARI: GEVİŞ GETİRME AZALMIŞ (%${ratio}):</strong><br>
           • Yatan koyunlarin %${ratio}'si geviş getiriyor (Hedef: En az %58-60).<br>
           • <strong>Ne Yapmalı?:</strong> Samanı veya yoncayı çok mu ince kıydınız kontrol edin; koyunlar iri taneli kaba yemleri yemlikte ayıklayıp kenara mı itiyor bakın.
         `;
@@ -3830,7 +3830,7 @@
         resultBox.style.border = "1.5px solid #ef4444";
         resultBox.style.color = "#b91c1c";
         resultBox.innerHTML = `
-          <strong>🔴 ALARM: İŞKEMBE EKŞİMESİ (AĞIR ASİDOZ) TEHLİKESİ (%${ratio})!</strong><br>
+          <strong>ALARM: İŞKEMBE EKŞİMESİ (AĞIR ASİDOZ) TEHLİKESİ (%${ratio})!</strong><br>
           • Yatan koyunlar geviş getirmeyi neredeyse bırakmış (Kritik sınırın çok altında).<br>
           • <strong>Tehlike:</strong> Koyun geviş getirmedikçe tükürük üretemez, işkembe asidi yakar ve tırnaklar düşer. Derhal uzun saplı kuru ot verin ve yemliğe koyun başı 20-30 gram karbonat katın!
         `;
@@ -3850,23 +3850,23 @@
 
       if (score === "1") {
         bg = "#fee2e2"; border = "#ef4444"; color = "#991b1b";
-        msg = "<strong>🔴 SKOR 1 - TEHLİKELİ (Fışkıran İshal):</strong> Şiddetli işkembe ekşimesi (asidoz), çelerme veya bağırsak iltihabı. Acil tahılı kesin, kuru ot ve elektrolit verin.";
+        msg = "<strong>SKOR 1 - TEHLİKELİ (Fışkıran İshal):</strong> Şiddetli işkembe ekşimesi (asidoz), çelerme veya bağırsak iltihabı. Acil tahılı kesin, kuru ot ve elektrolit verin.";
       } else if (score === "2") {
         bg = "#ffedd5"; border = "#f97316"; color = "#9a3412";
-        msg = "<strong>🟠 SKOR 2 - DİKKAT (Fındıklar Yapışmış / Cıvıklaşmış):</strong> Arpa/fabrika yemi fazla gelmiş, kaba ot yetersiz. İşkembe ekşiyor; tırnakta topallık ve çelerme riski kapıda.";
+        msg = "<strong>SKOR 2 - DİKKAT (Fındıklar Yapışmış / Cıvıklaşmış):</strong> Arpa/fabrika yemi fazla gelmiş, kaba ot yetersiz. İşkembe ekşiyor; tırnakta topallık ve çelerme riski kapıda.";
       } else if (score === "3") {
         bg = "#dcfce7"; border = "#22c55e"; color = "#115e59";
-        msg = "<strong>🟢 SKOR 3 - İDEAL (Tane Tane Koyun Fındığı):</strong> Mükemmel arpa-ot dengesi. Koyunun işkembesi tıkır tıkır çalışıyor.";
+        msg = "<strong>SKOR 3 - İDEAL (Tane Tane Koyun Fındığı):</strong> Mükemmel arpa-ot dengesi. Koyunun işkembesi tıkır tıkır çalışıyor.";
       } else if (score === "4") {
         bg = "#fef9c3"; border = "#eab308"; color = "#854d0e";
-        msg = "<strong>🟡 SKOR 4 - KURU / SERT FINDIKLAR:</strong> Saman/kuru kaba yem çok fazla, enerji veya su az. Süt verimi ve kuzu gelişimi yavaşlar.";
+        msg = "<strong>SKOR 4 - KURU / SERT FINDIKLAR:</strong> Saman/kuru kaba yem çok fazla, enerji veya su az. Süt verimi ve kuzu gelişimi yavaşlar.";
       } else if (score === "5") {
         bg = "#fee2e2"; border = "#ef4444"; color = "#991b1b";
-        msg = "<strong>🔴 SKOR 5 - TAŞLAŞMIŞ / KABIZ:</strong> Şiddetli susuzluk veya işkembe durması. Sulukları ve donmuş su borularını derhal kontrol edin.";
+        msg = "<strong>SKOR 5 - TAŞLAŞMIŞ / KABIZ:</strong> Şiddetli susuzluk veya işkembe durması. Sulukları ve donmuş su borularını derhal kontrol edin.";
       }
 
       if (grains) {
-        msg += `<br><br><span style="color:#b91c1c; font-weight:700;">⚠️ TEZEĞE KAÇAN TANE ALARMI:</span> Tezeğin içinde sindirilmeden bütün halde çıkan tane görülmesi; kırıcının ayarsız olduğunu veya yem karma makinesinin iyi ezmediğini gösterir. Nişasta işkembede sindirilemeyip tezekle doğrudan dışarı atılmaktadır (Verdiğiniz pahalı yem boşa gidiyor!).`;
+        msg += `<br><br><span style="color:#b91c1c; font-weight:700;">TEZEĞE KAÇAN TANE ALARMI:</span> Tezeğin içinde sindirilmeden bütün halde çıkan tane görülmesi; kırıcının ayarsız olduğunu veya yem karma makinesinin iyi ezmediğini gösterir. Nişasta işkembede sindirilemeyip tezekle doğrudan dışarı atılmaktadır (Verdiğiniz pahalı yem boşa gidiyor!).`;
       }
 
       resultBox.style.background = bg;
@@ -3892,17 +3892,17 @@
         resultBox.style.background = "#dcfce7";
         resultBox.style.border = "1px solid #86efac";
         resultBox.style.color = "#0f766e";
-        resultBox.innerHTML = `<strong>🟢 İDEAL YEMLİK (%${pct}):</strong> Kalan yem %3–5 hedef aralığında. Hayvanlar kapasitelerince yem tüketmiş ve yem israfı en az düzeyde.`;
+        resultBox.innerHTML = `<strong>İDEAL YEMLİK (%${pct}):</strong> Kalan yem %3–5 hedef aralığında. Hayvanlar kapasitelerince yem tüketmiş ve yem israfı en az düzeyde.`;
       } else if (pct < 3.0) {
         resultBox.style.background = "#fee2e2";
         resultBox.style.border = "1px solid #fca5a5";
         resultBox.style.color = "#b91c1c";
-        resultBox.innerHTML = `<strong>🔴 YEMLİK BOŞ / AÇLIK RİSKİ (%${pct}):</strong> Kalan yem %3'ün altında (Yemlik süpürülmüş!). Koyunlar aç kalmış olabilir, ertesi gün yeme aşırı yüklenip asidoz geçirebilirler. Yem miktarını %5 artırın.`;
+        resultBox.innerHTML = `<strong>YEMLİK BOŞ / AÇLIK RİSKİ (%${pct}):</strong> Kalan yem %3'ün altında (Yemlik süpürülmüş!). Koyunlar aç kalmış olabilir, ertesi gün yeme aşırı yüklenip asidoz geçirebilirler. Yem miktarını %5 artırın.`;
       } else {
         resultBox.style.background = "#fef9c3";
         resultBox.style.border = "1px solid #fde047";
         resultBox.style.color = "#854d0e";
-        resultBox.innerHTML = `<strong>🟡 YEM İSRAFI / SEÇME (%${pct}):</strong> Kalan yem %5'in üzerinde. Koyunlar kaba yemi bırakıp tane yemi seçmiş olabilir (Yem seçme / sorting). Kalan yemdeki partikül boyutunu kontrol edin.`;
+        resultBox.innerHTML = `<strong>YEM İSRAFI / SEÇME (%${pct}):</strong> Kalan yem %5'in üzerinde. Koyunlar kaba yemi bırakıp tane yemi seçmiş olabilir (Yem seçme / sorting). Kalan yemdeki partikül boyutunu kontrol edin.`;
       }
     }
 
@@ -3916,7 +3916,7 @@
       const bag25Kg = (totalKg / 25).toFixed(1);
 
       resultBox.innerHTML = `
-        <strong>🥣 Yemliğe / Yem Karmaya Eklenecek Günlük Karbonat:</strong><br>
+        <strong>Yemliğe / Yem Karmaya Eklenecek Günlük Karbonat:</strong><br>
         • <strong>Toplam Doz:</strong> ${totalKg} kg Sodyum Bikarbonat / gün (${cows} baş için)<br>
         • <strong>Çuval Karşılığı (25 kg standart çuval):</strong> ~${bag25Kg} çuval<br>
         • <em>Uygulama:</em> Yemliğe veya karma yeme homojen dağılacak şekilde karıştırın. Tükürük tamponlama kapasitesini destekleyerek rumen pH'sını 6.0–6.4 seviyesinde stabilize eder.
@@ -4034,9 +4034,9 @@
         activeSpeechRecognition = null;
         if (btnEl) {
           btnEl.style.background = "#0f766e";
-          btnEl.innerHTML = `🎙️ Sor`;
+          btnEl.innerHTML = `Sesle Sor`;
         }
-        if (statusEl) statusEl.innerHTML = `<span>🎙️ Ses tanıma durduruldu.</span>`;
+        if (statusEl) statusEl.innerHTML = `<span>Ses tanıma durduruldu.</span>`;
         return;
       }
 
@@ -4050,10 +4050,10 @@
           activeSpeechRecognition = recognition;
           if (btnEl) {
             btnEl.style.background = "#dc2626";
-            btnEl.innerHTML = `🛑 Dinliyor...`;
+            btnEl.innerHTML = `Dinliyor...`;
           }
           if (statusEl) {
-            statusEl.innerHTML = `<span style="color:#dc2626; font-weight:800;">🔴 Dinleniyor... Koyun küpesini söyleyin (Örn: "145" veya "yüz kırk beş")</span>`;
+            statusEl.innerHTML = `<span style="color:#dc2626; font-weight:800;">Dinleniyor... Koyun küpesini söyleyin (Örn: "145" veya "yüz kırk beş")</span>`;
           }
         };
 
@@ -4069,11 +4069,11 @@
           if (searchInput && parsedTag) {
             searchInput.value = parsedTag;
             if (statusEl) {
-              statusEl.innerHTML = `<span>✅ Algılandı: "<strong>${rawTranscript}</strong>" ➔ <strong>${parsedTag}</strong></span>`;
+              statusEl.innerHTML = `<span>Algılandı: "<strong>${rawTranscript}</strong>" ➔ <strong>${parsedTag}</strong></span>`;
             }
             checkMilkerStatus(true);
           } else if (statusEl) {
-            statusEl.innerHTML = `<span style="color:#d97706;">⚠️ Anlaşılamadı ("${rawTranscript}"). Tekrar deneyin.</span>`;
+            statusEl.innerHTML = `<span style="color:#d97706;">Anlaşılamadı ("${rawTranscript}"). Tekrar deneyin.</span>`;
             speakVoiceMessage("Küpe numarası anlaşılamadı, lütfen tekrar söyleyiniz.");
           }
         };
@@ -4082,9 +4082,9 @@
           console.warn("Ses tanıma hatası:", event.error);
           if (statusEl) {
             if (event.error === "not-allowed") {
-              statusEl.innerHTML = `<span style="color:#dc2626;">❌ Mikrofon izni verilmedi. Lütfen tarayıcı ayarlarından mikrofona izin verin.</span>`;
+              statusEl.innerHTML = `<span style="color:#dc2626;">Mikrofon izni verilmedi. Lütfen tarayıcı ayarlarından mikrofona izin verin.</span>`;
             } else {
-              statusEl.innerHTML = `<span style="color:#d97706;">⚠️ Ses algılanamadı (${event.error}). Tekrar deneyebilirsiniz.</span>`;
+              statusEl.innerHTML = `<span style="color:#d97706;">Ses algılanamadı (${event.error}). Tekrar deneyebilirsiniz.</span>`;
             }
           }
         };
@@ -4093,7 +4093,7 @@
           activeSpeechRecognition = null;
           if (btnEl) {
             btnEl.style.background = "#0f766e";
-            btnEl.innerHTML = `🎙️ Sor`;
+            btnEl.innerHTML = `Sesle Sor`;
           }
         };
 
@@ -4171,14 +4171,14 @@
       if (blockedKeys.length === 0) {
         blockedUl.innerHTML = `<li>Şu an antibiyotikli veya yasaklı koyun bulunmamaktadır.</li>`;
       } else {
-        blockedUl.innerHTML = blockedKeys.map(tag => `<li>🚫 ${tag} : ${blockedMap[tag]}</li>`).join("");
+        blockedUl.innerHTML = blockedKeys.map(tag => `<li>${tag} : ${blockedMap[tag]}</li>`).join("");
       }
 
       // Arama yapılmışsa tek hayvan kontrolü
       if (!search) {
         resBox.innerHTML = `
           <div class="milker-status-box milker-green">
-            🟢 SAĞIMA UYGUN
+            SAĞIMA UYGUN
             <div style="font-size:0.85rem; font-weight:400; margin-top:4px;">Sağım kontrolü için yukarıya koyun küpe numarasını yazın, kamerayla okutun veya sesle söyleyin.</div>
           </div>
         `;
@@ -4188,7 +4188,7 @@
       if (blockedMap[search]) {
         resBox.innerHTML = `
           <div class="milker-status-box milker-red">
-            🔴 BU KOYUNU TANKA SAĞMA!
+            BU KOYUNU TANKA SAĞMA!
             <div style="font-size:1rem; font-weight:600; margin-top:6px;">ANTİBİYOTİKLİ SÜT - TANKA KARIŞTIRILAMAZ!</div>
             <div style="font-size:0.85rem; font-weight:400; margin-top:4px;">Kalan Kısıt Süresi: ${blockedMap[search]}</div>
           </div>
@@ -4202,7 +4202,7 @@
         if (animalExists) {
           resBox.innerHTML = `
             <div class="milker-status-box milker-green">
-              🟢 SAĞIMA UYGUN
+              SAĞIMA UYGUN
               <div style="font-size:1rem; font-weight:600; margin-top:4px;">${search} KÜPELİ KOYUN TEMİZ</div>
               <div style="font-size:0.85rem; font-weight:400;">Kalıntı engeli yoktur, tanka sağılabilir.</div>
             </div>
@@ -4213,7 +4213,7 @@
         } else {
           resBox.innerHTML = `
             <div class="milker-status-box milker-yellow">
-              🟡 KÜPE LİSTEDE BULUNAMADI
+              KÜPE LİSTEDE BULUNAMADI
               <div style="font-size:0.85rem; font-weight:400; margin-top:4px;">"${search}" küpe numarası kayıtlı değil. Lütfen kontrol ediniz.</div>
             </div>
           `;
@@ -4269,7 +4269,7 @@
       renderAnimalTable();
       updateDashboardStats();
       document.getElementById("new-eartag").value = "";
-      alert(`✅ ${eartag} başarıyla eklendi!`);
+      alert(`${eartag} başarıyla eklendi!`);
     }
 
     /* =========================================================================
@@ -4333,9 +4333,9 @@
           renderReproRecords();
           renderCostRecords();
           updateDashboardStats();
-          alert("✅ Yedek veriler başarıyla cihaza yüklendi!");
+          alert("Yedek veriler başarıyla cihaza yüklendi!");
         } catch (err) {
-          alert("❌ Hata: Geçersiz yedek dosyası!");
+          alert("Hata: Geçersiz yedek dosyası!");
         }
       };
       reader.readAsText(file);
@@ -4356,7 +4356,7 @@
       statusText.style.color = "#1e293b";
 
       if (typeof Html5Qrcode === "undefined") {
-        statusText.textContent = "❌ Barkod okuyucu kütüphanesi yüklenemedi!";
+        statusText.textContent = "Barkod okuyucu kütüphanesi yüklenemedi!";
         statusText.style.color = "var(--danger)";
         return;
       }
@@ -4390,10 +4390,10 @@
           // Anlık okuma hatalarını sessizce geç
         }
       ).then(() => {
-        statusText.textContent = "🟢 Kamera aktif. Küpedeki barkod veya QR kodu kutunun içine hizalayın.";
+        statusText.textContent = "Kamera aktif. Küpedeki barkod veya QR kodu kutunun içine hizalayın.";
         statusText.style.color = "var(--primary)";
       }).catch((err) => {
-        statusText.innerHTML = `⚠️ Kamera erişimi açılamadı:<br><small>${err}</small><br>Tarayıcıdan kamera iznini onayladığınızdan emin olun.`;
+        statusText.innerHTML = `Kamera erişimi açılamadı:<br><small>${err}</small><br>Tarayıcıdan kamera iznini onayladığınızdan emin olun.`;
         statusText.style.color = "var(--danger)";
       });
     }
@@ -4415,7 +4415,7 @@
         const searchInput = document.getElementById("animal-search");
         searchInput.value = cleanTag;
         renderAnimalTable();
-        alert(`📷 Küpe Okundu: ${cleanTag}`);
+        alert(`Küpe Okundu: ${cleanTag}`);
       } else if (activeScanTarget === 'milker') {
         const milkerInput = document.getElementById("milker-search");
         milkerInput.value = cleanTag;
@@ -4452,9 +4452,9 @@
         opt.textContent = `${earTag} (Kamera ile Okundu)`;
         sel.appendChild(opt);
         sel.value = earTag;
-        alert(`📷 Küpe Okundu: ${earTag}\n(Sistemde kayıtlı bulunamadı, geçici eklendi)`);
+        alert(`Küpe Okundu: ${earTag}\n(Sistemde kayıtlı bulunamadı, geçici eklendi)`);
       } else {
-        alert(`📷 Küpe Eşleşti: ${earTag}`);
+        alert(`Küpe Eşleşti: ${earTag}`);
       }
     }
 
