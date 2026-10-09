@@ -31,7 +31,7 @@ Uygulama ana ekranında işlemler 5 büyük **Koyun Durumu Ana Menüsü** merkez
 
 ## 2. Gösterge Paneli ve Küpe Numaralı Takip
 
-- **Tohumlama / Koç Katımı:** Önceki aşımdan/tohumlamadan 14–19 gün geçmiş (17 günlük kızgınlık döngüsü) koyunlar ile 12–20 aylık damızlık toklular otomatik hesaplanır. Mor karta dokunarak üreme takvimine geçebilirsiniz.
+- **Tohumlama / Koç Katımı:** Önceki aşımdan/tohumlamadan 14–19 gün geçmiş (17 günlük kızgınlık döngüsü) koyunlar ile 12–20 aylık damızlık toklular otomatik hesaplanır. Karta dokunarak üreme takvimine geçebilirsiniz.
 - **Uyarılı Küpe Numaraları:** Sayfa başındaki kritik takip listesinde kafa karıştırıcı sayılar yerine doğrudan **Küpe Numaraları** listelenir.
 - **Koyun Uyarı & Sağlık Kartı:** Herhangi bir küpeye dokunduğunuzda koyunun acil sağlık kartı açılır; kalan süt arınma süresi, kesim kilidi, koç dönüşü veya yaklaşan aşısı doğrudan aksiyon butonlarıyla yönetilebilir.
 
@@ -78,13 +78,13 @@ Küçükbaşta ilaç kalıntılarının süte, peynire ve ete geçmesini önleye
 
 #### 2.2. Sağımcı Ekranı (Büyük Puntolu & Eller Serbest Sesli Kontrol)
 Sağımhane personeli sağım yaparken:
-- **Eller Serbest Sesle Sor:** Yeşil mikrofona dokunun ve koyun küpesini söyleyin (örn: *"145"* veya *"yüz kırk beş"*). Sistem koyunu anında bulur ve hoparlörden sesli olarak:
+- **Eller Serbest Sesle Sor:** "Sesle Sor" butonuna dokunun ve koyun küpesini söyleyin (örn: *"145"* veya *"yüz kırk beş"*). Sistem koyunu anında bulur ve hoparlörden sesli olarak:
   - *"Dikkat! Kırmızı Alarm! 145 numaralı koyunun sütü yasaklı! Tanka sağmayın! Kalan süre: 24 saat."*
   - *"145 numaralı koyun temiz. Süt kısıtı yok, tanka sağılabilir."* diye seslenir.
-- **Kamerayla Küpe Oku:** Sarı butona basarak kulak küpesini kameraya tutabilirsiniz.
+- **Kamerayla Küpe Oku:** "Kamera" butonuna basarak kulak küpesini kameraya tutabilirsiniz.
 - **Yazarak Arama:** Küpe numarasını yazınca dev puntolu renkli durumu ekrana gelir.
-- Antibiyotikli koyunlarda dev ekranda **"BU KOYUNU TANKA SAĞMA!"** kırmızı alarmı ve kalan saat çıkar.
-- İlaçsız koyunlarda **"SAĞIMA UYGUN"** yeşil onayı verilir. Kesim kilitli toklu ve koyunlar anlık listelenir.
+- Antibiyotikli koyunlarda dev ekranda **"BU KOYUNU TANKA SAĞMA!"** alarmı ve kalan saat çıkar.
+- İlaçsız koyunlarda **"SAĞIMA UYGUN"** onayı verilir. Kesim kilitli toklu ve koyunlar anlık listelenir.
 
 #### 2.3. Zarar & Masraf Defteri
 - Çiğ koyun sütü satış fiyatınızı (Örn: 38 TL/Litre) yazın.

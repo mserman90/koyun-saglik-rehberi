@@ -25,7 +25,7 @@ Bu uygulama, **koyun ve keçi yetiştiricileri, çobanlar ve küçükbaş çiftl
 Ağıl ve mera koşullarındaki **acil müdahale önceliği** ve eldivenli kullanıma göre optimize edilmiştir. Sayfa altındaki gezinme ikonları yerine ana ekranda 5 büyük **Koyun Durumu Ana Menüsü** merkezi yer alır:
 
 1. **HASTA / ACİL KOYUN:** İlk Yardım (Gebelik Zehirlenmesi / İkiz Koması, Çelerme / Çelerme (Yem Çarpması), Kuzu Donması / Hipotermi, Sidik Zoru, Kurt Isırması, İşkembe Gaz Şişmesi şişmesi, Adrenalin şok dozu), Hasta Muayenesi & Durum Tespiti & Makat Ateşi (38.5–40.0°C), İlaç Yap & Süt/Et Kilitle (İKAS).
-2. **SAĞIM & SÜT/ET GÜVENLİĞİ:** Sağımcı Ekranı (Dev puntolu yeşil/kırmızı izin, mezbaha kesim kilitleri), Dökülen Süt Zarar & Masraf Defteri.
+2. **SAĞIM & SÜT/ET GÜVENLİĞİ:** Sağımcı Ekranı (Dev puntolu yüksek kontrastlı siyah-beyaz süt ve kesim izni, mezbaha kesim kilitleri), Dökülen Süt Zarar & Masraf Defteri.
 3. **YENİ DOĞUM, KUZU & KOÇ KATIMI:** Kuzu Kolostrumu (İlk 2 saatte 300-400 mL), Brix Kalite Ölçer, Kuzu İshali Sıvı Hesabı, Koç Katımı & Doğum Çarkı (17 gün kızgınlık, 150 gün gebelik).
 4. **YENİ KOYUN GİRİŞİ & AŞI:** Yeni Koyun/Kuzu Kaydı (Karantina Bölmesi), Akıllı Aşı Takvimi (Çelerme, Çiçek, PPR Veba, Şap, Brucella).
 5. **YEMLİK, İŞKEMBE & GEVİŞ:** Geviş Getirme Sayacı (%58-60 hedef), Koyun Fındığı/Zibin Kıvamı (1-5), Tampon Karbonat Hesabı (15-30 gr/koyun), Şerit Metre ile Kilo Ölçer.
@@ -34,8 +34,8 @@ Ağıl ve mera koşullarındaki **acil müdahale önceliği** ve eldivenli kulla
 
 ## Gösterge Paneli & Küpe Numaralı Kritik Takip
 
-- **Tohumlama / Koç Katımı Zamanı Göstergesi:** Önceki aşımdan/tohumlamadan 14–19 gün geçmiş (17 günlük kızgınlık döngüsü) koyunlar ile 12–20 aylık damızlık toklular otomatik hesaplanır. Mor karta dokunarak üreme takvimini açabilirsiniz.
-- **Uyarılı Küpe Numaraları Çipleri:** Sayfa başındaki kritik takip listesinde kafa karıştırıcı sayılar yerine doğrudan hayvanların **Sarı Kulak Küpe Numaraları** listelenir.
+- **Tohumlama / Koç Katımı Zamanı Göstergesi:** Önceki aşımdan/tohumlamadan 14–19 gün geçmiş (17 günlük kızgınlık döngüsü) koyunlar ile 12–20 aylık damızlık toklular otomatik hesaplanır. Karta dokunarak üreme takvimini açabilirsiniz.
+- **Uyarılı Küpe Numaraları Çipleri:** Sayfa başındaki kritik takip listesinde kafa karıştırıcı sayılar yerine doğrudan hayvanların **Kulak Küpe Numaraları** listelenir.
 - **Koyun Uyarı & Sağlık Kartı Modalı:** Herhangi bir küpeye dokunulduğunda koyunun aktif süt engeli, kesim kilidi, koç katımı dönüşü, yaklaşan aşısı veya sağlık uyarısı tek ekranda açılır; ilgili butonla doğrudan müdahaleye yönlendirir.
 - **Kategori Filtreleme:** Uyarılı hayvanları *Tümü*, *İlaç & İKAS*, *Üreme & Doğum*, *Aşı* ve *Sağlık & Karantina* olarak tek dokunuşla süzebilirsiniz.
 
