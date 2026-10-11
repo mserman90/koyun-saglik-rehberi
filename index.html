@@ -2,8 +2,9 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
   <meta name="theme-color" content="#000000">
+  <meta name="color-scheme" content="light dark">
   <meta name="description" content="Koyun Çiftliği Rehberi - Ağıl, mera ve küçükbaş çiftlikleri için %100 internetsiz çalışan koyun ve kuzu hastalık teşhisi, acil ilk yardım (çelerme, ikiz koması, kuzu donması), aşı takvimi, koç katımı ve İKAS süt arınma süresi asistanı.">
   <meta name="keywords" content="koyun sağlık rehberi, küçükbaş hastalıkları, kuzu bakımı, çelerme aşısı, gebelik zehirlenmesi, ikiz koması, çelerme (yem çarpması), koç katımı takvimi, İKAS koyun sütü süresi, koyun kilosu ölçme, çoban rehberi offline">
   <meta name="author" content="Dr. Mert Serman / Koyun Çiftliği Rehberi">
@@ -17,10 +18,11 @@
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   <link rel="manifest" href="manifest.json">
   <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="apple-mobile-web-app-title" content="Koyun Sağlık">
+  <meta name="apple-mobile-web-app-title" content="Koyun Çiftliği">
   <meta name="application-name" content="Koyun Çiftliği Rehberi">
-  <meta name="msapplication-TileColor" content="#0d9488">
+  <meta name="msapplication-TileColor" content="#000000">
 
   <!-- Open Graph / Facebook / WhatsApp -->
   <meta property="og:type" content="website">
@@ -110,15 +112,19 @@
       background-color: var(--bg);
       color: var(--text);
       line-height: 1.5;
+      min-height: 100vh;
       min-height: 100dvh;
       padding-bottom: calc(24px + env(safe-area-inset-bottom, 0px));
+      padding-left: env(safe-area-inset-left, 0px);
+      padding-right: env(safe-area-inset-right, 0px);
+      overflow-x: hidden;
     }
 
     /* Üst Başlık */
     header {
       background: #000000 !important;
       color: #ffffff !important;
-      padding: 12px 16px;
+      padding: calc(10px + env(safe-area-inset-top, 0px)) 14px 10px 14px;
       position: sticky;
       top: 0;
       z-index: 100;
@@ -126,6 +132,8 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
     }
 
     header h1,
@@ -1874,6 +1882,24 @@
       color: #ffffff !important;
     }
 
+    @media (max-width: 480px) {
+      header {
+        padding: calc(8px + env(safe-area-inset-top, 0px)) 10px 8px 10px;
+        gap: 6px;
+      }
+      header h1 {
+        font-size: 0.95rem !important;
+      }
+      .header-actions-group {
+        gap: 4px !important;
+      }
+      .header-actions-group a,
+      .header-actions-group button {
+        padding: 6px 8px !important;
+        font-size: 0.75rem !important;
+        min-height: 36px !important;
+      }
+    }
   </style>
 </head>
 <body>
@@ -1881,15 +1907,16 @@
   <!-- Başlık -->
   <header>
     <div style="display:flex; align-items:center; gap:8px;">
-      <button id="header-back-btn" onclick="switchTab('dashboard')" style="display:none; background:rgba(255,255,255,0.22); color:white; border:1.5px solid rgba(255,255,255,0.6); padding:6px 12px; border-radius:8px; font-size:0.82rem; font-weight:800; cursor:pointer; min-height:38px; touch-action:manipulation;">Ana Menü</button>
+      <button id="header-back-btn" onclick="switchTab('dashboard')" style="display:none; background:rgba(255,255,255,0.22); color:white; border:1.5px solid rgba(255,255,255,0.6); padding:6px 10px; border-radius:8px; font-size:0.8rem; font-weight:800; cursor:pointer; min-height:36px; touch-action:manipulation;">Ana Menü</button>
       <div>
         <h1>Koyun Çiftliği Rehberi</h1>
       </div>
     </div>
-    <div style="display:flex; align-items:center; gap:8px;">
-      <a href="../" title="Çiftlik Rehberleri Portalı" style="background:rgba(255,255,255,0.22); color:white; border:1.5px solid rgba(255,255,255,0.6); padding:8px 12px; border-radius:8px; font-size:0.85rem; font-weight:700; text-decoration:none; display:inline-flex; align-items:center; min-height:44px; touch-action:manipulation;">Portal</a>
-      <button onclick="openGuideModal()" style="background:rgba(255,255,255,0.22); color:white; border:1.5px solid rgba(255,255,255,0.6); padding:8px 14px; border-radius:8px; font-size:0.85rem; font-weight:700; cursor:pointer; min-height:44px; touch-action:manipulation;">Kılavuz</button>
-      <button id="theme-toggle-btn" onclick="toggleTheme()" title="Koyu / Açık Mod" style="background:rgba(255,255,255,0.18); color:white; border:1.5px solid rgba(255,255,255,0.4); padding:8px 12px; border-radius:8px; font-size:0.85rem; font-weight:700; cursor:pointer; min-height:44px; touch-action:manipulation;">Gece Modu</button>
+    <div class="header-actions-group" style="display:flex; align-items:center; flex-wrap:wrap; gap:6px;">
+      <button id="pwa-install-btn" onclick="triggerPwaInstall()" title="Uygulamayı Telefona / Ana Ekrana Yükle" style="display:none; background:#ffffff; color:#000000; border:1.5px solid #ffffff; padding:8px 10px; border-radius:8px; font-size:0.82rem; font-weight:800; cursor:pointer; min-height:40px; touch-action:manipulation;">Yükle</button>
+      <a href="../" title="Çiftlik Rehberleri Portalı" style="background:rgba(255,255,255,0.22); color:white; border:1.5px solid rgba(255,255,255,0.6); padding:8px 10px; border-radius:8px; font-size:0.82rem; font-weight:700; text-decoration:none; display:inline-flex; align-items:center; min-height:40px; touch-action:manipulation;">Portal</a>
+      <button onclick="openGuideModal()" style="background:rgba(255,255,255,0.22); color:white; border:1.5px solid rgba(255,255,255,0.6); padding:8px 10px; border-radius:8px; font-size:0.82rem; font-weight:700; cursor:pointer; min-height:40px; touch-action:manipulation;">Kılavuz</button>
+      <button id="theme-toggle-btn" onclick="toggleTheme()" title="Koyu / Açık Mod" style="background:rgba(255,255,255,0.18); color:white; border:1.5px solid rgba(255,255,255,0.4); padding:8px 10px; border-radius:8px; font-size:0.82rem; font-weight:700; cursor:pointer; min-height:40px; touch-action:manipulation;">Gece Modu</button>
     </div>
   </header>
 
@@ -5492,10 +5519,63 @@
       }
     }
 
+    // PWA Kurulum Yöneticisi ve Kısayol (Hash) Yönlendirmesi
+    let deferredPwaPrompt = null;
+    const pwaInstallBtn = document.getElementById("pwa-install-btn");
+
+    function isStandaloneApp() {
+      return window.matchMedia("(display-mode: standalone)").matches || window.navigator.standalone === true;
+    }
+
+    function isIosDevice() {
+      return /iphone|ipad|ipod/i.test(window.navigator.userAgent);
+    }
+
+    window.addEventListener("beforeinstallprompt", (e) => {
+      e.preventDefault();
+      deferredPwaPrompt = e;
+      if (pwaInstallBtn && !isStandaloneApp()) {
+        pwaInstallBtn.style.display = "inline-flex";
+      }
+    });
+
+    window.addEventListener("appinstalled", () => {
+      deferredPwaPrompt = null;
+      if (pwaInstallBtn) pwaInstallBtn.style.display = "none";
+    });
+
+    if (isIosDevice() && !isStandaloneApp() && pwaInstallBtn) {
+      pwaInstallBtn.style.display = "inline-flex";
+    }
+
+    async function triggerPwaInstall() {
+      if (deferredPwaPrompt) {
+        deferredPwaPrompt.prompt();
+        const { outcome } = await deferredPwaPrompt.userChoice;
+        if (outcome === "accepted" && pwaInstallBtn) {
+          pwaInstallBtn.style.display = "none";
+        }
+        deferredPwaPrompt = null;
+      } else if (isIosDevice()) {
+        alert("iPhone / iPad'de Ana Ekrana Eklemek İçin:\n\n1. Safari alt menüsündeki 'Paylaş' (yukarı ok) simgesine dokunun.\n2. Listeden 'Ana Ekrana Ekle' seçeneğine dokunun.");
+      } else {
+        openGuideModal();
+      }
+    }
+
+    function handleUrlHashRouting() {
+      const hash = (window.location.hash || "").replace("#", "").trim();
+      if (hash && document.getElementById("tab-" + hash)) {
+        switchTab(hash);
+      }
+    }
+    window.addEventListener("hashchange", handleUrlHashRouting);
+    window.addEventListener("DOMContentLoaded", handleUrlHashRouting);
+
     // PWA Service Worker Kaydı (Tam Çevrimdışı Çalışma)
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
-        navigator.serviceWorker.register('./sw.js?v=27').then((reg) => {
+        navigator.serviceWorker.register('./sw.js?v=29').then((reg) => {
           reg.update();
         }).catch(() => {});
       });
